@@ -1,0 +1,21 @@
+
+> aiklanding@0.1.0 build H:\__prod\aiklanding
+> next build
+
+   Γû▓ Next.js 16.0.10 (Turbopack)
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully in 3.3s
+   Running TypeScript ...
+Failed to compile.
+
+./raw/kelasinovatif-university (1)/services/geminiService.ts:1:29
+Type error: Cannot find module '@google/genai' or its corresponding type declarations.
+
+> 1 | import { GoogleGenAI } from "@google/genai";
+    |                             ^
+  2 |
+  3 | const apiKey = process.env.API_KEY || '';
+  4 |
+Next.js build worker exited with code: 1 and signal: null
+ΓÇëELIFECYCLEΓÇë Command failed with exit code 1.

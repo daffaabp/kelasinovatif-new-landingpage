@@ -1,0 +1,43 @@
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+
+export function Hero() {
+    return (
+        <header className="pt-32 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+            <div className="inline-block bg-[var(--color-schedule-bg-light)] dark:bg-[var(--color-schedule-bg-dark)] px-3 py-1 rounded text-xs font-semibold tracking-wider uppercase mb-6 text-gray-600 dark:text-gray-400">
+                Kalender Akademik
+            </div>
+            <h1 className="text-4xl md:text-6xl font-serif text-[var(--color-schedule-primary)] dark:text-white mb-4">
+                Acara Mendatang <br />
+                <span className="italic font-normal text-gray-700 dark:text-gray-300">& Jadwal</span>
+            </h1>
+            <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                Temukan workshop, kuliah, dan aktivitas kampus yang dirancang untuk memperluas perspektif Anda dan meningkatkan perjalanan pembelajaran Anda.
+            </p>
+            <div className="mt-12 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                    <button className="px-5 py-2 rounded-full bg-[var(--color-schedule-primary)] text-white text-sm font-medium shadow-md hover:opacity-90 transition">
+                        Semua Acara
+                    </button>
+                    <button className="px-5 py-2 rounded-full bg-white dark:bg-[#1E1E1E] border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition shadow-sm cursor-pointer">
+                        Workshop
+                    </button>
+                    <button className="px-5 py-2 rounded-full bg-white dark:bg-[#1E1E1E] border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition shadow-sm cursor-pointer">
+                        Kuliah
+                    </button>
+                    <button className="px-5 py-2 rounded-full bg-white dark:bg-[#1E1E1E] border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition shadow-sm cursor-pointer">
+                        Upacara
+                    </button>
+                </div>
+                <div className="flex items-center bg-white dark:bg-[#1E1E1E] rounded-full px-2 py-1 border border-gray-200 dark:border-gray-700 shadow-sm">
+                    <button className="p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition rounded-full cursor-pointer">
+                        <ChevronLeft className="w-4 h-4" />
+                    </button>
+                    <span className="px-4 text-sm font-medium text-gray-700 dark:text-gray-200">Oktober 2023</span>
+                    <button className="p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition rounded-full cursor-pointer">
+                        <ChevronRight className="w-4 h-4" />
+                    </button>
+                </div>
+            </div>
+        </header>
+    );
+}
