@@ -90,10 +90,13 @@ export function PostSidebar({ initialData }: PostSidebarProps) {
                         className="w-full rounded-lg border-gray-300 dark:border-gray-700 dark:bg-gray-800/50 dark:text-white focus:border-[#263c32] focus:ring-[#263c32] shadow-sm text-sm p-2 bg-transparent border"
                     >
                         <option value="">Select a category</option>
-                        <option>Akademik</option>
-                        <option>Kehidupan Kampus</option>
-                        <option>Penelitian</option>
-                        <option>Acara</option>
+                        <option value="Penulisan Akademik">Penulisan Akademik</option>
+                        <option value="Berita">Berita</option>
+                        <option value="Tutorial">Tutorial</option>
+                        <option value="Bisnis">Bisnis</option>
+                        <option value="Konten Kreator">Konten Kreator</option>
+                        <option value="Alumni">Alumni</option>
+                        <option value="Produk">Produk</option>
                     </select>
                 </div>
                 <div>
