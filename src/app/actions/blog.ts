@@ -158,3 +158,36 @@ export async function deleteBlog(id: number) {
         return { msg: 'Failed to delete blog' };
     }
 }
+
+export async function getBlogStats() {
+    try {
+        const totalResult = await db('blogs').count('id as count').first();
+        const total = totalResult ? parseInt(totalResult.count as string) : 0;
+
+        const publishedResult = await db('blogs')
+            .where('status', 'published')
+            .orWhereNull('status') // Assuming legacy posts with null status are published
+            .count('id as count')
+            .first();
+        const published = publishedResult ? parseInt(publishedResult.count as string) : 0;
+
+        const draftsResult = await db('blogs')
+            .where('status', 'draft')
+            .count('id as count')
+            .first();
+        const drafts = draftsResult ? parseInt(draftsResult.count as string) : 0;
+
+        return {
+            total,
+            published,
+            drafts
+        };
+    } catch (error) {
+        console.error('Error fetching blog stats:', error);
+        return {
+            total: 0,
+            published: 0,
+            drafts: 0
+        };
+    }
+}
