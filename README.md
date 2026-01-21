@@ -52,18 +52,19 @@ Make sure not to forget to create the database in your PostgreSQL instance if it
 
 This project uses Knex.js for migrations.
 
-#### Run Migrations
-To set up the database schema (create tables), run:
+#### Restore Database (Recommended)
+If you have a database backup file (e.g., `backup_kelasinovatif.sql`), restore it using your PostgreSQL tool (e.g., psql, pgAdmin).
+
+Example using psql:
+```bash
+psql -h localhost -U your_username -d kelasinovatif_db -f backup_kelasinovatif.sql
+```
+
+#### Run Migrations (Alternative)
+If you are starting from scratch without a backup:
 
 ```bash
 bun x knex migrate:latest
-```
-
-#### Seed Data (Optional)
-To import initial blog posts from `posts.json`, run the import script:
-
-```bash
-bun scripts/json-to-pg.js
 ```
 
 ### 5. Run the Application
@@ -90,4 +91,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `bun build`: Builds the application for production.
 - `bun start`: Starts the production server.
 - `bun lint`: Runs ESLint.
-- `bun scripts/check-db.js`: Checks the database connection and lists some blog posts.
+- `bun lint`: Runs ESLint.

@@ -40,4 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 
 # Blog images
-/public/images/blogs
+
+# Scripts (local utils)
+/scripts/
