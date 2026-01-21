@@ -3,8 +3,21 @@
 import React, { useState } from "react";
 import { CloudUpload, X, Clock } from "lucide-react";
 
-export function PostSidebar() {
-    const [featured, setFeatured] = useState(false);
+interface PostSidebarProps {
+    initialData?: {
+        featured?: boolean;
+        category?: string;
+        image?: string;
+        read_time?: string;
+        status?: 'published' | 'draft';
+    };
+}
+
+export function PostSidebar({ initialData }: PostSidebarProps) {
+    const [featured, setFeatured] = useState(initialData?.featured || false);
+    // Parse read time to number if it format is "X min read"
+    const initialReadTime = initialData?.read_time ? parseInt(initialData.read_time) : undefined;
+    const initialStatus = initialData?.status || 'draft';
 
     return (
         <div className="lg:col-span-1 space-y-6">
@@ -18,7 +31,7 @@ export function PostSidebar() {
                 <div className="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in">
                     <input
                         type="checkbox"
-                        name="toggle"
+                        name="featured"
                         id="toggle"
                         className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer border-gray-300 checked:right-0 checked:border-[#263c32]"
                         checked={featured}
@@ -35,6 +48,7 @@ export function PostSidebar() {
                 <h3 className="font-serif font-bold text-lg text-gray-800 dark:text-white mb-4">
                     Cover Image
                 </h3>
+                {/* File upload omitted for simplicity, using URL */}
                 <div className="border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-lg p-6 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors group">
                     <div className="w-12 h-12 bg-[#263c32]/10 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                         <CloudUpload className="text-[#263c32] text-2xl w-6 h-6" />
@@ -51,6 +65,8 @@ export function PostSidebar() {
                     </label>
                     <input
                         type="text"
+                        name="image"
+                        defaultValue={initialData?.image}
                         className="w-full text-sm rounded-lg border-gray-300 dark:border-gray-700 dark:bg-gray-800/50 dark:text-white focus:border-[#263c32] focus:ring-[#263c32] shadow-sm p-2 bg-transparent border"
                         placeholder="https://..."
                     />
@@ -69,42 +85,36 @@ export function PostSidebar() {
                     </label>
                     <select
                         id="category"
+                        name="category"
+                        defaultValue={initialData?.category}
                         className="w-full rounded-lg border-gray-300 dark:border-gray-700 dark:bg-gray-800/50 dark:text-white focus:border-[#263c32] focus:ring-[#263c32] shadow-sm text-sm p-2 bg-transparent border"
                     >
-                        <option>Select a category</option>
+                        <option value="">Select a category</option>
                         <option>Akademik</option>
                         <option>Kehidupan Kampus</option>
+                        <option>Penelitian</option>
+                        <option>Acara</option>
                     </select>
                 </div>
                 <div>
                     <label
                         className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                        htmlFor="tags"
+                        htmlFor="status"
                     >
-                        Tags
+                        Status
                     </label>
-                    <div className="relative">
-                        <input
-                            id="tags"
-                            type="text"
-                            className="w-full rounded-lg border-gray-300 dark:border-gray-700 dark:bg-gray-800/50 dark:text-white focus:border-[#263c32] focus:ring-[#263c32] shadow-sm text-sm pb-8 p-2 bg-transparent border"
-                            placeholder="Add tags..."
-                        />
-                        <div className="absolute bottom-2 left-2 flex gap-1">
-                            <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-[#263c32]/10 text-[#263c32] dark:text-white dark:bg-[#263c32]/30">
-                                Education{" "}
-                                <button className="ml-1 text-[#263c32] hover:text-red-500">
-                                    <X className="w-3 h-3" />
-                                </button>
-                            </span>
-                            <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-[#263c32]/10 text-[#263c32] dark:text-white dark:bg-[#263c32]/30">
-                                Tips{" "}
-                                <button className="ml-1 text-[#263c32] hover:text-red-500">
-                                    <X className="w-3 h-3" />
-                                </button>
-                            </span>
-                        </div>
-                    </div>
+                    <select
+                        id="status"
+                        name="status"
+                        defaultValue={initialData?.status || 'draft'}
+                        className="w-full rounded-lg border-gray-300 dark:border-gray-700 dark:bg-gray-800/50 dark:text-white focus:border-[#263c32] focus:ring-[#263c32] shadow-sm text-sm p-2 bg-transparent border"
+                    >
+                        <option value="draft">Draft</option>
+                        <option value="published">Published</option>
+                    </select>
+                </div>
+                <div>
+                    {/* Tags omitted for basic implementation */}
                 </div>
                 <div>
                     <label
@@ -116,7 +126,9 @@ export function PostSidebar() {
                     <div className="relative">
                         <input
                             id="read-time"
+                            name="read_time"
                             type="number"
+                            defaultValue={initialReadTime}
                             className="w-full rounded-lg border-gray-300 dark:border-gray-700 dark:bg-gray-800/50 dark:text-white focus:border-[#263c32] focus:ring-[#263c32] shadow-sm text-sm pl-10 p-2 bg-transparent border"
                             placeholder="5"
                         />

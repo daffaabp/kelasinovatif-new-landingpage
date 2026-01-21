@@ -1,7 +1,11 @@
 import React from 'react';
 import { ChevronRight, Home } from 'lucide-react';
 
-export function Breadcrumb() {
+interface BreadcrumbProps {
+    title: string;
+}
+
+export function Breadcrumb({ title }: BreadcrumbProps) {
     return (
         <nav className="bg-blog-secondary dark:bg-blog-surface-dark pt-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -31,7 +35,7 @@ export function Breadcrumb() {
                     </li>
                     <li className="flex items-center">
                         <span className="text-blog-primary dark:text-white font-medium line-clamp-1">
-                            Mendefinisikan ulang pengalaman universitas
+                            {title}
                         </span>
                     </li>
                 </ol>

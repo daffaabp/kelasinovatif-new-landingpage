@@ -1,5 +1,23 @@
+"use client";
+
 import React from "react";
 import { Upload } from "lucide-react";
+import { useFormStatus } from 'react-dom';
+
+function SubmitButton() {
+    const { pending } = useFormStatus();
+
+    return (
+        <button
+            type="submit"
+            disabled={pending}
+            className="px-4 py-2 text-sm font-medium text-white bg-[#263c32] rounded-lg hover:bg-[#1e3028] shadow-md hover:shadow-lg transition-all flex items-center gap-2 disabled:opacity-50"
+        >
+            <Upload className="w-4 h-4" />
+            {pending ? 'Saving...' : 'Publish'}
+        </button>
+    );
+}
 
 export function CreateScheduleHeader() {
     return (
@@ -25,13 +43,10 @@ export function CreateScheduleHeader() {
                     </h1>
                 </div>
                 <div className="flex items-center gap-3">
-                    <button className="px-4 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 bg-white dark:bg-[#1C2624] border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                    <button type="button" className="px-4 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 bg-white dark:bg-[#1C2624] border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
                         Save Draft
                     </button>
-                    <button className="px-4 py-2 text-sm font-medium text-white bg-[#263c32] rounded-lg hover:bg-[#1e3028] shadow-md hover:shadow-lg transition-all flex items-center gap-2">
-                        <Upload className="w-4 h-4" />
-                        Publish
-                    </button>
+                    <SubmitButton />
                 </div>
             </header>
         </>

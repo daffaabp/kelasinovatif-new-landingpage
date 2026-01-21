@@ -3,7 +3,43 @@
 import React from "react";
 import { Bold, Italic, Underline, List, ListOrdered, Link as LinkIcon, Image, Quote } from "lucide-react";
 
-export function PostMainContent() {
+interface PostMainContentProps {
+    initialData?: {
+        title?: string;
+        slug?: string;
+        excerpt?: string;
+        content?: string;
+    };
+}
+
+export function PostMainContent({ initialData }: PostMainContentProps) {
+    const [title, setTitle] = React.useState(initialData?.title || "");
+    const [slug, setSlug] = React.useState(initialData?.slug || "");
+    // If we have initial data (editing), usually we don't want auto-slug overwriting unless user wants it.
+    // Let's default autoSlug to true ONLY if it's a new post (no initial title).
+    const [autoSlug, setAutoSlug] = React.useState(!initialData?.title);
+
+    const generateSlug = (text: string) => {
+        return text
+            .toLowerCase()
+            .replace(/[^\w\s-]/g, '')
+            .replace(/\s+/g, '-')
+            .replace(/--+/g, '-')
+            .trim();
+    };
+
+    const handleTitleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const newTitle = e.target.value;
+        setTitle(newTitle);
+        if (autoSlug) {
+            setSlug(generateSlug(newTitle));
+        }
+    };
+
+    const handleSlugChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setSlug(e.target.value);
+    };
+
     return (
         <div className="lg:col-span-2 space-y-6">
             <div className="bg-white dark:bg-[#1C2624] p-6 rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm space-y-6">
@@ -16,9 +52,13 @@ export function PostMainContent() {
                     </label>
                     <input
                         id="post-title"
+                        name="title"
                         type="text"
+                        value={title}
+                        onChange={handleTitleChange}
                         className="w-full rounded-lg border-gray-300 dark:border-gray-700 dark:bg-gray-800/50 dark:text-white focus:border-[#263c32] focus:ring-[#263c32] shadow-sm text-lg py-3 px-4 font-serif placeholder:font-sans transition-colors bg-transparent border focus:outline-none"
                         placeholder="Enter an engaging title..."
+                        required
                     />
                 </div>
                 <div>
@@ -33,13 +73,20 @@ export function PostMainContent() {
                             <span>Auto-generate</span>
                             <button
                                 type="button"
-                                className="relative inline-flex h-5 w-9 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#263c32] focus:ring-offset-2 bg-[#263c32]"
+                                onClick={() => {
+                                    const newState = !autoSlug;
+                                    setAutoSlug(newState);
+                                    if (newState) {
+                                        setSlug(generateSlug(title));
+                                    }
+                                }}
+                                className={`relative inline-flex h-5 w-9 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#263c32] focus:ring-offset-2 ${autoSlug ? 'bg-[#263c32]' : 'bg-gray-200 dark:bg-gray-700'}`}
                                 role="switch"
-                                aria-checked="true"
+                                aria-checked={autoSlug}
                             >
                                 <span
                                     aria-hidden="true"
-                                    className="translate-x-4 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"
+                                    className={`${autoSlug ? 'translate-x-4' : 'translate-x-0'} pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out`}
                                 ></span>
                             </button>
                         </div>
@@ -50,9 +97,14 @@ export function PostMainContent() {
                         </span>
                         <input
                             id="post-slug"
+                            name="slug"
                             type="text"
-                            className="block w-full min-w-0 flex-1 rounded-none rounded-r-md border-gray-300 dark:border-gray-700 dark:bg-gray-800/50 dark:text-white focus:border-[#263c32] focus:ring-[#263c32] sm:text-sm p-2 bg-transparent border focus:outline-none"
+                            value={slug}
+                            onChange={handleSlugChange}
+                            readOnly={autoSlug}
+                            className={`block w-full min-w-0 flex-1 rounded-none rounded-r-md border-gray-300 dark:border-gray-700 dark:bg-gray-800/50 dark:text-white focus:border-[#263c32] focus:ring-[#263c32] sm:text-sm p-2 bg-transparent border focus:outline-none ${autoSlug ? 'opacity-70 cursor-not-allowed' : ''}`}
                             placeholder="post-title-slug"
+                            required
                         />
                     </div>
                 </div>
@@ -65,7 +117,9 @@ export function PostMainContent() {
                     </label>
                     <textarea
                         id="post-excerpt"
+                        name="excerpt"
                         rows={3}
+                        defaultValue={initialData?.excerpt}
                         className="w-full rounded-lg border-gray-300 dark:border-gray-700 dark:bg-gray-800/50 dark:text-white focus:border-[#263c32] focus:ring-[#263c32] shadow-sm text-sm p-3 bg-transparent border focus:outline-none"
                         placeholder="Write a brief summary for search results and cards..."
                     ></textarea>
@@ -78,18 +132,21 @@ export function PostMainContent() {
                 <div className="px-4 py-3 border-b border-gray-200 dark:border-gray-800 flex items-center gap-1 flex-wrap bg-gray-50/50 dark:bg-gray-800/30 rounded-t-xl">
                     <div className="flex items-center bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-1 shadow-sm">
                         <button
+                            type="button"
                             className="p-1.5 text-gray-500 hover:text-[#263c32] hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 rounded transition-colors"
                             title="Bold"
                         >
                             <Bold className="w-5 h-5" />
                         </button>
                         <button
+                            type="button"
                             className="p-1.5 text-gray-500 hover:text-[#263c32] hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 rounded transition-colors"
                             title="Italic"
                         >
                             <Italic className="w-5 h-5" />
                         </button>
                         <button
+                            type="button"
                             className="p-1.5 text-gray-500 hover:text-[#263c32] hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 rounded transition-colors"
                             title="Underline"
                         >
@@ -99,12 +156,14 @@ export function PostMainContent() {
                     <div className="w-px h-6 bg-gray-300 dark:bg-gray-700 mx-2"></div>
                     <div className="flex items-center bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-1 shadow-sm">
                         <button
+                            type="button"
                             className="p-1.5 text-gray-500 hover:text-[#263c32] hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 rounded transition-colors"
                             title="H1"
                         >
                             <span className="font-serif font-bold text-lg px-1">H1</span>
                         </button>
                         <button
+                            type="button"
                             className="p-1.5 text-gray-500 hover:text-[#263c32] hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 rounded transition-colors"
                             title="H2"
                         >
@@ -114,12 +173,14 @@ export function PostMainContent() {
                     <div className="w-px h-6 bg-gray-300 dark:bg-gray-700 mx-2"></div>
                     <div className="flex items-center bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-1 shadow-sm">
                         <button
+                            type="button"
                             className="p-1.5 text-gray-500 hover:text-[#263c32] hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 rounded transition-colors"
                             title="Bullet List"
                         >
                             <List className="w-5 h-5" />
                         </button>
                         <button
+                            type="button"
                             className="p-1.5 text-gray-500 hover:text-[#263c32] hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 rounded transition-colors"
                             title="Numbered List"
                         >
@@ -129,18 +190,21 @@ export function PostMainContent() {
                     <div className="w-px h-6 bg-gray-300 dark:bg-gray-700 mx-2"></div>
                     <div className="flex items-center bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-1 shadow-sm">
                         <button
+                            type="button"
                             className="p-1.5 text-gray-500 hover:text-[#263c32] hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 rounded transition-colors"
                             title="Link"
                         >
                             <LinkIcon className="w-5 h-5" />
                         </button>
                         <button
+                            type="button"
                             className="p-1.5 text-gray-500 hover:text-[#263c32] hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 rounded transition-colors"
                             title="Image"
                         >
                             <Image className="w-5 h-5" />
                         </button>
                         <button
+                            type="button"
                             className="p-1.5 text-gray-500 hover:text-[#263c32] hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 rounded transition-colors"
                             title="Quote"
                         >
@@ -150,6 +214,8 @@ export function PostMainContent() {
                 </div>
                 <div className="flex-1 p-6 relative">
                     <textarea
+                        name="content"
+                        defaultValue={initialData?.content}
                         className="w-full h-full min-h-[400px] border-none focus:ring-0 bg-transparent text-gray-800 dark:text-gray-200 resize-none font-sans text-base leading-relaxed focus:outline-none"
                         placeholder="Start writing your masterpiece here..."
                     ></textarea>
