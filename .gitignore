@@ -41,5 +41,10 @@ yarn-error.log*
 
 # Blog images
 
-# Scripts (local utils)
-/scripts/
+
+# Data and Backups
+*.json
+!package.json
+!tsconfig.json
+!components.json
+*.sql
