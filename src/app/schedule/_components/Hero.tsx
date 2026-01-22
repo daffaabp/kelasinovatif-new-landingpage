@@ -1,6 +1,7 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Link from 'next/link';
 
-export function Hero() {
+export function Hero({ currentType = 'All' }: { currentType?: string }) {
     return (
         <header className="pt-32 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
             <div className="inline-block bg-[var(--color-schedule-bg-light)] dark:bg-[var(--color-schedule-bg-dark)] px-3 py-1 rounded text-xs font-semibold tracking-wider uppercase mb-6 text-gray-600 dark:text-gray-400">
@@ -15,18 +16,29 @@ export function Hero() {
             </p>
             <div className="mt-12 flex flex-col md:flex-row justify-between items-center gap-6">
                 <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                    <button className="px-5 py-2 rounded-full bg-[var(--color-schedule-primary)] text-white text-sm font-medium shadow-md hover:opacity-90 transition">
-                        Semua Acara
-                    </button>
-                    <button className="px-5 py-2 rounded-full bg-white dark:bg-[#1E1E1E] border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition shadow-sm cursor-pointer">
-                        Workshop
-                    </button>
-                    <button className="px-5 py-2 rounded-full bg-white dark:bg-[#1E1E1E] border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition shadow-sm cursor-pointer">
-                        Kuliah
-                    </button>
-                    <button className="px-5 py-2 rounded-full bg-white dark:bg-[#1E1E1E] border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition shadow-sm cursor-pointer">
-                        Upacara
-                    </button>
+                    {[
+                        "All",
+                        "FREE WEBINAR",
+                        "KELAS INTENSIF: CURSOR",
+                        "WORKSHOP REGULAR: SCISPACE",
+                        "WORKSHOP REGULAR: NOTEBOOKLM",
+                        "PERTEMUAN ALUMNI"
+                    ].map((category) => {
+                        const isActive = currentType === category || (currentType === 'All' && category === 'All');
+                        return (
+                            <Link
+                                key={category}
+                                href={category === 'All' ? '/schedule' : `/schedule?type=${encodeURIComponent(category)}`}
+                                scroll={false}
+                                className={`px-5 py-2 rounded-full text-sm font-medium transition shadow-sm ${isActive
+                                        ? "bg-[var(--color-schedule-primary)] text-white shadow-md hover:opacity-90"
+                                        : "bg-white dark:bg-[#1E1E1E] border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
+                                    }`}
+                            >
+                                {category === 'All' ? 'Semua Acara' : category}
+                            </Link>
+                        );
+                    })}
                 </div>
                 <div className="flex items-center bg-white dark:bg-[#1E1E1E] rounded-full px-2 py-1 border border-gray-200 dark:border-gray-700 shadow-sm">
                     <button className="p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition rounded-full cursor-pointer">

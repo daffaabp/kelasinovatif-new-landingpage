@@ -11,8 +11,9 @@ import React from 'react';
 // Client component for the form wrapper to handle action
 import { EditScheduleFormWrapper } from './_components/EditScheduleFormWrapper';
 
-export default async function EditSchedulePage({ params }: { params: { id: string } }) {
-    const scheduleId = parseInt(params.id);
+export default async function EditSchedulePage({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
+    const scheduleId = parseInt(id);
     if (isNaN(scheduleId)) notFound();
 
     const schedule = await getScheduleById(scheduleId);

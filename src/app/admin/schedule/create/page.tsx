@@ -21,6 +21,7 @@ export default function CreateSchedulePage() {
             speaker_name: formData.get('speaker_name'),
             speaker_role: formData.get('speaker_role'),
             speaker_image: formData.get('speaker_image'),
+            file: formData.get('speaker_image_file'),
             date: formData.get('date'),
             start_time: formData.get('start_time'),
             end_time: formData.get('end_time'),

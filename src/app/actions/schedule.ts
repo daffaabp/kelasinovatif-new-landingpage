@@ -3,19 +3,50 @@
 import db from '@/lib/db';
 import { revalidatePath } from 'next/cache';
 
-export async function getSchedules() {
+export async function getSchedules(page = 1, limit = 6, type?: string) {
     try {
-        const schedules = await db('schedules').select('*').orderBy('date', 'asc');
+        const offset = (page - 1) * limit;
+
+        let query = db('schedules');
+        let countQuery = db('schedules');
+
+        if (type && type !== 'All') {
+            query = query.where('type', type);
+            countQuery = countQuery.where('type', type);
+        }
+
+        const [countResult] = await countQuery.count('id as total');
+        const total = countResult.total as number;
+
+        const schedules = await query
+            .select('*')
+            .orderBy('date', 'asc')
+            .limit(limit)
+            .offset(offset);
+
         // Convert dates to string to avoid serialization issues in Next.js
-        return schedules.map(schedule => ({
+        const data = schedules.map(schedule => ({
             ...schedule,
             date: schedule.date.toISOString(),
             created_at: schedule.created_at?.toISOString(),
             updated_at: schedule.updated_at?.toISOString(),
         }));
+
+        return {
+            data,
+            meta: {
+                total,
+                page,
+                limit,
+                totalPages: Math.ceil(total / limit)
+            }
+        };
     } catch (error) {
         console.error('Error fetching schedules:', error);
-        return [];
+        return {
+            data: [],
+            meta: { total: 0, page: 1, limit: 6, totalPages: 0 }
+        };
     }
 }
 
@@ -35,8 +66,17 @@ export async function getScheduleById(id: number) {
     }
 }
 
+import { saveFile } from '@/lib/storage';
+
+// ... imports
+
 export async function createSchedule(data: any) {
     try {
+        // Handle file upload
+        if (data.file && data.file instanceof File && data.file.size > 0) {
+            data.speaker_image = await saveFile(data.file, 'speaker');
+        }
+
         // Basic validation
         if (!data.title || !data.date || !data.start_time || !data.end_time) {
             return { msg: 'Missing required fields' };
@@ -67,6 +107,11 @@ export async function createSchedule(data: any) {
 
 export async function updateSchedule(id: number, data: any) {
     try {
+        // Handle file upload
+        if (data.file && data.file instanceof File && data.file.size > 0) {
+            data.speaker_image = await saveFile(data.file, 'speaker');
+        }
+
         await db('schedules').where({ id }).update({
             title: data.title,
             type: data.type,
@@ -97,5 +142,28 @@ export async function deleteSchedule(id: number) {
     } catch (error) {
         console.error('Error deleting schedule:', error);
         return { msg: 'Failed to delete schedule' };
+    }
+}
+
+export async function getScheduleStats() {
+    try {
+        const now = new Date();
+
+        const [totalResult] = await db('schedules').count('id as count');
+        const [upcomingResult] = await db('schedules').where('date', '>=', now).count('id as count');
+        const [completedResult] = await db('schedules').where('date', '<', now).count('id as count');
+
+        return {
+            totalEvents: Number(totalResult.count),
+            upcomingEvents: Number(upcomingResult.count),
+            completedEvents: Number(completedResult.count)
+        };
+    } catch (error) {
+        console.error('Error fetching schedule stats:', error);
+        return {
+            totalEvents: 0,
+            upcomingEvents: 0,
+            completedEvents: 0
+        };
     }
 }

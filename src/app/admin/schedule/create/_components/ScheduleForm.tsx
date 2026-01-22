@@ -1,5 +1,7 @@
-import React from "react";
-import { Edit, MapPin, Bold, Italic, Underline, List, Link as LinkIcon } from "lucide-react";
+"use client";
+
+import React, { useState, useRef } from "react";
+import { Edit, MapPin, Bold, Italic, Underline, List, Link as LinkIcon, Upload } from "lucide-react";
 
 interface ScheduleFormProps {
     initialData?: {
@@ -13,6 +15,17 @@ interface ScheduleFormProps {
 }
 
 export function ScheduleForm({ initialData }: ScheduleFormProps) {
+    const [preview, setPreview] = useState(initialData?.speaker_image || "https://lh3.googleusercontent.com/aida-public/AB6AXuA5DECcNwlr6XKaoC7QMMH9pRanwsdUswa3H1lPRzo6BB5B87vSwdhOo6KP1qqmWtI28EbqdoX0-4LQ4dDPSa2BTCRKkCZTOtenSbjyD6qqVrCacIFyRBoclWsT_0WcF8mY9-7tqsZF89YqlaI6hTZlXslXjU9h1B3zIBTGSqdtQsMHxe9xQeEmTGgwl-SuKJ_Wi4GWS9XM3OAq_32m6Bem7ezj4fvX7gr8B3Jnhkvfg9_OxxzTX7jNOsgrfCzucVA28RU5Nq6HDzSG");
+    const fileInputRef = useRef<HTMLInputElement>(null);
+
+    const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (file) {
+            const url = URL.createObjectURL(file);
+            setPreview(url);
+        }
+    };
+
     return (
         <div className="flex-1 min-w-0">
             <div className="bg-white dark:bg-[#1C2624] rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm p-6 md:p-8">
@@ -41,16 +54,31 @@ export function ScheduleForm({ initialData }: ScheduleFormProps) {
                             Speaker
                         </label>
                         <div className="flex items-start gap-4 p-4 border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800/30">
-                            <div className="relative group cursor-pointer">
-                                <div className="w-16 h-16 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden flex items-center justify-center border-2 border-white dark:border-gray-600 shadow-sm">
+                            <div
+                                className="relative group cursor-pointer"
+                                onClick={() => fileInputRef.current?.click()}
+                            >
+                                <div className="w-16 h-16 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden flex items-center justify-center border-2 border-white dark:border-gray-600 shadow-sm group-hover:border-[#263c32] transition-colors">
                                     <img
                                         alt="Speaker"
                                         className="w-full h-full object-cover"
-                                        src={initialData?.speaker_image || "https://lh3.googleusercontent.com/aida-public/AB6AXuA5DECcNwlr6XKaoC7QMMH9pRanwsdUswa3H1lPRzo6BB5B87vSwdhOo6KP1qqmWtI28EbqdoX0-4LQ4dDPSa2BTCRKkCZTOtenSbjyD6qqVrCacIFyRBoclWsT_0WcF8mY9-7tqsZF89YqlaI6hTZlXslXjU9h1B3zIBTGSqdtQsMHxe9xQeEmTGgwl-SuKJ_Wi4GWS9XM3OAq_32m6Bem7ezj4fvX7gr8B3Jnhkvfg9_OxxzTX7jNOsgrfCzucVA28RU5Nq6HDzSG"}
+                                        src={preview}
                                     />
+                                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                        <Upload className="w-5 h-5 text-white" />
+                                    </div>
                                 </div>
-                                {/* Hidden input for speaker image, defaults to initialData or hardcoded placeholder if creating new */}
-                                <input type="hidden" name="speaker_image" defaultValue={initialData?.speaker_image || "https://lh3.googleusercontent.com/aida-public/AB6AXuA5DECcNwlr6XKaoC7QMMH9pRanwsdUswa3H1lPRzo6BB5B87vSwdhOo6KP1qqmWtI28EbqdoX0-4LQ4dDPSa2BTCRKkCZTOtenSbjyD6qqVrCacIFyRBoclWsT_0WcF8mY9-7tqsZF89YqlaI6hTZlXslXjU9h1B3zIBTGSqdtQsMHxe9xQeEmTGgwl-SuKJ_Wi4GWS9XM3OAq_32m6Bem7ezj4fvX7gr8B3Jnhkvfg9_OxxzTX7jNOsgrfCzucVA28RU5Nq6HDzSG"} />
+                                {/* Hidden input for speaker image file */}
+                                <input
+                                    type="file"
+                                    name="speaker_image_file"
+                                    ref={fileInputRef}
+                                    className="hidden"
+                                    accept="image/*"
+                                    onChange={handleImageChange}
+                                />
+                                {/* Keep the existing hidden input for fallback/existing value */}
+                                <input type="hidden" name="speaker_image" value={preview} />
                             </div>
                             <div className="flex-1 space-y-3">
                                 <input

@@ -89,10 +89,11 @@ export function ScheduleSidebar({ initialData }: ScheduleSidebarProps) {
                 </div>
                 <div className="p-5">
                     <select name="type" defaultValue={initialData?.type} className="w-full px-3 py-2 bg-white dark:bg-[#1C2624] border border-gray-200 dark:border-gray-700 rounded-lg text-sm focus:ring-1 focus:ring-[#263c32] focus:border-[#263c32] dark:text-gray-200 mb-3">
-                        <option value="Workshop">Workshops</option>
-                        <option value="Seminar">Seminars</option>
-                        <option value="Webinar">Webinars</option>
-                        <option value="Community">Community Events</option>
+                        <option value="FREE WEBINAR">FREE WEBINAR</option>
+                        <option value="KELAS INTENSIF: CURSOR">KELAS INTENSIF: CURSOR</option>
+                        <option value="WORKSHOP REGULAR: SCISPACE">WORKSHOP REGULAR: SCISPACE</option>
+                        <option value="WORKSHOP REGULAR: NOTEBOOKLM">WORKSHOP REGULAR: NOTEBOOKLM</option>
+                        <option value="PERTEMUAN ALUMNI">PERTEMUAN ALUMNI</option>
                     </select>
                 </div>
             </div>
