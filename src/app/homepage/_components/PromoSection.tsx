@@ -8,9 +8,9 @@ export function PromoSection() {
 
           {/* Left Student */}
           <div className="w-full md:w-1/3">
-            <img src="/images/comunity.jpeg"
+            <img src="/images/community.avif"
               alt="Student smiling"
-              className="w-full h-[400px] object-cover rounded-t-[100px] rounded-b-[20px] shadow-xl grayscale hover:grayscale-0 transition-all duration-500"
+              className="w-full h-[400px] object-cover rounded-t-[100px] rounded-b-[20px] shadow-xl transition-all duration-500"
             />
           </div>
 
@@ -21,10 +21,14 @@ export function PromoSection() {
                 <span className="text-[8px] font-bold uppercase tracking-widest text-center transform rotate-12">10.000+<br />Member Aktif</span>
               </div>
             </div>
-            <span className="inline-block px-4 py-1 border border-gray-800 rounded-full text-xs font-bold uppercase tracking-wider">Daftar Open House</span>
-            <h2 className="text-4xl md:text-5xl font-serif font-medium">Bergabung dengan komunitas AI terbesar di Indonesia.</h2>
-            <button className="mx-auto bg-eduzin-dark text-white px-6 py-3 rounded-full flex items-center gap-2 text-sm font-bold cursor-pointer">
-              HUBUNGI KAMI <ArrowRight size={16} />
+            <span className="inline-block px-4 py-1 border border-gray-800 rounded-full text-xs font-bold uppercase tracking-wider">
+              Komunitas AI Milik Anda
+            </span>
+            <h2 className="text-4xl md:text-5xl font-serif font-medium">
+              Bertumbuh, Berinovasi, dan Berkolaborasi Bersama
+            </h2>
+            <button className="mx-auto bg-eduzin-dark text-white px-6 py-3 rounded-full flex items-center gap-2 text-sm font-bold cursor-pointer group transition">
+              Gabung Sekarang <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
 
@@ -32,7 +36,7 @@ export function PromoSection() {
           <div className="w-full md:w-1/3">
             <img src="/images/community2.jpeg"
               alt="Student smiling"
-              className="w-full h-[400px] object-cover rounded-t-[20px] rounded-b-[100px] shadow-xl grayscale hover:grayscale-0 transition-all duration-500"
+              className="w-full h-[400px] object-cover rounded-t-[20px] rounded-b-[100px] shadow-xl transition-all duration-500"
             />
           </div>
 

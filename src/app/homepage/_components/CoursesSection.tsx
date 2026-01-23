@@ -13,22 +13,22 @@ const courseMapping = [
   { 
     course: courses[0], 
     icon: GraduationCap, 
-    title: 'AI for Akademik',
-    description: 'Selesaikan tesis dan disertasi lebih cepat dengan tools AI yang tepat. Literature review, penulisan akademik, dan penelitian menjadi lebih efisien.',
+    title: 'AI untuk Akademik',
+    description: 'Capai studi dan riset lebih mudah bersama komunitas AI. Dapatkan dukungan, ide, dan solusi praktis untuk skripsi, tesis, atau disertasi Anda.',
     position: 'left' 
   },
   { 
     course: courses[1], 
     icon: Briefcase, 
-    title: 'AI for Bisnis',
-    description: 'Tingkatkan produktivitas tim dan efisiensi bisnis dengan implementasi AI yang strategis. Dari automasi hingga analisis data untuk keputusan yang lebih cerdas.',
+    title: 'AI untuk Bisnis',
+    description: 'Akselerasi pertumbuhan bisnis Anda dengan AI. Dapatkan insight, jaringan, dan kolaborasi bersama pelaku usaha inovatif lainnya.',
     position: 'center' 
   },
   { 
     course: courses[2], 
     icon: Camera, 
-    title: 'AI for Konten Kreator',
-    description: 'Produksi konten lebih cepat tanpa mengorbankan kualitas. Dari ide, script, editing, hingga strategi konten—semua dengan bantuan AI.',
+    title: 'AI untuk Konten Kreator',
+    description: 'Ciptakan konten kreatif lebih efisien dengan AI. Bergabung dan dapatkan inspirasi serta dukungan dari kreator terbaik di komunitas.',
     position: 'right' 
   },
 ];
@@ -75,7 +75,7 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
         </svg>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 py-8 lg:py-14 flex flex-col items-center">
+      <div className="relative z-10 container mx-auto px-4 py-4 lg:py-8 flex flex-col items-center">
         {/* Header Section */}
         <div className="text-center max-w-3xl mx-auto mb-10 lg:mb-14 relative">
           <div 
@@ -94,7 +94,7 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
           </div>
           
           <h1 
-            className="text-4xl lg:text-6xl font-bold mb-4 leading-tight dark:text-white"
+            className="text-4xl lg:text-6xl font-bold mb-4 leading-none dark:text-white"
             style={{ color: 'var(--color-courses-primary)' }}
           >
             Tingkatkan karir dan pendidikan Anda melalui{' '}
@@ -133,7 +133,7 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
         </div>
 
         {/* Desktop Circular Layout */}
-        <div className="relative w-full max-w-6xl h-[800px] lg:h-[600px] mx-auto hidden lg:block">
+        <div className="relative w-full max-w-6xl h-[800px] lg:h-[700px] mx-auto hidden lg:block mb-32">
           {/* Left Circle - Course 1 */}
           <div className="absolute top-0 left-0 lg:left-12 w-[380px] h-[380px] circle-container group z-10 animate-float">
             <div className="relative w-full h-full">
@@ -145,7 +145,7 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
                 }}
               >
                 <img 
-                  src={courseMapping[0].course.image} 
+                  src="/images/course-section/ai for academic.avif" 
                   alt={courseMapping[0].title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
                 />
@@ -193,16 +193,17 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
 
           {/* Center Circle - Course 2 */}
           <div className="absolute top-[200px] left-1/2 transform -translate-x-1/2 w-[420px] h-[420px] circle-container group z-20">
-            <div className="relative w-full h-full">
+            <div className="relative w-full h-full flex flex-col items-center">
+              {/* Circle di atas */}
               <div 
-                className="absolute inset-0 rounded-full overflow-hidden border-4 shadow-2xl circle-mask dark:border-gray-800"
+                className="absolute inset-0 rounded-full overflow-hidden border-4 shadow-2xl circle-mask dark:border-gray-800 z-10"
                 style={{
                   borderColor: 'white',
                   backgroundColor: 'white'
                 }}
               >
                 <img 
-                  src={courseMapping[1].course.image} 
+                  src="/images/course-section/ai for business.avif" 
                   alt={courseMapping[1].title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
                 />
@@ -213,33 +214,39 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
                   onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(26, 77, 70, 0.1)'}
                 />
               </div>
-              <div 
-                className="absolute bottom-10 left-1/2 transform -translate-x-1/2 translate-y-1/2 p-6 rounded-2xl shadow-soft glass-panel border max-w-[240px] text-center transition-all duration-300 group-hover:translate-y-8 group-hover:scale-105 z-30 cursor-pointer dark:bg-[var(--color-courses-card-dark)] dark:border-white/10"
-                style={{
-                  backgroundColor: 'var(--color-courses-card-light)',
-                  borderColor: 'rgba(255, 255, 255, 0.5)'
-                }}
-                onClick={() => handleCourseClick(courseMapping[1].course)}
-              >
-                <h3 
-                  className="text-2xl font-bold mb-2 dark:text-white"
-                  style={{ color: 'var(--color-courses-primary)' }}
-                >
-                  {courseMapping[1].title}
-                </h3>
-                <p 
-                  className="text-sm leading-relaxed mb-4 dark:text-[var(--color-courses-muted-dark)]"
-                  style={{ color: 'var(--color-courses-muted-light)' }}
-                >
-                  {courseMapping[1].description}
-                </p>
-                <button
-                  className="inline-flex items-center justify-center w-8 h-8 rounded-full transition-colors"
-                  style={{ backgroundColor: 'var(--color-courses-primary)', color: 'white' }}
+              {/* Card teks di bawah circle */}
+              <div className="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2 w-full flex justify-center z-30 group-hover:z-50 pointer-events-none">
+                <div 
+                  className="p-6 rounded-2xl shadow-soft glass-panel border max-w-[270px] mx-auto text-center transition-all duration-300 group-hover:scale-105 cursor-pointer pointer-events-auto dark:bg-[var(--color-courses-card-dark)] dark:border-white/10"
+                  style={{
+                    backgroundColor: 'var(--color-courses-card-light)',
+                    borderColor: 'rgba(255, 255, 255, 0.5)'
+                  }}
                   onClick={() => handleCourseClick(courseMapping[1].course)}
                 >
-                  <ArrowRight size={16} />
-                </button>
+                  <h3 
+                    className="text-2xl font-bold mb-2 dark:text-white"
+                    style={{ color: 'var(--color-courses-primary)' }}
+                  >
+                    {courseMapping[1].title}
+                  </h3>
+                  <p 
+                    className="text-sm leading-relaxed mb-4 dark:text-[var(--color-courses-muted-dark)]"
+                    style={{ color: 'var(--color-courses-muted-light)' }}
+                  >
+                    {courseMapping[1].description}
+                  </p>
+                  <button
+                    className="inline-flex items-center justify-center w-8 h-8 rounded-full transition-colors"
+                    style={{ backgroundColor: 'var(--color-courses-primary)', color: 'white' }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleCourseClick(courseMapping[1].course);
+                    }}
+                  >
+                    <ArrowRight size={16} />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -255,7 +262,7 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
                 }}
               >
                 <img 
-                  src={courseMapping[2].course.image} 
+                  src="/images/course-section/ai for konten kreator.avif" 
                   alt={courseMapping[2].title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
                 />
@@ -372,7 +379,7 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-20 lg:mt-32 text-center max-w-2xl mx-auto">
+        <div className="mt-8 lg:mt-12 text-center max-w-2xl mx-auto">
           <h2 
             className="text-2xl font-bold mb-6 dark:text-white"
             style={{ color: 'var(--color-courses-primary)' }}

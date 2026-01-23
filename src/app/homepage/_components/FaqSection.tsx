@@ -14,8 +14,12 @@ export function FaqSection() {
       <div className="container mx-auto px-4 md:px-8">
 
         <div className="text-center mb-16">
-          <span className="inline-block px-3 py-1 border border-gray-300 rounded-full text-xs font-bold uppercase tracking-wider mb-4">FAQ & Jawaban</span>
-          <h2 id="faq-heading" className="text-4xl font-medium">Jawaban untuk pertanyaan Anda, di setiap<br />langkah perjalanan.</h2>
+          <span className="inline-block px-3 py-1 border border-gray-300 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+            FAQ & Jawaban
+          </span>
+          <h2 id="faq-heading" className="text-4xl font-medium mb-3">
+            Komitmen Kami untuk Membantu Setiap Langkah Anda
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">

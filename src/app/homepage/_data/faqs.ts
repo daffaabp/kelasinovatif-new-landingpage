@@ -1,21 +1,22 @@
 import { FaqItem } from "../types";
 
+// FAQ difokuskan untuk memperkuat trust dan decision joining komunitas Kelas Inovatif
+
 export const faqs: FaqItem[] = [
   { 
-    question: "Apakah berfungsi dengan baik di perangkat mobile?", 
-    answer: "Ya, seluruh platform sepenuhnya responsif dan dioptimalkan untuk perangkat mobile, tablet, dan desktop." 
+    question: "Bagaimana komunitas membantu saya menyelesaikan studi atau project AI?", 
+    answer: "Anda akan mendapatkan bimbingan intensif, akses ke mentor, diskusi solusi di grup, dan inspirasi nyata dari anggota yang telah sukses menyelesaikan skripsi, tesis, disertasi, bahkan publikasi internasional. Kolaborasi dan support komunitas terbukti mempercepat progres studi maupun project Anda."
   },
   { 
-    question: "Apakah navigasinya sederhana dan jelas?", 
-    answer: "Kami memprioritaskan pengalaman pengguna dengan struktur navigasi intuitif yang dirancang untuk kejelasan." 
+    question: "Apakah ada peluang kolaborasi bisnis, riset, atau konten di dalam komunitas?", 
+    answer: "Tentu! Anggota aktif dapat terlibat dalam project bersama, kolaborasi riset, bahkan eksekusi ide bisnis serta produksi konten AI. Banyak hasil kolaborasi alumni terbukti menghasilkan karya, bisnis, atau jejaring karier baru."
   },
   { 
-    question: "Apakah ada bilah pencarian yang efektif?", 
-    answer: "Fungsi pencarian canggih kami memungkinkan Anda menemukan kursus, fakultas, dan sumber daya secara instan." 
+    question: "Bagaimana sistem pendampingan/mentoring berjalan di komunitas?", 
+    answer: "Pendampingan dilakukan melalui sesi group mentoring rutin, konsultasi langsung dengan mentor berpengalaman, serta akses ke materi premium dan diskusi privat. Anda bebas bertanya dan mendapat feedback dari mentor ataupun anggota lain."
   },
   { 
-    question: "Apakah informasi kontak/dukungan terlihat?", 
-    answer: "Kontak dukungan tersedia di header, footer, dan halaman kontak khusus." 
+    question: "Apa yang membedakan event komunitas Kelas Inovatif dengan pelatihan AI lainnya?", 
+    answer: "Event komunitas bersifat interaktif dan aplikatif, selalu mengutamakan sharing pengalaman nyata, studi kasus, serta sesi networking—bukan sekadar materi satu arah. Banyak member mendapatkan solusi spesifik dan relasi strategis setelah mengikuti event kami."
   },
 ];
-

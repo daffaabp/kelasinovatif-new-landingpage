@@ -20,39 +20,39 @@ interface EventData {
 const events: EventData[] = [
   {
     id: 1,
-    title: "Upacara ke-50 Pablo Benzo 2025",
-    timezone: "02:36 WIB (GMT)",
-    price: "Gratis",
-    location: "Auditorium Utama",
+    title: "Bootcamp Intensif: Menyelesaikan Skripsi & Tesis dengan AI",
+    timezone: "19:00 WIB",
+    price: "Gratis untuk Member",
+    location: "Online via Zoom",
     speaker: {
-      name: "Natalia T. Morgan",
-      role: "Guru Sains",
+      name: "Arianto",
+      role: "Founder Kelas Inovatif",
       avatar: "https://i.pravatar.cc/100?img=32"
     },
     image: "/images/comunity3.jpeg"
   },
   {
     id: 2,
-    title: "Workshop & Seminar Design Thinking",
-    timezone: "10:00 WIB (GMT)",
-    price: "$50.00",
-    location: "Studio Kreatif B",
+    title: "Workshop AI untuk Bisnis: Meningkatkan Produktivitas dengan Cursor",
+    timezone: "14:00 WIB",
+    price: "Gratis untuk Member",
+    location: "Online via Zoom",
     speaker: {
-      name: "Marcus Chen",
-      role: "Kepala Desain",
+      name: "Arianto",
+      role: "Founder Kelas Inovatif",
       avatar: "https://i.pravatar.cc/100?img=11"
     },
     image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=2670&auto=format&fit=crop"
   },
   {
     id: 3,
-    title: "Masa Depan Teknologi dalam Pendidikan",
-    timezone: "13:00 WIB (GMT)",
-    price: "$25.00",
-    location: "Aula Konferensi Virtual",
+    title: "Webinar Publikasi Scopus: Strategi Menulis Artikel dengan AI",
+    timezone: "19:00 WIB",
+    price: "Gratis untuk Member",
+    location: "Online via Zoom",
     speaker: {
-      name: "Sarah Williams",
-      role: "Inovator Teknologi",
+      name: "Arianto",
+      role: "Founder Kelas Inovatif",
       avatar: "https://i.pravatar.cc/100?img=5"
     },
     image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2670&auto=format&fit=crop"
@@ -73,8 +73,21 @@ export function EventSection() {
   const currentEvent = events[currentIndex];
 
   return (
-    <section className="bg-white pb-20">
+    <section className="bg-white pb-20 pt-12">
       <div className="container mx-auto px-4 md:px-8">
+        {/* Header Section */}
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <span className="inline-block px-3 py-1 border border-gray-300 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+            Event Komunitas
+          </span>
+          <h2 className="text-4xl md:text-5xl font-serif font-medium mb-4">
+            Bergabung dalam Event & Workshop Eksklusif
+          </h2>
+          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+            Tingkatkan skill AI Anda melalui workshop, bootcamp, dan webinar eksklusif yang diadakan khusus untuk member komunitas Kelas Inovatif.
+          </p>
+        </div>
+
         <div className="flex flex-col md:flex-row h-auto md:h-[500px]">
 
           {/* Left: Dark Info Card */}
@@ -87,7 +100,7 @@ export function EventSection() {
               <h3 className="text-3xl font-serif mb-6 min-h-[4rem]">{currentEvent.title}</h3>
 
               <div className="space-y-2 text-sm text-white/60">
-                <p><span className="text-white font-bold">Zona Waktu:</span> {currentEvent.timezone}</p>
+                <p><span className="text-white font-bold">Waktu:</span> {currentEvent.timezone}</p>
                 <p><span className="text-white font-bold">Harga:</span> {currentEvent.price}</p>
                 <p><span className="text-white font-bold">Lokasi:</span> {currentEvent.location}</p>
               </div>

@@ -96,10 +96,16 @@ export function StatsSection() {
             {/* Student Avatars & Rating */}
             <div>
               <div className="flex -space-x-4 mb-4">
-                {[15, 33, 45, 52, 60].map((i) => (
+                {[
+                  'ABDUL JAMIL.avif',
+                  'AKHMAD SUHAIDI.avif',
+                  'FADILAH NEYARASMI.avif',
+                  'GOMGOM T. PANGARIBUAN.avif',
+                  'KHAIRUDDIN KARIM.avif'
+                ].map((filename) => (
                   <img 
-                    key={i} 
-                    src={`https://i.pravatar.cc/150?img=${i}`} 
+                    key={filename} 
+                    src={`/images/testimonials/${filename}`} 
                     alt="Student" 
                     className="w-14 h-14 rounded-full border-2 border-eduzin-dark object-cover"
                   />
@@ -117,24 +123,24 @@ export function StatsSection() {
             <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/10">
                <div>
                  <h3 className="text-4xl md:text-5xl font-serif mb-2">10,000+</h3>
-                 <p className="text-sm text-white/60">Profesional terlatih AI di seluruh Indonesia</p>
+                 <p className="text-md text-white/60">Member komunitas Kelas Inovatif dari seluruh Indonesia</p>
                </div>
                <div>
                  <h3 className="text-4xl md:text-5xl font-serif mb-2">95%</h3>
-                 <p className="text-sm text-white/60">Peserta berhasil meningkatkan produktivitas dengan AI tools</p>
+                 <p className="text-md text-white/60">Alumni kami sukses lulus studi, promosi karier, hingga menghasilkan bisnis & karya inovatif berkat AI</p>
                </div>
             </div>
 
             {/* Student Ratings Card - Now inline instead of absolute */}
             <div className="hidden lg:flex bg-white/10 backdrop-blur-md p-4 rounded-xl items-center gap-4 border border-white/10 w-fit">
               <div className="flex -space-x-2">
-                <img src="https://i.pravatar.cc/100?img=1" className="w-8 h-8 rounded-full border-2 border-transparent" alt="student"/>
-                <img src="https://i.pravatar.cc/100?img=5" className="w-8 h-8 rounded-full border-2 border-transparent" alt="student"/>
-                <img src="https://i.pravatar.cc/100?img=8" className="w-8 h-8 rounded-full border-2 border-transparent" alt="student"/>
+                <img src="/images/testimonials/GOMGOM T. PANGARIBUAN.avif" className="w-8 h-8 rounded-full border-2 border-transparent" alt="student"/>
+                <img src="/images/testimonials/AKHMAD SUHAIDI.avif" className="w-8 h-8 rounded-full border-2 border-transparent" alt="student"/>
+                <img src="/images/testimonials/FADILAH NEYARASMI.avif" className="w-8 h-8 rounded-full border-2 border-transparent" alt="student"/>
               </div>
               <div>
                 <p className="font-bold text-sm text-white">4.9/5</p>
-                <p className="text-[10px] uppercase tracking-wide text-white/80">Rating dari 2,500+ peserta</p>
+                <p className="text-[10px] uppercase tracking-wide text-white/80">Rating dari 5000+ peserta</p>
               </div>
             </div>
           </div>
