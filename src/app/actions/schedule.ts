@@ -3,7 +3,7 @@
 import db from '@/lib/db';
 import { revalidatePath } from 'next/cache';
 
-export async function getSchedules(page = 1, limit = 6, type?: string) {
+export async function getSchedules(page = 1, limit = 6, type?: string, month?: number, year?: number) {
     try {
         const offset = (page - 1) * limit;
 
@@ -13,6 +13,15 @@ export async function getSchedules(page = 1, limit = 6, type?: string) {
         if (type && type !== 'All') {
             query = query.where('type', type);
             countQuery = countQuery.where('type', type);
+        }
+
+        if (month && year) {
+            // Construct start and end dates for the month
+            const startDate = new Date(year, month - 1, 1);
+            const endDate = new Date(year, month, 0); // Last day of the month
+
+            query = query.whereBetween('date', [startDate, endDate]);
+            countQuery = countQuery.whereBetween('date', [startDate, endDate]);
         }
 
         const [countResult] = await countQuery.count('id as total');

@@ -13,11 +13,17 @@ export const metadata: Metadata = {
     description: 'Lihat kelas, acara, dan workshop yang akan datang. Rencanakan perjalanan pembelajaran Anda dengan jadwal interaktif kami.',
 };
 
-export default async function SchedulePage(props: { searchParams: Promise<{ page?: string; type?: string }> }) {
+export default async function SchedulePage(props: { searchParams: Promise<{ page?: string; type?: string; month?: string; year?: string }> }) {
     const searchParams = await props.searchParams;
     const page = Number(searchParams.page) || 1;
     const type = typeof searchParams.type === 'string' ? searchParams.type : 'All';
-    const { data: schedules, meta } = await getSchedules(page, 6, type);
+
+    // Parse month and year from URL
+    const currentDate = new Date();
+    const month = searchParams.month ? Number(searchParams.month) : currentDate.getMonth() + 1;
+    const year = searchParams.year ? Number(searchParams.year) : currentDate.getFullYear();
+
+    const { data: schedules, meta } = await getSchedules(page, 6, type, month, year);
 
     // Highlight first event of first page only, or logic could change. 
     // For now let's just highlight the first event of the fetched set if on page 1?

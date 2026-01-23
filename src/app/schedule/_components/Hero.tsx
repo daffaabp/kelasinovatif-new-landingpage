@@ -1,5 +1,6 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import { MonthNavigator } from './MonthNavigator';
 
 export function Hero({ currentType = 'All' }: { currentType?: string }) {
     return (
@@ -31,8 +32,8 @@ export function Hero({ currentType = 'All' }: { currentType?: string }) {
                                 href={category === 'All' ? '/schedule' : `/schedule?type=${encodeURIComponent(category)}`}
                                 scroll={false}
                                 className={`px-5 py-2 rounded-full text-sm font-medium transition shadow-sm ${isActive
-                                        ? "bg-[var(--color-schedule-primary)] text-white shadow-md hover:opacity-90"
-                                        : "bg-white dark:bg-[#1E1E1E] border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
+                                    ? "bg-[var(--color-schedule-primary)] text-white shadow-md hover:opacity-90"
+                                    : "bg-white dark:bg-[#1E1E1E] border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
                                     }`}
                             >
                                 {category === 'All' ? 'Semua Acara' : category}
@@ -40,15 +41,7 @@ export function Hero({ currentType = 'All' }: { currentType?: string }) {
                         );
                     })}
                 </div>
-                <div className="flex items-center bg-white dark:bg-[#1E1E1E] rounded-full px-2 py-1 border border-gray-200 dark:border-gray-700 shadow-sm">
-                    <button className="p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition rounded-full cursor-pointer">
-                        <ChevronLeft className="w-4 h-4" />
-                    </button>
-                    <span className="px-4 text-sm font-medium text-gray-700 dark:text-gray-200">Oktober 2023</span>
-                    <button className="p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition rounded-full cursor-pointer">
-                        <ChevronRight className="w-4 h-4" />
-                    </button>
-                </div>
+                <MonthNavigator />
             </div>
         </header>
     );
