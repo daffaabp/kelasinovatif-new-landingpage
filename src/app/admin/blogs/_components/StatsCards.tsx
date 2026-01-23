@@ -1,7 +1,13 @@
 import React from "react";
 import { BookOpen, CheckCircle, FileEdit } from "lucide-react";
 
-export function StatsCards() {
+interface StatsCardsProps {
+    total: number;
+    published: number;
+    drafts: number;
+}
+
+export function StatsCards({ total, published, drafts }: StatsCardsProps) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             <div className="bg-white dark:bg-[#1C2624] p-6 rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm flex items-center justify-between">
@@ -10,7 +16,7 @@ export function StatsCards() {
                         Total Posts
                     </p>
                     <h3 className="text-3xl font-serif font-bold text-gray-800 dark:text-white">
-                        124
+                        {total}
                     </h3>
                 </div>
                 <div className="w-12 h-12 rounded-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-blue-600 dark:text-blue-400">
@@ -23,7 +29,7 @@ export function StatsCards() {
                         Published
                     </p>
                     <h3 className="text-3xl font-serif font-bold text-gray-800 dark:text-white">
-                        98
+                        {published}
                     </h3>
                 </div>
                 <div className="w-12 h-12 rounded-full bg-green-50 dark:bg-green-900/20 flex items-center justify-center text-green-600 dark:text-green-400">
@@ -36,7 +42,7 @@ export function StatsCards() {
                         Drafts
                     </p>
                     <h3 className="text-3xl font-serif font-bold text-gray-800 dark:text-white">
-                        26
+                        {drafts}
                     </h3>
                 </div>
                 <div className="w-12 h-12 rounded-full bg-amber-50 dark:bg-amber-900/20 flex items-center justify-center text-amber-600 dark:text-amber-400">

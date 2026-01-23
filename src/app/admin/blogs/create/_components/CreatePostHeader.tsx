@@ -25,10 +25,13 @@ export function CreatePostHeader() {
                     </h1>
                 </div>
                 <div className="flex items-center gap-3">
-                    <button className="px-6 py-2.5 rounded-full border border-[#263c32]/30 text-[#263c32] dark:text-white dark:border-white/20 font-medium hover:bg-[#263c32]/5 dark:hover:bg-white/5 transition-colors cursor-pointer">
+                    <button type="button" className="px-6 py-2.5 rounded-full border border-[#263c32]/30 text-[#263c32] dark:text-white dark:border-white/20 font-medium hover:bg-[#263c32]/5 dark:hover:bg-white/5 transition-colors cursor-pointer">
                         Save Draft
                     </button>
-                    <button className="bg-[#263c32] hover:bg-[#1e3028] text-white px-8 py-2.5 rounded-full font-medium shadow-lg hover:shadow-xl transition-all flex items-center gap-2 transform active:scale-95 cursor-pointer">
+                    <button
+                        type="submit"
+                        className="bg-[#263c32] hover:bg-[#1e3028] text-white px-8 py-2.5 rounded-full font-medium shadow-lg hover:shadow-xl transition-all flex items-center gap-2 transform active:scale-95 cursor-pointer"
+                    >
                         <Upload className="w-4 h-4" />
                         Publish
                     </button>

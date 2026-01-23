@@ -31,7 +31,6 @@ export function ApplicationModal({ isOpen, onClose, jobTitle, jobCategory }: App
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         // Handle form submission here
-        console.log('Application submitted:', formData);
         onClose();
     };
 

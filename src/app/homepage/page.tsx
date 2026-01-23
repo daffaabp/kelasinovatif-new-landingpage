@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Navbar } from '@/components/commons/Navbar';
-import { Hero } from '@/app/homepage2/_components/Hero';
+import { Hero } from './_components/Hero';
 import { StatsSection } from './_components/StatsSection';
 import { CoursesSection } from './_components/CoursesSection';
 import { FeaturesSection } from './_components/FeaturesSection';

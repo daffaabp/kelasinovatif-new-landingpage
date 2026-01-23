@@ -2,15 +2,21 @@
 
 import React, { useState } from 'react';
 import { Search } from 'lucide-react';
-import { blogPosts } from './blogData';
+import { BlogPost } from './types';
 
-const categories = ['Semua Postingan', 'Kehidupan Kampus', 'Penelitian', 'Acara', 'Alumni'];
+const categories = ['Semua Postingan', 'Penulisan Akademik', 'Berita', 'Tutorial', 'Bisnis', 'Konten Kreator', 'Alumni', 'Produk'];
 
-export function BlogGrid() {
+interface BlogGridProps {
+    posts: BlogPost[];
+}
+
+export function BlogGrid({ posts }: BlogGridProps) {
     const [selectedCategory, setSelectedCategory] = useState('Semua Postingan');
     const [searchQuery, setSearchQuery] = useState('');
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 6;
 
-    const filteredPosts = blogPosts
+    const filteredPosts = posts
         .filter(post => !post.featured) // Exclude featured post
         .filter(post => {
             const matchesCategory = selectedCategory === 'Semua Postingan' || post.category === selectedCategory;
@@ -19,8 +25,59 @@ export function BlogGrid() {
             return matchesCategory && matchesSearch;
         });
 
+    const totalPages = Math.ceil(filteredPosts.length / itemsPerPage);
+    const paginatedPosts = filteredPosts.slice(
+        (currentPage - 1) * itemsPerPage,
+        currentPage * itemsPerPage
+    );
+
+    const handlePageChange = (page: number) => {
+        if (page >= 1 && page <= totalPages) {
+            setCurrentPage(page);
+            // Optional: scroll to top of grid
+            const gridElement = document.getElementById('blog-grid-start');
+            if (gridElement) {
+                gridElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    };
+
+    // Calculate page numbers to show (simple logic for now, can be enhanced)
+    const getPageNumbers = () => {
+        const pages = [];
+        const maxVisiblePages = 5;
+
+        if (totalPages <= maxVisiblePages) {
+            for (let i = 1; i <= totalPages; i++) {
+                pages.push(i);
+            }
+        } else {
+            // Always show first, last, and current surroundings
+            if (currentPage <= 3) {
+                for (let i = 1; i <= 4; i++) pages.push(i);
+                if (totalPages > 4) pages.push('...');
+                pages.push(totalPages);
+            } else if (currentPage >= totalPages - 2) {
+                pages.push(1);
+                if (totalPages > 4) pages.push('...');
+                for (let i = totalPages - 3; i <= totalPages; i++) pages.push(i);
+            } else {
+                pages.push(1);
+                pages.push('...');
+                pages.push(currentPage - 1);
+                pages.push(currentPage);
+                pages.push(currentPage + 1);
+                pages.push('...');
+                pages.push(totalPages);
+            }
+        }
+        // Remove duplicates if any logic slipped
+        return [...new Set(pages)];
+    };
+
+
     return (
-        <section className="py-12 bg-blog-bg-light dark:bg-blog-bg-dark">
+        <section className="py-12 bg-blog-bg-light dark:bg-blog-bg-dark" id="blog-grid-start">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Filters */}
                 <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
@@ -32,7 +89,10 @@ export function BlogGrid() {
                                     ? 'bg-blog-primary text-white'
                                     : 'bg-white dark:bg-blog-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-blog-primary hover:text-blog-primary dark:hover:border-white dark:hover:text-white'
                                     }`}
-                                onClick={() => setSelectedCategory(category)}
+                                onClick={() => {
+                                    setSelectedCategory(category);
+                                    setCurrentPage(1); // Reset to page 1 on filter change
+                                }}
                             >
                                 {category}
                             </button>
@@ -44,7 +104,10 @@ export function BlogGrid() {
                             placeholder="Cari artikel..."
                             type="text"
                             value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
+                            onChange={(e) => {
+                                setSearchQuery(e.target.value);
+                                setCurrentPage(1); // Reset to page 1 on search change
+                            }}
                         />
                         <Search className="absolute left-3 top-2.5 text-gray-400 w-4 h-4" />
                     </div>
@@ -52,10 +115,10 @@ export function BlogGrid() {
 
                 {/* Blog Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {filteredPosts.map((post) => (
-                        <a key={post.id} href="/blog-detail">
+                    {paginatedPosts.map((post) => (
+                        <a key={post.id} href={post.slug ? `/blogs/${post.slug}` : '#'}>
                             <article
-                                className="flex flex-col bg-white dark:bg-blog-surface-dark rounded-xl overflow-hidden hover:shadow-xl transition duration-300 border border-gray-100 dark:border-gray-800 group"
+                                className="flex flex-col bg-white dark:bg-blog-surface-dark rounded-xl overflow-hidden hover:shadow-xl transition duration-300 border border-gray-100 dark:border-gray-800 group h-full"
                             >
                                 <div className="relative h-56 overflow-hidden">
                                     <img
@@ -71,7 +134,7 @@ export function BlogGrid() {
                                     <div className="text-xs text-gray-500 dark:text-gray-400 mb-3 uppercase tracking-wide font-medium">
                                         {post.date}
                                     </div>
-                                    <h3 className="text-xl font-serif font-semibold text-blog-primary dark:text-white mb-3 group-hover:text-blog-primary/80 dark:group-hover:text-white/80 transition">
+                                    <h3 className="text-xl font-serif font-semibold text-blog-primary dark:text-white mb-3 group-hover:text-blog-primary/80 dark:group-hover:text-white/80 transition line-clamp-2">
                                         {post.title}
                                     </h3>
                                     <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3">
@@ -97,27 +160,42 @@ export function BlogGrid() {
                 </div>
 
                 {/* Pagination */}
-                <div className="mt-16 flex justify-center items-center gap-4">
-                    <button className="flex items-center justify-center w-10 h-10 rounded-full bg-white dark:bg-blog-surface-dark border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 hover:border-blog-primary hover:text-blog-primary dark:hover:border-white dark:hover:text-white transition shadow-sm disabled:opacity-50">
-                        ←
-                    </button>
-                    <button className="w-10 h-10 rounded-full bg-blog-primary text-white font-medium shadow-md">
-                        1
-                    </button>
-                    <button className="w-10 h-10 rounded-full bg-white dark:bg-blog-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-blog-primary hover:text-blog-primary dark:hover:border-white dark:hover:text-white transition shadow-sm">
-                        2
-                    </button>
-                    <button className="w-10 h-10 rounded-full bg-white dark:bg-blog-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-blog-primary hover:text-blog-primary dark:hover:border-white dark:hover:text-white transition shadow-sm">
-                        3
-                    </button>
-                    <span className="text-gray-400">...</span>
-                    <button className="w-10 h-10 rounded-full bg-white dark:bg-blog-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-blog-primary hover:text-blog-primary dark:hover:border-white dark:hover:text-white transition shadow-sm">
-                        8
-                    </button>
-                    <button className="flex items-center justify-center w-10 h-10 rounded-full bg-white dark:bg-blog-surface-dark border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 hover:border-blog-primary hover:text-blog-primary dark:hover:border-white dark:hover:text-white transition shadow-sm">
-                        →
-                    </button>
-                </div>
+                {totalPages > 1 && (
+                    <div className="mt-16 flex justify-center items-center gap-2">
+                        <button
+                            onClick={() => handlePageChange(currentPage - 1)}
+                            disabled={currentPage === 1}
+                            className="flex items-center justify-center w-10 h-10 rounded-full bg-white dark:bg-blog-surface-dark border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 hover:border-blog-primary hover:text-blog-primary dark:hover:border-white dark:hover:text-white transition shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                            ←
+                        </button>
+
+                        {getPageNumbers().map((page, index) => (
+                            page === '...' ? (
+                                <span key={`ellipsis-${index}`} className="text-gray-400 px-2">...</span>
+                            ) : (
+                                <button
+                                    key={page}
+                                    onClick={() => handlePageChange(page as number)}
+                                    className={`w-10 h-10 rounded-full font-medium shadow-md transition ${currentPage === page
+                                        ? 'bg-blog-primary text-white'
+                                        : 'bg-white dark:bg-blog-surface-dark border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-blog-primary hover:text-blog-primary dark:hover:border-white dark:hover:text-white'
+                                        }`}
+                                >
+                                    {page}
+                                </button>
+                            )
+                        ))}
+
+                        <button
+                            onClick={() => handlePageChange(currentPage + 1)}
+                            disabled={currentPage === totalPages}
+                            className="flex items-center justify-center w-10 h-10 rounded-full bg-white dark:bg-blog-surface-dark border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 hover:border-blog-primary hover:text-blog-primary dark:hover:border-white dark:hover:text-white transition shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                            →
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
     );
