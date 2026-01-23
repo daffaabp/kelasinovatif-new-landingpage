@@ -8,7 +8,7 @@ export function Newsletter() {
                 <div className="flex items-center gap-4 relative z-10">
                     <div className="w-12 h-12 bg-[#1C302B] text-white rounded-full flex items-center justify-center font-serif font-bold text-xl">K</div>
                     <div>
-                        <h3 className="font-bold text-lg text-[#1C302B] dark:text-white">KelasInovatif</h3>
+                        <h3 className="font-bold text-lg text-[#1C302B] dark:text-white">Kelas Inovatif</h3>
                         <p className="text-xs text-gray-500 uppercase tracking-widest">University</p>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ export function FeaturesSection() {
           {/* Right: Content */}
           <div className="pl-0 lg:pl-10">
             <span className="inline-block px-3 py-1 border border-gray-300 rounded-full text-xs font-bold uppercase tracking-wider mb-4">Mengapa pilih kami?</span>
-            <h2 className="text-4xl md:text-5xl font-medium leading-tight mb-6">Komunitas KelasInovatif adalah tempat untuk bertumbuh bersama</h2>
+            <h2 className="text-4xl md:text-5xl font-medium leading-tight mb-6">Komunitas Kelas Inovatif adalah tempat untuk bertumbuh bersama</h2>
             <p className="text-gray-600 mb-8 leading-relaxed">
               Bergabung dengan komunitas AI terbesar di Indonesia. Dapatkan akses ke mentoring, bedah kasus, prompt library, dan jaringan profesional yang mendukung perjalanan belajar AI Anda. Dari akademik hingga bisnis dan kreator—semua ada di sini.
             </p>

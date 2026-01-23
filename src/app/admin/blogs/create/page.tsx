@@ -52,7 +52,7 @@ export default function CreatePostPage() {
                         <PostSidebar />
                     </div>
                     <footer className="mt-10 mb-6 text-center text-xs text-gray-400 dark:text-gray-600">
-                        © 2023 KelasInovatif Admin Panel. All rights reserved.
+                        © 2026 Kelas Inovatif. All rights reserved.
                     </footer>
                 </div>
             </main>

@@ -14,7 +14,7 @@ export function NewsletterSection() {
                     <div className="relative z-10 flex items-center gap-4">
                         <div className="w-12 h-12 rounded-full bg-eduzin-dark flex items-center justify-center text-white font-serif font-bold italic text-xl shadow-lg shadow-eduzin-dark/20">K</div>
                         <div className="flex flex-col">
-                            <span className="text-xl font-bold tracking-tight text-eduzin-dark leading-none">KelasInovatif</span>
+                            <span className="text-xl font-bold tracking-tight text-eduzin-dark leading-none">Kelas Inovatif</span>
                             <span className="text-[10px] uppercase tracking-widest text-gray-400 mt-1">University</span>
                         </div>
                     </div>

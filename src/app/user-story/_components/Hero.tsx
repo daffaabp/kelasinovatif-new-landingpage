@@ -12,7 +12,7 @@ export function Hero() {
                         Dengarkan dari komunitas kami yang <span className="italic text-[#D4AF37]">berkembang</span>
                     </h1>
                     <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-                        Temukan bagaimana KelasInovatif memberdayakan mahasiswa untuk mewujudkan impian mereka, menguasai keterampilan baru, dan membentuk masa depan mereka.
+                        Temukan bagaimana Kelas Inovatif memberdayakan mahasiswa untuk mewujudkan impian mereka, menguasai keterampilan baru, dan membentuk masa depan mereka.
                     </p>
                 </div>
             </div>

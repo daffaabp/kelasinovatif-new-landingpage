@@ -31,7 +31,7 @@ export default async function AdminSchedulePage({
                     <ScheduleStats stats={stats} />
                     <ScheduleTable schedules={schedules} />
                     <footer className="mt-10 mb-6 text-center text-xs text-gray-400 dark:text-gray-600">
-                        © 2023 KelasInovatif Admin Panel. All rights reserved.
+                        © 2023 Kelas Inovatif Admin Panel. All rights reserved.
                     </footer>
                 </div>
             </main>

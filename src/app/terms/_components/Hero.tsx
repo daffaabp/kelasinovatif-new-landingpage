@@ -11,7 +11,7 @@ export function Hero() {
                     Syarat &amp; Ketentuan
                 </h1>
                 <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light">
-                    Harap baca syarat-syarat ini dengan seksama sebelum menggunakan layanan kami. Mereka menguraikan aturan dan regulasi untuk penggunaan Situs Web dan Layanan KelasInovatif.
+                    Harap baca syarat-syarat ini dengan seksama sebelum menggunakan layanan kami. Mereka menguraikan aturan dan regulasi untuk penggunaan Situs Web dan Layanan Kelas Inovatif.
                 </p>
                 <div className="mt-8 text-sm text-gray-400">
                     Terakhir Diperbarui: <span className="font-medium text-white">24 Oktober 2023</span>

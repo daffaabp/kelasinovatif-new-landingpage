@@ -63,7 +63,7 @@ export function AdminSidebar() {
                     K
                 </div>
                 <span className="font-serif font-bold text-xl text-[#263c32] dark:text-white tracking-wide">
-                    KelasInovatif
+                    Kelas Inovatif
                 </span>
             </div>
             <nav className="flex-1 px-4 space-y-2 overflow-y-auto custom-scrollbar">

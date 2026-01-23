@@ -8,7 +8,7 @@ export function Footer() {
                     <div className="col-span-1 md:col-span-2 lg:col-span-1">
                         <div className="flex items-center gap-2 mb-6">
                             <div className="w-8 h-8 bg-about-primary rounded-full flex items-center justify-center text-white font-serif font-bold">K</div>
-                            <span className="font-serif font-bold text-xl text-about-primary dark:text-white">KelasInovatif</span>
+                            <span className="font-serif font-bold text-xl text-about-primary dark:text-white">Kelas Inovatif</span>
                         </div>
                         <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
                             Kelas Inovatif adalah platform pembelajaran AI nomor 1 di Indonesia. Membantu profesional dari akademik, bisnis, hingga kreator menguasai AI tools yang terbukti efektif.
@@ -70,7 +70,7 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="border-t border-gray-100 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 dark:text-gray-400">
-                    <p>© 2024 KelasInovatif Community. Hak cipta dilindungi.</p>
+                    <p>© 2026 Komunitas Kelas Inovatif. Hak cipta dilindungi.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
                         <a className="hover:text-about-primary dark:hover:text-white transition" href="/privacy">Kebijakan Privasi</a>
                         <a className="hover:text-about-primary dark:hover:text-white transition" href="/terms">Syarat & Ketentuan</a>

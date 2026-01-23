@@ -12,7 +12,7 @@ export function AdminLogo({ className }: { className?: string }) {
                     K
                 </div>
                 <span className="font-serif text-2xl font-bold text-gray-800 dark:text-gray-100 tracking-tight">
-                    KelasInovatif
+                    Kelas Inovatif
                 </span>
             </div>
         </div>

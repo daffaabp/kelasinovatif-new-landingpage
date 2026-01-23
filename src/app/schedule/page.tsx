@@ -9,7 +9,7 @@ import { getSchedules } from '@/app/actions/schedule';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Jadwal - KelasInovatif University',
+    title: 'Jadwal - Kelas Inovatif University',
     description: 'Lihat kelas, acara, dan workshop yang akan datang. Rencanakan perjalanan pembelajaran Anda dengan jadwal interaktif kami.',
 };
 

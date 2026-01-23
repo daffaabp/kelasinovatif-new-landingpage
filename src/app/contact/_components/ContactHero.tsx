@@ -15,7 +15,7 @@ export const ContactHero = () => {
                 <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300">
                     Baik Anda memiliki pertanyaan tentang penerimaan, kehidupan kampus, atau peluang
                     penelitian, tim kami siap membantu Anda menavigasi perjalanan di
-                    KelasInovatif.
+                    Kelas Inovatif.
                 </p>
             </div>
         </header>

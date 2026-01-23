@@ -10,7 +10,7 @@ import type { Metadata } from 'next';
 import { BlogPost, BlogFromDB } from './_components/types';
 
 export const metadata: Metadata = {
-    title: 'Blog - KelasInovatif University',
+    title: 'Blog - Kelas Inovatif University',
     description: 'Baca wawasan, berita, dan artikel terbaru dari fakultas dan mahasiswa kami.',
 };
 

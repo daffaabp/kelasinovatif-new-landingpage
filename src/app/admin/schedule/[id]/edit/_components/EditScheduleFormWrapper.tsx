@@ -53,7 +53,7 @@ export function EditScheduleFormWrapper({ schedule, scheduleId }: EditScheduleFo
                             K
                         </div>
                         <span className="font-serif font-bold text-lg text-[#263c32] dark:text-white">
-                            KelasInovatif
+                            Kelas Inovatif
                         </span>
                     </div>
                     <button className="text-gray-600 dark:text-gray-300 p-2">
@@ -88,7 +88,7 @@ export function EditScheduleFormWrapper({ schedule, scheduleId }: EditScheduleFo
                 <ScheduleSidebar initialData={schedule} />
             </div>
             <footer className="mt-auto pt-10 mb-6 text-center text-xs text-gray-400 dark:text-gray-600">
-                © 2023 KelasInovatif Admin Panel. All rights reserved.
+                © 2023 Kelas Inovatif Admin Panel. All rights reserved.
             </footer>
         </form>
     );

@@ -9,7 +9,7 @@ export function PolicyContent() {
                 {/* Introduction */}
                 <div className="scroll-mt-32 mb-16 border-b border-gray-100 dark:border-gray-800 pb-16" id="introduction">
                     <h2>1. Pengantar</h2>
-                    <p>Selamat datang di KelasInovatif University ("kami," "milik kami," atau "kita"). Kami menghormati privasi mahasiswa, fakultas, staf, dan pengunjung situs web kami. Kebijakan Privasi ini menjelaskan siapa kami, bagaimana kami mengumpulkan, berbagi, dan menggunakan informasi pribadi tentang Anda, dan bagaimana Anda dapat menggunakan hak privasi Anda.</p>
+                    <p>Selamat datang di Kelas Inovatif University ("kami," "milik kami," atau "kita"). Kami menghormati privasi mahasiswa, fakultas, staf, dan pengunjung situs web kami. Kebijakan Privasi ini menjelaskan siapa kami, bagaimana kami mengumpulkan, berbagi, dan menggunakan informasi pribadi tentang Anda, dan bagaimana Anda dapat menggunakan hak privasi Anda.</p>
                     <p>Kebijakan ini berlaku untuk semua informasi pribadi yang kami kumpulkan melalui situs web dan platform pembelajaran online kami. Dengan mengakses atau menggunakan Layanan kami, Anda menandakan bahwa Anda telah membaca, memahami, dan menyetujui pengumpulan, penyimpanan, penggunaan, dan pengungkapan informasi pribadi Anda seperti yang dijelaskan dalam Kebijakan Privasi ini.</p>
                 </div>
 

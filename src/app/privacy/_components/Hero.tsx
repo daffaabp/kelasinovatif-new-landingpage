@@ -23,7 +23,7 @@ export function Hero() {
                         Kebijakan Privasi
                     </h1>
                     <p className="text-lg text-white/80 leading-relaxed max-w-2xl">
-                        Di KelasInovatif, kami berkomitmen untuk melindungi informasi pribadi Anda dan hak privasi Anda. Kebijakan ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi data Anda di seluruh platform pembelajaran kami.
+                        Di Kelas Inovatif, kami berkomitmen untuk melindungi informasi pribadi Anda dan hak privasi Anda. Kebijakan ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi data Anda di seluruh platform pembelajaran kami.
                     </p>
                     <p className="mt-8 text-sm text-white/60 font-mono flex items-center gap-2 justify-center md:justify-start">
                         <Clock className="w-4 h-4" /> Terakhir diperbarui: 24 Oktober 2024

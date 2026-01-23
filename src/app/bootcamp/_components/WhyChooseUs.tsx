@@ -7,7 +7,7 @@ export function WhyChooseUs() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">Mengapa belajar dengan KelasInovatif?</h2>
+                        <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">Mengapa belajar dengan Kelas Inovatif?</h2>
                         <p className="text-bootcamp-accent/90 text-lg mb-8 max-w-md">
                             Bootcamp kami lebih dari sekadar kelas. Mereka adalah pengalaman berbasis komunitas yang dirancang untuk mempercepat karier dan dampak penelitian Anda.
                         </p>

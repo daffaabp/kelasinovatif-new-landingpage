@@ -9,7 +9,7 @@ import { ContactCTA } from './_components/ContactCTA';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'FAQ - KelasInovatif University',
+    title: 'FAQ - Kelas Inovatif University',
     description: 'Temukan jawaban untuk pertanyaan yang sering diajukan tentang program, penerimaan, dan kehidupan kampus kami.',
 };
 

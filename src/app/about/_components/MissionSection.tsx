@@ -31,7 +31,7 @@ export function MissionSection() {
                         </h3>
                         <div className="space-y-6 text-lg text-gray-600 dark:text-gray-400">
                             <p>
-                                Di KelasInovatif, kami percaya bahwa pembelajaran sejati terjadi ketika
+                                Di Kelas Inovatif, kami percaya bahwa pembelajaran sejati terjadi ketika
                                 rasa ingin tahu bertemu dengan kesempatan. Misi kami adalah menyediakan
                                 lingkungan inklusif di mana mahasiswa dari berbagai latar belakang dapat
                                 berkembang.
