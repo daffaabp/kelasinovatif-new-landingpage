@@ -41,6 +41,9 @@ export function AdminSidebar() {
             href: "/admin/schedule",
             icon: Calendar,
         },
+    ];
+
+    const navItems2 = [
         {
             name: "Users",
             href: "/admin/users",
@@ -71,14 +74,14 @@ export function AdminSidebar() {
                             key={item.name}
                             href={item.href}
                             className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors group ${active
-                                    ? "bg-[#263c32]/10 dark:bg-[#263c32]/20 text-[#263c32] dark:text-white shadow-sm"
-                                    : "text-gray-500 dark:text-gray-400 hover:bg-[#F3F1EC] dark:hover:bg-gray-800"
+                                ? "bg-[#263c32]/10 dark:bg-[#263c32]/20 text-[#263c32] dark:text-white shadow-sm"
+                                : "text-gray-500 dark:text-gray-400 hover:bg-[#F3F1EC] dark:hover:bg-gray-800"
                                 }`}
                         >
                             <item.icon
                                 className={`w-5 h-5 transition-colors ${active
-                                        ? ""
-                                        : "text-gray-400 group-hover:text-[#263c32] dark:group-hover:text-white"
+                                    ? ""
+                                    : "text-gray-400 group-hover:text-[#263c32] dark:group-hover:text-white"
                                     }`}
                             />
                             <span className="font-medium">{item.name}</span>
@@ -87,7 +90,7 @@ export function AdminSidebar() {
                 })}
             </nav>
             <div className="p-4 border-t border-gray-200 dark:border-gray-800 shrink-0">
-                <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-[#F3F1EC] dark:hover:bg-gray-800 cursor-pointer transition-colors w-full">
+                <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-[#F3F1EC] dark:hover:bg-gray-800 cursor-pointer transition-colors w-full mb-2">
                     <img
                         alt="Admin Profile"
                         className="w-10 h-10 rounded-full object-cover border-2 border-[#263c32]/20"
@@ -102,6 +105,14 @@ export function AdminSidebar() {
                         </p>
                     </div>
                 </div>
+                <button
+                    onClick={async () => {
+                        await import("@/app/actions/auth").then((mod) => mod.logout());
+                    }}
+                    className="w-full flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/10 hover:bg-red-100 dark:hover:bg-red-900/20 rounded-md transition-colors"
+                >
+                    Log Out
+                </button>
             </div>
         </aside>
     );
