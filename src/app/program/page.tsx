@@ -9,7 +9,7 @@ import { CTA } from './_components/CTA';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Program - KelasInovatif University',
+    title: 'Program - Kelas Inovatif University',
     description: 'Jelajahi berbagai program pembelajaran kami, dari kelas reguler hingga bootcamp intensif.',
 };
 

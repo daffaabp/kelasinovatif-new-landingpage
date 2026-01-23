@@ -20,7 +20,7 @@ export function AboutHero() {
                     Merancang masa depan <br /> pendidikan.
                 </h1>
                 <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
-                    KelasInovatif lebih dari sekadar universitas. Kami adalah komunitas
+                    Kelas Inovatif lebih dari sekadar universitas. Kami adalah komunitas
                     pemikir maju, pencipta, dan pemimpin yang berdedikasi untuk menyelesaikan
                     tantangan masa depan hari ini.
                 </p>

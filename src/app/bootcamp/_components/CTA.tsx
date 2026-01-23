@@ -10,7 +10,7 @@ export function CTA() {
                     <div className="relative z-10">
                         <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">Siap memulai perjalanan Anda?</h2>
                         <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
-                            Bergabunglah dengan ribuan mahasiswa dan peneliti yang telah mengubah karier mereka dengan KelasInovatif.
+                            Bergabunglah dengan ribuan mahasiswa dan peneliti yang telah mengubah karier mereka dengan Kelas Inovatif.
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                             <button className="px-8 py-4 bg-white text-bootcamp-primary rounded-full font-bold hover:bg-gray-100 transition-colors shadow-lg cursor-pointer">

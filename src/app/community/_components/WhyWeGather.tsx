@@ -10,7 +10,7 @@ export function WhyWeGather() {
                         Memupuk budaya <br /> <span className="italic text-community-primary dark:text-white/80">kolaborasi &amp; inovasi.</span>
                     </h3>
                     <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                        Di KelasInovatif, komunitas bukan hanya tambahan—ini adalah inti dari pengalaman pembelajaran. Kami percaya bahwa ide terbaik lahir dari perspektif beragam yang berkumpul dalam lingkungan yang mendukung.
+                        Di Kelas Inovatif, komunitas bukan hanya tambahan—ini adalah inti dari pengalaman pembelajaran. Kami percaya bahwa ide terbaik lahir dari perspektif beragam yang berkumpul dalam lingkungan yang mendukung.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

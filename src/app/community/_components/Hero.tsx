@@ -19,7 +19,7 @@ export function Hero() {
                             <span className="italic font-normal opacity-90">universitas.</span>
                         </h1>
                         <p className="text-lg text-gray-200 max-w-lg leading-relaxed font-light">
-                            Bergabunglah dengan ekosistem pemikir, pencipta, dan pemimpin yang dinamis. Komunitas KelasInovatif adalah tempat di mana koneksi seumur hidup dibentuk dan kolaborator masa depan bertemu.
+                            Bergabunglah dengan ekosistem pemikir, pencipta, dan pemimpin yang dinamis. Komunitas Kelas Inovatif adalah tempat di mana koneksi seumur hidup dibentuk dan kolaborator masa depan bertemu.
                         </p>
                         <div className="flex flex-wrap gap-4 pt-4">
                             <button className="bg-white text-community-primary px-8 py-3.5 rounded-full font-semibold hover:bg-gray-100 transition shadow-lg flex items-center gap-2 cursor-pointer">

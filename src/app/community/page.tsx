@@ -12,7 +12,7 @@ import { BeyondGraduation } from './_components/BeyondGraduation';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Komunitas - KelasInovatif University',
+    title: 'Komunitas - Kelas Inovatif University',
     description: 'Bergabunglah dengan komunitas pembelajar dan pendidik kami yang dinamis. Ikuti klub, acara, dan diskusi.',
 };
 

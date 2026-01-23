@@ -18,7 +18,7 @@ const accordionData: AccordionItem[] = [
         content: (
             <>
                 <p>
-                    Dengan mengakses situs web ini, kami berasumsi Anda menerima syarat dan ketentuan ini. Jangan melanjutkan menggunakan KelasInovatif jika Anda tidak setuju untuk menerima semua syarat dan ketentuan yang dinyatakan di halaman ini.
+                    Dengan mengakses situs web ini, kami berasumsi Anda menerima syarat dan ketentuan ini. Jangan melanjutkan menggunakan Kelas Inovatif jika Anda tidak setuju untuk menerima semua syarat dan ketentuan yang dinyatakan di halaman ini.
                 </p>
                 <p className="mt-4">
                     Terminologi berikut berlaku untuk Syarat dan Ketentuan ini, Pernyataan Privasi dan Pemberitahuan Penafian serta semua Perjanjian: "Klien", "Anda" dan "Milik Anda" merujuk pada Anda, orang yang masuk ke situs web ini dan mematuhi syarat dan ketentuan Perusahaan. "Perusahaan", "Kami Sendiri", "Kami", "Milik Kami" dan "Kita", merujuk pada Perusahaan kami.
@@ -33,13 +33,13 @@ const accordionData: AccordionItem[] = [
         content: (
             <>
                 <p>
-                    Kecuali dinyatakan lain, KelasInovatif dan/atau pemberi lisensinya memiliki hak kekayaan intelektual untuk semua materi di KelasInovatif. Semua hak kekayaan intelektual dilindungi. Anda dapat mengakses ini dari KelasInovatif untuk penggunaan pribadi Anda sendiri tunduk pada pembatasan yang ditetapkan dalam syarat dan ketentuan ini.
+                    Kecuali dinyatakan lain, Kelas Inovatif dan/atau pemberi lisensinya memiliki hak kekayaan intelektual untuk semua materi di Kelas Inovatif. Semua hak kekayaan intelektual dilindungi. Anda dapat mengakses ini dari Kelas Inovatif untuk penggunaan pribadi Anda sendiri tunduk pada pembatasan yang ditetapkan dalam syarat dan ketentuan ini.
                 </p>
                 <ul className="list-disc pl-5 mt-4 space-y-2">
-                    <li>Menerbitkan ulang materi dari KelasInovatif</li>
-                    <li>Menjual, menyewakan atau mensublisensikan materi dari KelasInovatif</li>
-                    <li>Mereproduksi, menduplikasi atau menyalin materi dari KelasInovatif</li>
-                    <li>Mendistribusikan ulang konten dari KelasInovatif</li>
+                    <li>Menerbitkan ulang materi dari Kelas Inovatif</li>
+                    <li>Menjual, menyewakan atau mensublisensikan materi dari Kelas Inovatif</li>
+                    <li>Mereproduksi, menduplikasi atau menyalin materi dari Kelas Inovatif</li>
+                    <li>Mendistribusikan ulang konten dari Kelas Inovatif</li>
                 </ul>
             </>
         ),
@@ -65,7 +65,7 @@ const accordionData: AccordionItem[] = [
         title: 'Komentar & Konten Pengguna',
         content: (
             <p>
-                Bagian dari situs web ini menawarkan kesempatan bagi pengguna untuk memposting dan bertukar pendapat serta informasi di area tertentu dari situs web. KelasInovatif tidak memfilter, mengedit, menerbitkan atau meninjau Komentar sebelum kehadiran mereka di situs web. Komentar tidak mencerminkan pandangan dan pendapat KelasInovatif, agen dan/atau afiliasinya.
+                Bagian dari situs web ini menawarkan kesempatan bagi pengguna untuk memposting dan bertukar pendapat serta informasi di area tertentu dari situs web. Kelas Inovatif tidak memfilter, mengedit, menerbitkan atau meninjau Komentar sebelum kehadiran mereka di situs web. Komentar tidak mencerminkan pandangan dan pendapat Kelas Inovatif, agen dan/atau afiliasinya.
             </p>
         ),
     },
@@ -75,7 +75,7 @@ const accordionData: AccordionItem[] = [
         title: 'Pembatasan Tanggung Jawab',
         content: (
             <p>
-                Dalam keadaan apa pun KelasInovatif, atau pejabat, direktur, dan karyawannya, tidak akan bertanggung jawab atas apa pun yang timbul dari atau dengan cara apa pun terkait dengan penggunaan Situs Web ini oleh Anda, baik tanggung jawab tersebut berdasarkan kontrak. KelasInovatif, termasuk pejabat, direktur, dan karyawannya tidak akan bertanggung jawab atas tanggung jawab tidak langsung, konsekuensial atau khusus yang timbul dari atau dengan cara apa pun terkait dengan penggunaan Situs Web ini oleh Anda.
+                Dalam keadaan apa pun Kelas Inovatif, atau pejabat, direktur, dan karyawannya, tidak akan bertanggung jawab atas apa pun yang timbul dari atau dengan cara apa pun terkait dengan penggunaan Situs Web ini oleh Anda, baik tanggung jawab tersebut berdasarkan kontrak. Kelas Inovatif, termasuk pejabat, direktur, dan karyawannya tidak akan bertanggung jawab atas tanggung jawab tidak langsung, konsekuensial atau khusus yang timbul dari atau dengan cara apa pun terkait dengan penggunaan Situs Web ini oleh Anda.
             </p>
         ),
     },

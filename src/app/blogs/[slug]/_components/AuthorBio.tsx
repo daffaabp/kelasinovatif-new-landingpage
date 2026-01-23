@@ -37,7 +37,7 @@ export function AuthorBio({ author }: AuthorBioProps) {
                     </div>
                 </div>
                 <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed mb-6 mt-4">
-                    {author.bio || 'Penulis di KelasInovatif.'}
+                    {author.bio || 'Penulis di Kelas Inovatif.'}
                 </p>
                 <div className="flex justify-center md:justify-start gap-4">
                     <a className="text-gray-400 hover:text-blog-primary dark:hover:text-white transition" href="#">

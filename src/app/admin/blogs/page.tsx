@@ -21,7 +21,7 @@ export default async function AdminBlogsPage({ searchParams }: { searchParams: P
                     <StatsCards total={stats.total} published={stats.published} drafts={stats.drafts} />
                     <BlogTable blogs={blogs} metadata={metadata} />
                     <footer className="mt-10 mb-6 text-center text-xs text-gray-400 dark:text-gray-600">
-                        © 2023 KelasInovatif Admin Panel. All rights reserved.
+                        © 2026 Kelas Inovatif. All rights reserved.
                     </footer>
                 </div>
             </main>

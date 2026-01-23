@@ -19,7 +19,7 @@ export function CommunityLeader() {
                                 Komunitas di sini bukan hanya tentang bersosialisasi; ini tentang dukungan. Ketika saya ingin memulai inisiatif amal, saya menemukan mentor, relawan, dan pendanaan dalam seminggu.
                             </h3>
                             <p className="text-gray-600 dark:text-gray-400 mb-8">
-                                KelasInovatif menyediakan platform, tetapi mahasiswa yang memberikan hati. Menjadi bagian dari keluarga ini telah menjadi bagian paling transformatif dari gelar saya.
+                                Kelas Inovatif menyediakan platform, tetapi mahasiswa yang memberikan hati. Menjadi bagian dari keluarga ini telah menjadi bagian paling transformatif dari gelar saya.
                             </p>
                             <a className="text-community-primary dark:text-white font-bold tracking-wide hover:underline flex items-center" href="#">
                                 Baca Lebih Banyak Kisah <span className="material-icons-outlined text-lg ml-2">arrow_right_alt</span>

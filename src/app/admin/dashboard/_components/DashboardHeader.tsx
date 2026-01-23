@@ -12,7 +12,7 @@ export function DashboardHeader() {
                         K
                     </div>
                     <span className="font-serif font-bold text-lg text-[#263c32] dark:text-white">
-                        KelasInovatif
+                        Kelas Inovatif
                     </span>
                 </div>
                 <button className="text-gray-600 dark:text-gray-300 p-2">

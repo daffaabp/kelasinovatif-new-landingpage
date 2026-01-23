@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Kelas Scite - KelasInovatif University',
+    title: 'Kelas Scite - Kelas Inovatif University',
     description: 'Kuasai analisis kutipan lanjutan dengan Scite.ai. Tingkatkan alur kerja penelitian Anda dan verifikasi klaim ilmiah.',
 };
 

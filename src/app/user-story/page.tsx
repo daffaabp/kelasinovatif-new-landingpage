@@ -10,8 +10,8 @@ import { Newsletter } from './_components/Newsletter';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Kisah Mahasiswa - KelasInovatif University',
-    description: 'Dengarkan dari komunitas kami yang berkembang. Temukan bagaimana KelasInovatif memberdayakan mahasiswa untuk mewujudkan impian mereka.',
+    title: 'Kisah Mahasiswa - Komunitas Kelas Inovatif',
+    description: 'Dengarkan dari komunitas kami yang berkembang. Temukan bagaimana Kelas Inovatif memberdayakan mahasiswa untuk mewujudkan impian mereka.',
 };
 
 export default function UserStoryPage() {

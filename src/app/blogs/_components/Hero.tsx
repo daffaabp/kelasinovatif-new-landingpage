@@ -13,7 +13,7 @@ export function Hero() {
                     Wawasan &amp; <span className="italic font-normal">Inovasi</span>
                 </h1>
                 <p className="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400 font-sans">
-                    Jelajahi berita terbaru, terobosan penelitian, dan cerita mahasiswa dari komunitas KelasInovatif. Tetap terinformasi dan terinspirasi.
+                    Jelajahi berita terbaru, terobosan penelitian, dan cerita mahasiswa dari komunitas Kelas Inovatif. Tetap terinformasi dan terinspirasi.
                 </p>
             </div>
         </header>

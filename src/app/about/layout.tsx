@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Tentang Kami - KelasInovatif University',
+    title: 'Tentang Kami - Komunitas Kelas Inovatif',
     description: 'Pelajari tentang misi, nilai-nilai, dan kepemimpinan kami. Temukan bagaimana kami membentuk masa depan pendidikan.',
 };
 

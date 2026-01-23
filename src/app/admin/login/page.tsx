@@ -41,7 +41,7 @@ export default function AdminLoginPage() {
                     </div>
                     <div className="bg-gray-50 dark:bg-gray-800 px-8 py-4 border-t border-gray-100 dark:border-gray-700 flex justify-center items-center">
                         <p className="text-xs text-gray-400 dark:text-gray-500 font-sans">
-                            © 2024 KelasInovatif Admin Panel. All rights reserved.
+                            © 2026 Komunitas Kelas Inovatif. All rights reserved.
                         </p>
                     </div>
                 </div>

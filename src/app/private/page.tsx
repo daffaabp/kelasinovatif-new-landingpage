@@ -10,7 +10,7 @@ import { WaitlistCTA } from './_components/WaitlistCTA';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Kelas Privat - KelasInovatif University',
+    title: 'Kelas Privat - Kelas Inovatif University',
     description: 'Rasakan pembelajaran yang dipersonalisasi dengan Kelas Privat kami. Mentorship satu-satu dan kurikulum yang disesuaikan.',
 };
 
