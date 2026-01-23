@@ -12,29 +12,23 @@ interface CoursesSectionProps {
 const courseMapping = [
   { 
     course: courses[0], 
-    level: 'Beginner', 
     icon: GraduationCap, 
-    label: 'Akademik', 
     title: 'AI for Akademik',
-    description: 'Enhance research capabilities and streamline academic writing.',
+    description: 'Selesaikan tesis dan disertasi lebih cepat dengan tools AI yang tepat. Literature review, penulisan akademik, dan penelitian menjadi lebih efisien.',
     position: 'left' 
   },
   { 
     course: courses[1], 
-    level: 'Advanced', 
     icon: Briefcase, 
-    label: 'Business', 
     title: 'AI for Bisnis',
-    description: 'Strategic implementation for leaders and decision makers.',
+    description: 'Tingkatkan produktivitas tim dan efisiensi bisnis dengan implementasi AI yang strategis. Dari automasi hingga analisis data untuk keputusan yang lebih cerdas.',
     position: 'center' 
   },
   { 
     course: courses[2], 
-    level: 'Intermediate', 
     icon: Camera, 
-    label: 'Kreator', 
     title: 'AI for Konten Kreator',
-    description: 'Automate editing and generate creative assets instantly.',
+    description: 'Produksi konten lebih cepat tanpa mengorbankan kualitas. Dari ide, script, editing, hingga strategi konten—semua dengan bantuan AI.',
     position: 'right' 
   },
 ];
@@ -81,11 +75,11 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
         </svg>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 py-12 lg:py-20 flex flex-col items-center">
+      <div className="relative z-10 container mx-auto px-4 py-8 lg:py-14 flex flex-col items-center">
         {/* Header Section */}
-        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-24 relative">
+        <div className="text-center max-w-3xl mx-auto mb-10 lg:mb-14 relative">
           <div 
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full border text-xs font-semibold tracking-wider uppercase mb-6 dark:bg-white/10 dark:border-white/20 dark:text-[var(--color-courses-secondary)]"
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full border text-xs font-semibold tracking-wider uppercase mb-4 dark:bg-white/10 dark:border-white/20 dark:text-[var(--color-courses-secondary)]"
             style={{
               backgroundColor: 'rgba(26, 77, 70, 0.05)',
               borderColor: 'rgba(26, 77, 70, 0.1)',
@@ -96,14 +90,14 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
               className="w-2 h-2 rounded-full animate-pulse-slow"
               style={{ backgroundColor: 'var(--color-courses-secondary)' }}
             />
-            Bidang Studi
+            Jalur Belajar
           </div>
           
           <h1 
-            className="text-4xl lg:text-6xl font-bold mb-6 leading-tight dark:text-white"
+            className="text-4xl lg:text-6xl font-bold mb-4 leading-tight dark:text-white"
             style={{ color: 'var(--color-courses-primary)' }}
           >
-            Tingkatkan karier dan pendidikan Anda melalui{' '}
+            Tingkatkan karir dan pendidikan Anda melalui{' '}
             <span className="relative inline-block">
               <span 
                 className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r dark:from-white dark:to-[var(--color-courses-secondary)]"
@@ -111,7 +105,7 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
                   backgroundImage: 'linear-gradient(to right, var(--color-courses-primary), var(--color-courses-secondary))'
                 }}
               >
-                pembelajaran inovatif
+                pembelajaran AI yang inovatif
               </span>
               <svg 
                 className="absolute w-full h-3 -bottom-1 left-0 opacity-40" 
@@ -131,7 +125,7 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
           </h1>
           
           <p 
-            className="text-lg max-w-2xl mx-auto leading-relaxed dark:text-[var(--color-courses-muted-dark)]"
+            className="text-base lg:text-lg max-w-2xl mx-auto leading-relaxed dark:text-[var(--color-courses-muted-dark)]"
             style={{ color: 'var(--color-courses-muted-light)' }}
           >
             Pilih jalur Anda. Baik Anda di bidang akademik, bisnis, atau kreatif, kami memiliki kurikulum AI khusus yang dirancang untuk pertumbuhan Anda.
@@ -163,39 +157,27 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
                 />
               </div>
               <div 
-                className="absolute -right-16 top-1/2 transform -translate-y-1/2 translate-x-4 p-6 rounded-2xl shadow-soft glass-panel border max-w-[220px] transition-all duration-300 group-hover:translate-x-8 group-hover:scale-105 z-20 cursor-pointer dark:bg-[var(--color-courses-card-dark)] dark:border-white/10"
+                className="absolute -left-16 top-1/2 transform -translate-y-1/2 -translate-x-4 p-6 rounded-2xl shadow-soft glass-panel border max-w-[220px] transition-all duration-300 group-hover:-translate-x-8 group-hover:scale-105 z-20 cursor-pointer dark:bg-[var(--color-courses-card-dark)] dark:border-white/10"
                 style={{
                   backgroundColor: 'var(--color-courses-card-light)',
                   borderColor: 'rgba(255, 255, 255, 0.5)'
                 }}
                 onClick={() => handleCourseClick(courseMapping[0].course)}
               >
-                <div className="flex items-center gap-2 mb-2">
-                  {(() => {
-                    const Icon = courseMapping[0].icon;
-                    return <Icon size={18} style={{ color: 'var(--color-courses-secondary)' }} />;
-                  })()}
-                  <span 
-                    className="text-xs font-bold uppercase tracking-wider"
-                    style={{ color: 'var(--color-courses-secondary)' }}
-                  >
-                    {courseMapping[0].level}
-                  </span>
-                </div>
                 <h3 
-                  className="text-xl font-bold mb-2 dark:text-white"
+                  className="text-2xl font-bold mb-2 dark:text-white"
                   style={{ color: 'var(--color-courses-primary)' }}
                 >
                   {courseMapping[0].title}
                 </h3>
                 <p 
-                  className="text-xs leading-relaxed mb-3 dark:text-[var(--color-courses-muted-dark)]"
+                  className="text-sm leading-relaxed mb-4 dark:text-[var(--color-courses-muted-dark)]"
                   style={{ color: 'var(--color-courses-muted-light)' }}
                 >
                   {courseMapping[0].description}
                 </p>
                 <a 
-                  className="inline-flex items-center text-xs font-semibold transition-colors dark:text-white dark:hover:text-[var(--color-courses-secondary)]"
+                  className="inline-flex items-center text-sm font-semibold transition-colors dark:text-white dark:hover:text-[var(--color-courses-secondary)]"
                   style={{ color: 'var(--color-courses-primary)' }}
                   onClick={(e) => {
                     e.preventDefault();
@@ -203,7 +185,7 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
                   }}
                 >
                   Jelajahi Modul{' '}
-                  <ArrowRight size={14} className="ml-1" />
+                  <ArrowRight size={16} className="ml-1" />
                 </a>
               </div>
             </div>
@@ -239,26 +221,14 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
                 }}
                 onClick={() => handleCourseClick(courseMapping[1].course)}
               >
-                <div className="flex items-center justify-center gap-2 mb-2">
-                  {(() => {
-                    const Icon = courseMapping[1].icon;
-                    return <Icon size={18} style={{ color: 'var(--color-courses-secondary)' }} />;
-                  })()}
-                  <span 
-                    className="text-xs font-bold uppercase tracking-wider"
-                    style={{ color: 'var(--color-courses-secondary)' }}
-                  >
-                    {courseMapping[1].level}
-                  </span>
-                </div>
                 <h3 
-                  className="text-xl font-bold mb-2 dark:text-white"
+                  className="text-2xl font-bold mb-2 dark:text-white"
                   style={{ color: 'var(--color-courses-primary)' }}
                 >
                   {courseMapping[1].title}
                 </h3>
                 <p 
-                  className="text-xs leading-relaxed mb-3 dark:text-[var(--color-courses-muted-dark)]"
+                  className="text-sm leading-relaxed mb-4 dark:text-[var(--color-courses-muted-dark)]"
                   style={{ color: 'var(--color-courses-muted-light)' }}
                 >
                   {courseMapping[1].description}
@@ -268,7 +238,7 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
                   style={{ backgroundColor: 'var(--color-courses-primary)', color: 'white' }}
                   onClick={() => handleCourseClick(courseMapping[1].course)}
                 >
-                  <ArrowRight size={14} />
+                  <ArrowRight size={16} />
                 </button>
               </div>
             </div>
@@ -297,39 +267,27 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
                 />
               </div>
               <div 
-                className="absolute -left-16 top-1/2 transform -translate-y-1/2 -translate-x-4 p-6 rounded-2xl shadow-soft glass-panel border max-w-[220px] transition-all duration-300 group-hover:-translate-x-8 group-hover:scale-105 z-20 text-right cursor-pointer dark:bg-[var(--color-courses-card-dark)] dark:border-white/10"
+                className="absolute -right-16 top-1/2 transform -translate-y-1/2 translate-x-4 p-6 rounded-2xl shadow-soft glass-panel border max-w-[220px] transition-all duration-300 group-hover:translate-x-8 group-hover:scale-105 z-20 cursor-pointer dark:bg-[var(--color-courses-card-dark)] dark:border-white/10"
                 style={{
                   backgroundColor: 'var(--color-courses-card-light)',
                   borderColor: 'rgba(255, 255, 255, 0.5)'
                 }}
                 onClick={() => handleCourseClick(courseMapping[2].course)}
               >
-                <div className="flex items-center justify-end gap-2 mb-2">
-                  <span 
-                    className="text-xs font-bold uppercase tracking-wider"
-                    style={{ color: 'var(--color-courses-secondary)' }}
-                  >
-                    {courseMapping[2].level}
-                  </span>
-                  {(() => {
-                    const Icon = courseMapping[2].icon;
-                    return <Icon size={18} style={{ color: 'var(--color-courses-secondary)' }} />;
-                  })()}
-                </div>
                 <h3 
-                  className="text-xl font-bold mb-2 dark:text-white"
+                  className="text-2xl font-bold mb-2 dark:text-white"
                   style={{ color: 'var(--color-courses-primary)' }}
                 >
                   {courseMapping[2].title}
                 </h3>
                 <p 
-                  className="text-xs leading-relaxed mb-3 dark:text-[var(--color-courses-muted-dark)]"
+                  className="text-sm leading-relaxed mb-4 dark:text-[var(--color-courses-muted-dark)]"
                   style={{ color: 'var(--color-courses-muted-light)' }}
                 >
                   {courseMapping[2].description}
                 </p>
                 <a 
-                  className="inline-flex items-center text-xs font-semibold transition-colors flex-row-reverse dark:text-white dark:hover:text-[var(--color-courses-secondary)]"
+                  className="inline-flex items-center text-sm font-semibold transition-colors dark:text-white dark:hover:text-[var(--color-courses-secondary)]"
                   style={{ color: 'var(--color-courses-primary)' }}
                   onClick={(e) => {
                     e.preventDefault();
@@ -337,7 +295,7 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
                   }}
                 >
                   Mulai Membuat{' '}
-                  <ArrowLeft size={14} className="mr-1 transform rotate-180" />
+                  <ArrowRight size={16} className="ml-1" />
                 </a>
               </div>
             </div>
@@ -385,29 +343,20 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
                   }}
                   onClick={() => handleCourseClick(item.course)}
                 >
-                  <span 
-                    className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 uppercase"
-                    style={{
-                      backgroundColor: 'rgba(212, 180, 131, 0.1)',
-                      color: 'var(--color-courses-secondary)'
-                    }}
-                  >
-                    {item.label}
-                  </span>
                   <h3 
-                    className="text-xl font-bold mb-2 dark:text-white"
+                    className="text-2xl font-bold mb-2 dark:text-white"
                     style={{ color: 'var(--color-courses-primary)' }}
                   >
                     {item.title}
                   </h3>
                   <p 
-                    className="text-sm mb-4 dark:text-[var(--color-courses-muted-dark)]"
+                    className="text-base mb-4 dark:text-[var(--color-courses-muted-dark)]"
                     style={{ color: 'var(--color-courses-muted-light)' }}
                   >
                     {item.description}
                   </p>
                   <a 
-                    className="text-sm font-semibold transition-colors dark:text-white dark:hover:text-[var(--color-courses-secondary)]"
+                    className="text-base font-semibold transition-colors dark:text-white dark:hover:text-[var(--color-courses-secondary)]"
                     style={{ color: 'var(--color-courses-primary)' }}
                     onClick={(e) => {
                       e.preventDefault();

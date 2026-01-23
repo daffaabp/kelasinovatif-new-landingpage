@@ -3,78 +3,78 @@ import { Course } from "../types";
 export const courses: Course[] = [
   {
     id: '1',
-    category: 'Seni & Humaniora',
-    title: 'Temukan esensi ekspresi manusia dan budaya.',
-    description: 'Jelajahi sejarah gerakan seni dari Renaisans hingga zaman Kontemporer. Kursus ini menyelami konteks sosial, politik, dan budaya yang membentuk ekspresi artistik.',
+    category: 'AI untuk Akademik',
+    title: 'AI for Akademik',
+    description: 'Selesaikan tesis dan disertasi lebih cepat dengan tools AI yang tepat. Literature review, penulisan akademik, dan penelitian menjadi lebih efisien.',
     image: 'https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2670&auto=format&fit=crop',
     duration: '8 Minggu',
-    level: 'Pemula',
-    rating: 4.8,
+    level: 'Semua Level',
+    rating: 4.9,
     students: 1240,
-    price: '$299',
+    price: 'Rp 2.500.000',
     instructor: { 
-      name: 'Natalia T. Morgan', 
+      name: 'Dr. Rina Sari, M.Kom', 
       avatar: 'https://i.pravatar.cc/100?img=32', 
-      role: 'Profesor Sejarah Seni',
-      bio: 'Natalia T. Morgan memiliki pengalaman lebih dari 15 tahun mengajar sejarah seni di universitas terkemuka. Dia adalah penulis dan kurator yang telah menerbitkan karya.'
+      role: 'Dosen & Peneliti, Universitas Indonesia',
+      bio: 'Dr. Rina Sari memiliki pengalaman lebih dari 10 tahun dalam penelitian akademik dan telah membantu ratusan mahasiswa menyelesaikan tesis dan disertasi dengan tools AI.'
     },
     syllabus: [
-      { title: 'Pengantar Sejarah Seni', content: 'Memahami metodologi dan terminologi dasar.' },
-      { title: 'Renaisans', content: 'Menjelajahi kelahiran kembali seni dan budaya di Eropa.' },
-      { title: 'Barok dan Rokoko', content: 'Drama dan detail abad ke-17 dan ke-18.' },
-      { title: 'Modernisme', content: 'Pergeseran menuju abstraksi dan media baru.' }
+      { title: 'Pengantar AI untuk Akademik', content: 'Memahami tools AI yang tepat untuk penelitian dan penulisan akademik.' },
+      { title: 'Scispace untuk Literature Review', content: 'Menggunakan Scispace untuk analisis paper dan citation management yang efisien.' },
+      { title: 'NotebookLM untuk Note-taking', content: 'Mengorganisir ratusan paper dan catatan penelitian dengan NotebookLM.' },
+      { title: 'Cursor untuk Penulisan Akademik', content: 'Menulis akademik bebas plagiasi dan terstruktur dengan bantuan Cursor.' }
     ],
-    prerequisites: ['Tidak diperlukan pengetahuan sebelumnya', 'Minat pada sejarah dan budaya']
+    prerequisites: ['Tidak diperlukan pengetahuan sebelumnya', 'Minat pada penelitian dan penulisan akademik']
   },
   {
     id: '2',
-    category: 'Sains & Teknologi',
-    title: 'Dasar-dasar Ilmu Komputer dan Logika.',
-    description: 'Pengantar komprehensif tentang ilmu komputer, mencakup algoritma, struktur data, dan dasar-dasar rekayasa perangkat lunak.',
-    image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2670&auto=format&fit=crop',
-    duration: '12 Minggu',
-    level: 'Menengah',
+    category: 'AI untuk Bisnis',
+    title: 'AI for Bisnis',
+    description: 'Tingkatkan produktivitas tim dan efisiensi bisnis dengan implementasi AI yang strategis. Dari automasi hingga analisis data untuk keputusan yang lebih cerdas.',
+    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop',
+    duration: '10 Minggu',
+    level: 'Semua Level',
     rating: 4.9,
     students: 2100,
-    price: '$399',
+    price: 'Rp 3.000.000',
     instructor: { 
-      name: 'Gabriella S. Adams', 
-      avatar: 'https://i.pravatar.cc/100?img=44', 
-      role: 'Insinyur Perangkat Lunak Senior',
-      bio: 'Gabriella adalah pengembang utama di perusahaan teknologi besar dan senang mengajar dasar-dasar coding kepada generasi insinyur berikutnya.'
+      name: 'Budi Santoso', 
+      avatar: 'https://i.pravatar.cc/100?img=15', 
+      role: 'CEO, PT Teknologi Digital Indonesia',
+      bio: 'Budi Santoso adalah praktisi AI untuk bisnis yang telah membantu puluhan perusahaan meningkatkan efisiensi hingga 40% dengan implementasi AI yang tepat.'
     },
     syllabus: [
-      { title: 'Pengantar Algoritma', content: 'Pengurutan, pencarian, dan analisis kompleksitas.' },
-      { title: 'Struktur Data', content: 'Array, linked list, pohon, dan graf.' },
-      { title: 'Dasar-dasar Pengembangan Web', content: 'Fundamental HTML, CSS, dan JavaScript.' },
-      { title: 'Prinsip Rekayasa Perangkat Lunak', content: 'Kontrol versi, pengujian, dan deployment.' }
+      { title: 'Pengantar AI untuk Bisnis', content: 'Memahami potensi AI dalam transformasi bisnis dan produktivitas tim.' },
+      { title: 'Automasi Proses Bisnis', content: 'Mengotomasi tugas repetitif dan workflow bisnis dengan AI tools.' },
+      { title: 'Analisis Data & Business Intelligence', content: 'Menggunakan AI untuk analisis data dan pengambilan keputusan bisnis.' },
+      { title: 'Strategi Implementasi AI', content: 'Membangun SOP dan strategi implementasi AI yang aman untuk tim.' }
     ],
-    prerequisites: ['Keterampilan matematika dasar', 'Akses ke komputer']
+    prerequisites: ['Tidak diperlukan pengetahuan sebelumnya', 'Minat pada transformasi bisnis dengan AI']
   },
   {
     id: '3',
-    category: 'Bisnis & Ekonomi',
-    title: 'Manajemen Strategis untuk Pemimpin Masa Depan.',
-    description: 'Pelajari prinsip-prinsip inti strategi bisnis, pemasaran, dan ekonomi untuk memimpin organisasi secara efektif di pasar global.',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop',
-    duration: '10 Minggu',
-    level: 'Lanjutan',
-    rating: 4.7,
-    students: 850,
-    price: '$349',
+    category: 'AI untuk Content Creator',
+    title: 'AI for Konten Kreator',
+    description: 'Produksi konten lebih cepat tanpa mengorbankan kualitas. Dari ide, script, editing, hingga strategi konten—semua dengan bantuan AI.',
+    image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2670&auto=format&fit=crop',
+    duration: '8 Minggu',
+    level: 'Semua Level',
+    rating: 4.8,
+    students: 1850,
+    price: 'Rp 2.500.000',
     instructor: { 
-      name: 'Eliana M. Thompson', 
-      avatar: 'https://i.pravatar.cc/100?img=9', 
-      role: 'MBA, Konsultan Bisnis',
-      bio: 'Eliana telah berkonsultasi untuk perusahaan Fortune 500 dan membawa studi kasus dunia nyata ke dalam kelas.'
+      name: 'Dewi Lestari', 
+      avatar: 'https://i.pravatar.cc/100?img=5', 
+      role: 'Content Creator, 500K Subscribers',
+      bio: 'Dewi Lestari adalah content creator sukses yang telah meningkatkan produksi konten dari 1 menjadi 5 video per minggu berkat AI tools, dengan revenue YouTube naik 200% dalam 6 bulan.'
     },
     syllabus: [
-      { title: 'Mikroekonomi', content: 'Penawaran, permintaan, dan struktur pasar.' },
-      { title: 'Strategi Pemasaran', content: 'Positioning, targeting, dan branding.' },
-      { title: 'Akuntansi Keuangan', content: 'Membaca neraca dan laporan laba rugi.' },
-      { title: 'Kepemimpinan & Etika', content: 'Mengelola tim dan pengambilan keputusan etis.' }
+      { title: 'Pengantar AI untuk Content Creation', content: 'Memahami tools AI yang tepat untuk produksi konten yang efisien.' },
+      { title: 'AI untuk Ide & Scriptwriting', content: 'Menggunakan ChatGPT dan tools AI untuk generate ide konten dan scriptwriting.' },
+      { title: 'AI untuk Video Editing', content: 'Menggunakan Runway dan tools AI untuk video editing yang cepat dan profesional.' },
+      { title: 'Strategi Konten dengan AI', content: 'Membangun kalender konten dan strategi content marketing dengan bantuan AI.' }
     ],
-    prerequisites: ['Pemahaman dasar tentang ekonomi', 'Pengalaman kepemimpinan lebih disukai']
+    prerequisites: ['Tidak diperlukan pengetahuan sebelumnya', 'Minat pada content creation dan kreativitas']
   }
 ];
 

@@ -11,7 +11,7 @@ export function Footer() {
                             <span className="font-serif font-bold text-xl text-about-primary dark:text-white">KelasInovatif</span>
                         </div>
                         <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
-                            Empowering the next generation of leaders through innovative education and inclusive community building.
+                            Kelas Inovatif adalah platform pembelajaran AI nomor 1 di Indonesia. Membantu profesional dari akademik, bisnis, hingga kreator menguasai AI tools yang terbukti efektif.
                         </p>
                         <div className="flex space-x-4">
                             <a className="text-gray-400 hover:text-about-primary dark:hover:text-white transition" href="#">
@@ -29,51 +29,51 @@ export function Footer() {
                         </div>
                     </div>
                     <div>
-                        <h4 className="font-bold text-about-primary dark:text-white mb-6">Quick Links</h4>
+                        <h4 className="font-bold text-about-primary dark:text-white mb-6">Tautan Cepat</h4>
                         <ul className="space-y-4 text-sm text-gray-600 dark:text-gray-400">
-                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/about">About Us</a></li>
-                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/community">Community</a></li>
-                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/program">Programs</a></li>
-                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/bootcamp">Bootcamps</a></li>
+                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/about">Tentang Kami</a></li>
+                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/community">Komunitas</a></li>
+                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/program">Program</a></li>
+                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/bootcamp">Bootcamp</a></li>
                             <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/contact">Hubungi Kami</a></li>
                             <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/blogs">Blog</a></li>
-                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/schedule">Schedule</a></li>
+                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/schedule">Jadwal</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 className="font-bold text-about-primary dark:text-white mb-6">Resources</h4>
+                        <h4 className="font-bold text-about-primary dark:text-white mb-6">Sumber Daya</h4>
                         <ul className="space-y-4 text-sm text-gray-600 dark:text-gray-400">
-                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Library</a></li>
-                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Career Services</a></li>
-                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Alumni Association</a></li>
-                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Student Portal</a></li>
+                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Prompt Library</a></li>
+                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Case Studies</a></li>
+                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Kisah Alumni</a></li>
+                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Member Portal</a></li>
                             <li><a className="hover:text-about-primary dark:hover:text-white transition" href="/faq">FAQ</a></li>
-                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Staff Directory</a></li>
+                            <li><a className="hover:text-about-primary dark:hover:text-white transition" href="#">Kontak Support</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 className="font-bold text-about-primary dark:text-white mb-6">Contact</h4>
+                        <h4 className="font-bold text-about-primary dark:text-white mb-6">Kontak</h4>
                         <ul className="space-y-4 text-sm text-gray-600 dark:text-gray-400">
                             <li className="flex items-start gap-3">
                                 <MapPin className="text-about-primary w-5 h-5 shrink-0" />
-                                <span>123 University Ave, <br />Education City, CA 90210</span>
+                                <span>Jl Raya Mujur No 46 Kroya<br />Cilacap, Jawa Tengah<br />Indonesia</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone className="text-about-primary w-5 h-5 shrink-0" />
-                                <span>+1 (555) 123-4567</span>
+                                <span>085712208535</span>
                             </li>
-                            <li className="flex items-center gap-3">
-                                <Mail className="text-about-primary w-5 h-5 shrink-0" />
-                                <span>admissions@kelasinovatif.edu</span>
+                            <li className="flex items-start gap-3">
+                                <Mail className="text-about-primary w-5 h-5 shrink-0 mt-1" />
+                                <span>Senin - Sabtu<br />08:00 - 17:00 WIB</span>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className="border-t border-gray-100 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 dark:text-gray-400">
-                    <p>© 2024 KelasInovatif Community. All rights reserved.</p>
+                    <p>© 2024 KelasInovatif Community. Hak cipta dilindungi.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
-                        <a className="hover:text-about-primary dark:hover:text-white transition" href="/privacy">Privacy Policy</a>
-                        <a className="hover:text-about-primary dark:hover:text-white transition" href="/terms">Terms of Service</a>
+                        <a className="hover:text-about-primary dark:hover:text-white transition" href="/privacy">Kebijakan Privasi</a>
+                        <a className="hover:text-about-primary dark:hover:text-white transition" href="/terms">Syarat & Ketentuan</a>
                     </div>
                 </div>
             </div>

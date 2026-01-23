@@ -8,7 +8,7 @@ export function LatestNews() {
                 <div>
                     <span className="bg-gray-100 dark:bg-gray-800 text-[10px] font-bold tracking-widest uppercase text-gray-600 dark:text-gray-300 px-3 py-1 rounded mb-4 inline-block">ACARA</span>
                     <h2 className="font-serif text-3xl md:text-4xl text-[#1C302B] dark:text-white max-w-md">
-                        Berita tentang universitas KelasInovatif kami
+                        Berita tentang komunitas KelasInovatif kami
                     </h2>
                 </div>
                 <a className="bg-[#1C302B] text-white px-5 py-2 rounded-full font-medium inline-flex items-center gap-2 hover:bg-opacity-90 transition text-xs uppercase" href="#">

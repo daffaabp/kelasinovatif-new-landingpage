@@ -59,7 +59,7 @@ export function Testimonials() {
           
           <div className="space-y-6">
             <span className="inline-block px-3 py-1 border border-gray-300 rounded-full text-xs font-bold uppercase tracking-wider">Testimoni</span>
-            <h2 className="text-4xl font-medium max-w-xs">Ungkapan mahasiswa bahagia eksklusif kami.</h2>
+            <h2 className="text-4xl font-medium max-w-xs">Kisah sukses dari anggota komunitas kami.</h2>
             
             <div className="flex gap-4 pt-4">
               <button 

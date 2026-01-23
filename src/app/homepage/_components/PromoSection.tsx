@@ -18,11 +18,11 @@ export function PromoSection() {
           <div className="w-full md:w-1/3 text-center space-y-6">
             <div className="flex justify-center mb-4">
               <div className="w-20 h-20 rounded-full border border-gray-200 flex items-center justify-center animate-spin-slow">
-                <span className="text-[8px] font-bold uppercase tracking-widest text-center transform rotate-12">Sejak 1850<br />Pendidikan Berkualitas</span>
+                <span className="text-[8px] font-bold uppercase tracking-widest text-center transform rotate-12">10.000+<br />Member Aktif</span>
               </div>
             </div>
-            <span className="inline-block px-4 py-1 border border-gray-800 rounded-full text-xs font-bold uppercase tracking-wider">Pesan Tur Gratis</span>
-            <h2 className="text-4xl md:text-5xl font-serif font-medium">Kampus universitas KelasInovatif luar biasa.</h2>
+            <span className="inline-block px-4 py-1 border border-gray-800 rounded-full text-xs font-bold uppercase tracking-wider">Daftar Open House</span>
+            <h2 className="text-4xl md:text-5xl font-serif font-medium">Bergabung dengan komunitas AI terbesar di Indonesia.</h2>
             <button className="mx-auto bg-eduzin-dark text-white px-6 py-3 rounded-full flex items-center gap-2 text-sm font-bold cursor-pointer">
               HUBUNGI KAMI <ArrowRight size={16} />
             </button>

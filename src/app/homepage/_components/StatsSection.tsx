@@ -109,19 +109,19 @@ export function StatsSection() {
                 {[1, 2, 3, 4, 5].map((i) => (
                   <Star key={i} size={20} className="fill-yellow-400 text-yellow-400" />
                 ))}
-                <span className="ml-2 font-bold text-white">5.0</span>
+                <span className="ml-2 font-bold text-white">4.9</span>
               </div>
             </div>
 
             {/* Stats Grid */}
             <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/10">
                <div>
-                 <h3 className="text-4xl md:text-5xl font-serif mb-2">92%</h3>
-                 <p className="text-sm text-white/60">Mereka bekerja di bidang yang terkait dengan bidang studi mereka</p>
+                 <h3 className="text-4xl md:text-5xl font-serif mb-2">10,000+</h3>
+                 <p className="text-sm text-white/60">Profesional terlatih AI di seluruh Indonesia</p>
                </div>
                <div>
-                 <h3 className="text-4xl md:text-5xl font-serif mb-2">25%</h3>
-                 <p className="text-sm text-white/60">Mahasiswa yang terus berkembang setiap hari masih berjuang</p>
+                 <h3 className="text-4xl md:text-5xl font-serif mb-2">95%</h3>
+                 <p className="text-sm text-white/60">Peserta berhasil meningkatkan produktivitas dengan AI tools</p>
                </div>
             </div>
 
@@ -133,23 +133,23 @@ export function StatsSection() {
                 <img src="https://i.pravatar.cc/100?img=8" className="w-8 h-8 rounded-full border-2 border-transparent" alt="student"/>
               </div>
               <div>
-                <p className="font-bold text-sm text-white">5000</p>
-                <p className="text-[10px] uppercase tracking-wide text-white/80">Rating mahasiswa</p>
+                <p className="font-bold text-sm text-white">4.9/5</p>
+                <p className="text-[10px] uppercase tracking-wide text-white/80">Rating dari 2,500+ peserta</p>
               </div>
             </div>
           </div>
 
           {/* Right Column: Testimonial Slider */}
-          <div className="lg:pl-8">
+          <div className="lg:pl-8 relative flex flex-col h-[690px] pb-20">
              {/* Header Badge */}
              <div className="mb-8">
                 <span className="inline-block px-3 py-1 border border-white/20 rounded-full text-xs font-bold uppercase tracking-wider text-white/90">
-                  Kisah Mahasiswa
+                  Kisah Sukses Alumni
                 </span>
              </div>
 
              {/* Testimonial Content */}
-             <div className="mb-10 min-h-[200px]">
+             <div className="flex-1 min-h-0 pr-2">
                 <Quote className="text-white/20 w-10 h-10 mb-6" />
                 
                 <div key={current.id} className="animate-fadeIn">
@@ -172,7 +172,7 @@ export function StatsSection() {
              </div>
 
              {/* Navigation Arrows */}
-             <div className="flex gap-4">
+             <div className="absolute bottom-0 left-0 flex gap-4">
                 <button 
                   onClick={prevTestimonial}
                   className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-eduzin-dark transition-all duration-300 group cursor-pointer"

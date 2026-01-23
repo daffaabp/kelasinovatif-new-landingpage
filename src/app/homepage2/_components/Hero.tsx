@@ -16,13 +16,13 @@ export function Hero() {
 
             <div className="container mx-auto px-6 relative z-10">
                 <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[1.1] mb-6 drop-shadow-lg">
-                    Pembelajaran <br />
+                    Pembelajaran AI <br />
                     inovatif <br />
-                    <span className="italic font-light">untuk semua</span>
+                    <span className="italic font-light">untuk semua kalangan</span>
                 </h1>
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
                     <p className="text-white/80 max-w-sm text-sm md:text-base leading-relaxed">
-                        Lulusan memegang posisi yang terkait dengan gelar atau tujuan karier mereka.
+                        Platform pembelajaran AI nomor satu di Indonesia. 10.000+ profesional sudah bergabung dan ratusan doktor & magister berhasil menyelesaikan tesis mereka.
                     </p>
                     <a className="bg-white text-[#1C302B] px-8 py-3 rounded-full font-medium inline-flex items-center gap-2 hover:bg-gray-100 transition group" href="#">
                         GABUNG KOMUNITAS
