@@ -107,6 +107,7 @@ export async function createSchedule(data: any) {
         });
 
         revalidatePath('/admin/schedule');
+        revalidatePath('/homepage');
         return { msg: 'success' };
     } catch (error) {
         console.error('Error creating schedule:', error);
@@ -136,6 +137,7 @@ export async function updateSchedule(id: number, data: any) {
         });
 
         revalidatePath('/admin/schedule');
+        revalidatePath('/homepage');
         return { msg: 'success' };
     } catch (error) {
         console.error('Error updating schedule:', error);
@@ -147,10 +149,32 @@ export async function deleteSchedule(id: number) {
     try {
         await db('schedules').where({ id }).del();
         revalidatePath('/admin/schedule');
+        revalidatePath('/homepage');
         return { msg: 'success' };
     } catch (error) {
         console.error('Error deleting schedule:', error);
         return { msg: 'Failed to delete schedule' };
+    }
+}
+
+export async function getLatestSchedules(limit: number = 10) {
+    try {
+        const schedules = await db('schedules')
+            .select('*')
+            .orderBy('updated_at', 'desc')
+            .orderBy('date', 'desc')
+            .limit(limit);
+
+        // Convert dates to string to avoid serialization issues in Next.js
+        return schedules.map(schedule => ({
+            ...schedule,
+            date: schedule.date.toISOString(),
+            created_at: schedule.created_at?.toISOString(),
+            updated_at: schedule.updated_at?.toISOString(),
+        }));
+    } catch (error) {
+        console.error('Error fetching latest schedules:', error);
+        return [];
     }
 }
 
