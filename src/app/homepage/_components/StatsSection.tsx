@@ -80,7 +80,7 @@ export function StatsSection() {
   const current = testimonials[currentIndex];
 
   return (
-    <section className="bg-eduzin-dark text-white py-20 px-4 md:px-8 overflow-hidden relative">
+    <section className="bg-eduzin-dark text-white py-18 md:px-8 overflow-hidden relative">
       {/* Globe Background - positioned absolutely behind content */}
       <div className="absolute inset-0 flex items-end justify-center pointer-events-none overflow-hidden">
         <div className="w-[500px] h-[500px] lg:w-[600px] lg:h-[600px] opacity-20 lg:opacity-40 translate-y-[30%]">
@@ -158,8 +158,8 @@ export function StatsSection() {
              <div className="flex-1 min-h-0 pr-2">
                 <Quote className="text-white/20 w-10 h-10 mb-6" />
                 
-                <div key={current.id} className="animate-fadeIn">
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-medium leading-tight mb-8">
+               <div key={current.id} className="animate-fadeIn">
+                  <h2 className="text-2xl font-serif font-medium leading-relaxed mb-6">
                     &quot;{current.quote}&quot;
                   </h2>
                   
@@ -178,7 +178,7 @@ export function StatsSection() {
              </div>
 
              {/* Navigation Arrows */}
-             <div className="absolute bottom-0 left-0 flex gap-4">
+             <div className="absolute bottom-32 left-0 flex gap-4">
                 <button 
                   onClick={prevTestimonial}
                   className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-eduzin-dark transition-all duration-300 group cursor-pointer"

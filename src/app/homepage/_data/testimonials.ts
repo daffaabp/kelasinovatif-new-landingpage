@@ -3,44 +3,42 @@ import { Testimonial } from "../types";
 export const testimonials: Testimonial[] = [
   {
     id: 1,
-    quote: "Tools AI Scispace, NotebookLM, dan Cursor dari Kelas Inovatif sangat membantu saya menyelesaikan tesis S2. Literature review dan penulisan akademik menjadi lebih efisien serta bebas plagiasi, menghemat waktu hingga 3 bulan. Disertasi saya selesai tepat waktu berkat platform ini.",
-    author: "Dr. Rina Sari, M.Kom",
-    role: "Dosen & Peneliti, Universitas Indonesia",
-    avatar: "https://i.pravatar.cc/150?img=32"
+    title: "Perjalanan Transformasi Bersama Kelas Inovatif",
+    quote: "Saya awam dengan AI, namun di Kelas Inovatif saya justru 'tersesat di jalan yang benar'. Di sini, pembelajaran diberikan perlahan dan bertahap. Hasilnya, saya bisa menyelesaikan studi magister saya, dan tahun depan berencana melanjutkan ke jenjang doktoral S3.",
+    author: "Wayan Tangun Setiarien, M.M.",
+    role: "Alumni Magister Manajemen",
+    avatar: "/images/testimonials/Wayan Tangun.avif"
   },
   {
     id: 2,
-    quote: "Sebagai mahasiswa PhD, Scispace untuk paper analysis, NotebookLM untuk note-taking, dan Cursor untuk penulisan akademik bebas plagiasi yang dipelajari di Kelas Inovatif membantu saya mengorganisir ratusan paper dengan lebih terstruktur. Kualitas disertasi meningkat signifikan.",
-    author: "Ahmad Fauzi, S.T., M.T.",
-    role: "Kandidat Doktor, Institut Teknologi Bandung",
-    avatar: "https://i.pravatar.cc/150?img=11"
+    title: "Solusi Tepat Saat Membutuhkan",
+    quote: "Saya mahasiswa hukum. Syukurnya, saya bertemu Kelas Inovatif di waktu yang tepat. Dengan bimbingan step by step yang sangat detail, saya berhasil menyusun proposal tesis dengan revisi yang sangat sedikit. Tingkat plagiasi juga rata-rata di bawah 10%. Materinya mudah dipahami, prosesnya jelas dan terstruktur.",
+    author: "Akhmad Suhaidi, S.H",
+    role: "Mahasiswa Hukum",
+    avatar: "/images/testimonials/AKHMAD SUHAIDI.avif"
   },
   {
     id: 3,
-    quote: "Dengan bantuan Cursor dari Kelas Inovatif, saya berhasil menyelesaikan skripsi S1 dalam waktu yang lebih singkat. Penulisan akademik menjadi lebih terstruktur dan tingkat plagiasi turun drastis. Sangat membantu untuk mahasiswa yang sedang menyusun tugas akhir.",
-    author: "Sari Dewi, S.Kom",
-    role: "Alumni S1, Universitas Gadjah Mada",
-    avatar: "https://i.pravatar.cc/150?img=12"
+    title: "Dari Workshop ke Buku Ber-ISBN",
+    quote: "Jujur, saya sangat bersyukur mengenal kelas ini. Pak Arianto sangat sabar membimbing. Saya sudah ikut banyak workshop AI, tapi di Kelas Inovatif jauh lebih simple dan mudah dipraktikkan. Setelah menerapkan trik penulisan buku dari kelas intensif Cursor, alhamdulillah kini 6 buku saya terbit ber-ISBN. Target saya sekarang, setiap bulan menerbitkan satu buku baru.",
+    author: "Dr. R. Arif Muljohadi, S.H., M.Hum.",
+    role: "Dosen dan Penulis Buku",
+    avatar: "/images/testimonials/Arif Mulyohadi.avif"
   },
   {
     id: 4,
-    quote: "Sebagai peneliti, Scispace membantu saya menganalisis ratusan jurnal dengan cepat. Saya bisa menemukan paper relevan dan memahami kontennya dalam waktu singkat. Kelas Inovatif benar-benar mengubah cara saya melakukan penelitian.",
-    author: "Dr. Muhammad Rizki, S.T., M.Sc.",
-    role: "Peneliti & Dosen, Universitas Brawijaya",
-    avatar: "https://i.pravatar.cc/150?img=13"
+    title: "Menjadi Doktor S3 Berkat Dukungan Kelas Inovatif",
+    quote: "Alhamdulillah, saya berhasil menyelesaikan studi S3 Doktoral dengan predikat Cumlaude. Untuk teman-teman yang sedang dalam proses penulisan disertasi, tetap semangat—kalian pasti bisa! Terima kasih Kelas Inovatif atas support-nya; saya sangat terbantu dalam menelusuri jurnal-jurnal yang dibutuhkan dan menyelesaikan disertasi tepat waktu.",
+    author: "Nur Aridha",
+    role: "Alumni Doktoral S3",
+    avatar: "https://i.pravatar.cc/100?img=5"
   },
   {
     id: 5,
-    quote: "NotebookLM dari Kelas Inovatif membantu saya mengorganisir semua catatan penelitian dan paper. Saya bisa dengan mudah mencari informasi dari ratusan dokumen. Sangat membantu untuk mahasiswa yang sedang menyusun tesis atau disertasi.",
-    author: "Indah Sari, M.T.",
-    role: "Kandidat Magister, Institut Teknologi Sepuluh Nopember",
-    avatar: "https://i.pravatar.cc/150?img=14"
-  },
-  {
-    id: 6,
-    quote: "Berkat metode pembelajaran AI untuk akademik di Kelas Inovatif, artikel penelitian saya berhasil diterima di jurnal Scopus Q2. Proses penulisan menjadi lebih efisien dan kualitas tulisan meningkat signifikan.",
-    author: "Dr. Ahmad Hidayat, S.Pd., M.Pd.",
-    role: "Dosen & Peneliti, Universitas Negeri Jakarta",
-    avatar: "https://i.pravatar.cc/150?img=15"
+    title: "Disertasi Selesai & Publikasi Scopus Berkat Kelas Inovatif",
+    quote: "Puji Tuhan, dengan mengikuti Kelas Inovatif, khususnya kelas intensif Cursor bersama mentor Pak Arianto, disertasi saya berhasil selesai. Skor Turnitin saya waktu itu 11% dan sebenarnya masih bisa lebih rendah lagi dengan bantuan Cursor, karena sangat akurat. Saya dan tim juga sudah membuktikan, artikel yang kami tulis dengan Cursor sudah berhasil tembus Scopus Q1.",
+    author: "Dr. Leopold Baginda, S.Pd., M.Th.",
+    role: "Alumni Doktoral & Publikasi Scopus",
+    avatar: "/images/testimonials/LEOPOLD BAGINDA.avif"
   }
 ];

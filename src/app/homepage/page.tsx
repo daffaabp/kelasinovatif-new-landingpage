@@ -44,7 +44,7 @@ export default function HomePage() {
       </div>
       <CoursesSection onCourseSelect={setSelectedCourse} />
       <FeaturesSection />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <PromoSection />
       <EventSection />
       <FaqSection />

@@ -38,6 +38,7 @@ export interface ChatMessage {
 
 export interface Testimonial {
   id: number;
+  title?: string;
   quote: string;
   author: string;
   role: string;
