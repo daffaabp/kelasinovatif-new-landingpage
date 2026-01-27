@@ -17,30 +17,30 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: 3,
-    quote: "Implementasi AI untuk customer service di perusahaan kami meningkatkan efisiensi 40%. Training di Kelas Inovatif memberikan insight praktis yang langsung bisa diterapkan. ROI investasi training ini terbayar dalam 2 bulan.",
-    author: "Budi Santoso",
-    role: "CEO, PT Teknologi Digital Indonesia",
-    avatar: "https://i.pravatar.cc/150?img=15"
+    quote: "Dengan bantuan Cursor dari Kelas Inovatif, saya berhasil menyelesaikan skripsi S1 dalam waktu yang lebih singkat. Penulisan akademik menjadi lebih terstruktur dan tingkat plagiasi turun drastis. Sangat membantu untuk mahasiswa yang sedang menyusun tugas akhir.",
+    author: "Sari Dewi, S.Kom",
+    role: "Alumni S1, Universitas Gadjah Mada",
+    avatar: "https://i.pravatar.cc/150?img=12"
   },
   {
     id: 4,
-    quote: "Sebagai Business Analyst, AI tools dari Kelas Inovatif membantu saya membuat laporan bisnis 5x lebih cepat dengan akurasi tinggi. Produktivitas tim meningkat drastis dan keputusan bisnis menjadi lebih data-driven.",
-    author: "Siti Nurhaliza, S.E., M.M.",
-    role: "Business Intelligence Manager, Startup Fintech",
-    avatar: "https://i.pravatar.cc/150?img=9"
+    quote: "Sebagai peneliti, Scispace membantu saya menganalisis ratusan jurnal dengan cepat. Saya bisa menemukan paper relevan dan memahami kontennya dalam waktu singkat. Kelas Inovatif benar-benar mengubah cara saya melakukan penelitian.",
+    author: "Dr. Muhammad Rizki, S.T., M.Sc.",
+    role: "Peneliti & Dosen, Universitas Brawijaya",
+    avatar: "https://i.pravatar.cc/150?img=13"
   },
   {
     id: 5,
-    quote: "Berkat AI tools dari Kelas Inovatif, produksi video saya meningkat dari 1 menjadi 5 video per minggu. Runway untuk editing dan ChatGPT untuk scriptwriting menghemat waktu produksi hingga 70%. Revenue YouTube naik 200% dalam 6 bulan.",
-    author: "Dewi Lestari",
-    role: "Content Creator, 500K Subscribers",
-    avatar: "https://i.pravatar.cc/150?img=5"
+    quote: "NotebookLM dari Kelas Inovatif membantu saya mengorganisir semua catatan penelitian dan paper. Saya bisa dengan mudah mencari informasi dari ratusan dokumen. Sangat membantu untuk mahasiswa yang sedang menyusun tesis atau disertasi.",
+    author: "Indah Sari, M.T.",
+    role: "Kandidat Magister, Institut Teknologi Sepuluh Nopember",
+    avatar: "https://i.pravatar.cc/150?img=14"
   },
   {
     id: 6,
-    quote: "Sebagai social media manager, AI tools untuk design dan copywriting dari Kelas Inovatif memungkinkan saya membuat 20+ konten profesional per hari. Engagement rate meningkat 150% dan workflow menjadi jauh lebih efisien.",
-    author: "Andi Pratama",
-    role: "Social Media Strategist, Agency Kreatif",
-    avatar: "https://i.pravatar.cc/150?img=8"
+    quote: "Berkat metode pembelajaran AI untuk akademik di Kelas Inovatif, artikel penelitian saya berhasil diterima di jurnal Scopus Q2. Proses penulisan menjadi lebih efisien dan kualitas tulisan meningkat signifikan.",
+    author: "Dr. Ahmad Hidayat, S.Pd., M.Pd.",
+    role: "Dosen & Peneliti, Universitas Negeri Jakarta",
+    avatar: "https://i.pravatar.cc/150?img=15"
   }
 ];

@@ -22,7 +22,7 @@ export function Hero() {
                 </h1>
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
                     <p className="text-white/90 max-w-xl text-base md:text-lg leading-relaxed font-medium">
-                        Belajar, berjejaring, dan tumbuh bersama komunitas AI terbaik untuk akademisi, bisnis, dan kreator.
+                        Belajar, berjejaring, dan tumbuh bersama komunitas AI terbaik untuk akademisi Indonesia.
                     </p>
                     <a
                         className="bg-white text-[#1C302B] px-8 py-3 rounded-full font-bold inline-flex items-center gap-2 hover:bg-gray-100 transition group shadow-xl"

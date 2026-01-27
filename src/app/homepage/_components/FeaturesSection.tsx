@@ -38,7 +38,7 @@ export function FeaturesSection() {
               Jadilah Inovator Bersama Kelas Inovatif
             </h2>
             <p className="text-gray-700 mb-8 leading-relaxed">
-              Kelas Inovatif adalah komunitas AI untuk akademisi, pebisnis, dan kreator yang ingin belajar, berkolaborasi, dan berkembang bersama — didukung jalur pembelajaran, mentoring, networking, serta bukti nyata dari ribuan alumni sukses.
+              Kelas Inovatif adalah komunitas AI untuk akademisi yang ingin belajar, berkolaborasi, dan berkembang bersama — didukung jalur pembelajaran, mentoring, networking, serta bukti nyata dari ribuan alumni sukses.
             </p>
 
             <div className="space-y-7 mb-12">
@@ -49,7 +49,7 @@ export function FeaturesSection() {
                 <div>
                   <h4 className="font-bold text-sm">Mentor & Alumni Terpercaya</h4>
                   <p className="text-md text-gray-600">
-                    Dibimbing instruktur berpengalaman, serta support nyata dari alumni doktoral, profesional, dan kreator AI Indonesia.
+                    Dibimbing instruktur berpengalaman, serta support nyata dari alumni doktoral dan peneliti AI Indonesia.
                   </p>
                 </div>
               </div>

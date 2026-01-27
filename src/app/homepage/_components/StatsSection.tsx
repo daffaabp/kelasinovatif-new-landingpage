@@ -127,7 +127,7 @@ export function StatsSection() {
                </div>
                <div>
                  <h3 className="text-4xl md:text-5xl font-serif mb-2">95%</h3>
-                 <p className="text-md text-white/60">Alumni kami sukses lulus studi, promosi karier, hingga menghasilkan bisnis & karya inovatif berkat AI</p>
+                 <p className="text-md text-white/60">Alumni kami sukses lulus studi, menyelesaikan skripsi, tesis, dan disertasi, hingga publikasi internasional berkat AI</p>
                </div>
             </div>
 

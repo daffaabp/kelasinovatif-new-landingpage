@@ -8,8 +8,8 @@ export const faqs: FaqItem[] = [
     answer: "Anda akan mendapatkan bimbingan intensif, akses ke mentor, diskusi solusi di grup, dan inspirasi nyata dari anggota yang telah sukses menyelesaikan skripsi, tesis, disertasi, bahkan publikasi internasional. Kolaborasi dan support komunitas terbukti mempercepat progres studi maupun project Anda."
   },
   { 
-    question: "Apakah ada peluang kolaborasi bisnis, riset, atau konten di dalam komunitas?", 
-    answer: "Tentu! Anggota aktif dapat terlibat dalam project bersama, kolaborasi riset, bahkan eksekusi ide bisnis serta produksi konten AI. Banyak hasil kolaborasi alumni terbukti menghasilkan karya, bisnis, atau jejaring karier baru."
+    question: "Apakah ada peluang kolaborasi riset dan publikasi di dalam komunitas?", 
+    answer: "Tentu! Anggota aktif dapat terlibat dalam project penelitian bersama, kolaborasi riset, bahkan publikasi artikel ilmiah. Banyak hasil kolaborasi alumni terbukti menghasilkan publikasi Scopus, jurnal internasional, atau jejaring akademik baru."
   },
   { 
     question: "Bagaimana sistem pendampingan/mentoring berjalan di komunitas?", 

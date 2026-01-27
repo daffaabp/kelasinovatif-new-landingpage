@@ -33,7 +33,7 @@ const events: EventData[] = [
   },
   {
     id: 2,
-    title: "Workshop AI untuk Bisnis: Meningkatkan Produktivitas dengan Cursor",
+    title: "Workshop Literature Review dengan Scispace: Analisis Paper Lebih Efisien",
     timezone: "14:00 WIB",
     price: "Gratis untuk Member",
     location: "Online via Zoom",
@@ -84,7 +84,7 @@ export function EventSection() {
             Bergabung dalam Event & Workshop Eksklusif
           </h2>
           <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-            Tingkatkan skill AI Anda melalui workshop, bootcamp, dan webinar eksklusif yang diadakan khusus untuk member komunitas Kelas Inovatif.
+            Tingkatkan skill AI untuk akademik Anda melalui workshop, bootcamp, dan webinar eksklusif yang diadakan khusus untuk member komunitas Kelas Inovatif.
           </p>
         </div>
 

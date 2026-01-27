@@ -48,3 +48,6 @@ yarn-error.log*
 !tsconfig.json
 !components.json
 *.sql
+
+# Cursor
+.cursor

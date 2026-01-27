@@ -37,7 +37,7 @@ export function NewsSection() {
         <div className="flex justify-between items-center mb-12">
           <div>
             <span className="inline-block px-3 py-1 border border-gray-300 rounded-full text-xs font-bold uppercase tracking-wider mb-2">Acara</span>
-            <h2 className="text-3xl font-medium">Berita tentang komunitas<br />Kelas Inovatif kami</h2>
+            <h2 className="text-3xl font-medium">Berita tentang komunitas<br />akademik Kelas Inovatif kami</h2>
           </div>
           <button className="bg-eduzin-dark text-white px-6 py-2 rounded-full text-xs font-bold flex items-center gap-2 hover:bg-opacity-90 transition-colors cursor-pointer">
             BERITA LAINNYA <ArrowRight size={14} />

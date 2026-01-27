@@ -114,6 +114,7 @@ export async function createBlog(data: any) {
 
         revalidatePath('/blogs');
         revalidatePath('/admin/blogs');
+        revalidatePath('/homepage');
         return { msg: 'success' };
     } catch (error) {
         console.error('Error creating blog:', error);
@@ -140,6 +141,7 @@ export async function updateBlog(id: number, data: any) {
 
         revalidatePath('/blogs');
         revalidatePath('/admin/blogs');
+        revalidatePath('/homepage');
         return { msg: 'success' };
     } catch (error) {
         console.error('Error updating blog:', error);
@@ -152,10 +154,32 @@ export async function deleteBlog(id: number) {
         await db('blogs').where({ id }).del();
         revalidatePath('/blogs');
         revalidatePath('/admin/blogs');
+        revalidatePath('/homepage');
         return { msg: 'success' };
     } catch (error) {
         console.error('Error deleting blog:', error);
         return { msg: 'Failed to delete blog' };
+    }
+}
+
+export async function getLatestBlogs(limit: number = 3) {
+    try {
+        const blogs = await db('blogs')
+            .where({ status: 'published' })
+            .select('*')
+            .orderBy('created_at', 'desc')
+            .limit(limit);
+
+        return blogs.map(blog => ({
+            ...blog,
+            created_at: blog.created_at?.toISOString(),
+            updated_at: blog.updated_at?.toISOString(),
+            slug: blog.slug,
+            status: blog.status,
+        }));
+    } catch (error) {
+        console.error('Error fetching latest blogs:', error);
+        return [];
     }
 }
 
