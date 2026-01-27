@@ -159,7 +159,7 @@ export function CoursesSection({ onCourseSelect }: CoursesSectionProps) {
                     <div className="flex items-center gap-2">
                       <Users size={18} className="text-gray-400" />
                       <span className="text-sm dark:text-gray-300" style={{ color: 'var(--color-courses-muted-light)' }}>
-                        {academicCourse.students?.toLocaleString()}+ Peserta
+                        {academicCourse.students?.toLocaleString('en-US')}+ Peserta
                       </span>
                     </div>
                     <div className="flex items-center gap-2">

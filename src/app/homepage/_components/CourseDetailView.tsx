@@ -53,7 +53,7 @@ export function CourseDetailView({ course, onBack }: CourseDetailViewProps) {
                   <Star size={18} className="text-yellow-400 fill-yellow-400" /> {course.rating} Rating
                 </div>
                 <div className="flex items-center gap-2">
-                  <Users size={18} /> {course.students} Students
+                  <Users size={18} /> {course.students?.toLocaleString('en-US')} Students
                 </div>
               </div>
             </div>
