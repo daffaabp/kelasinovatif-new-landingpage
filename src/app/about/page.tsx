@@ -5,7 +5,7 @@ import { Footer } from "@/components/commons/Footer";
 import { AboutHero } from "./_components/AboutHero";
 import { MissionSection } from "./_components/MissionSection";
 import { ValuesSection } from "./_components/ValuesSection";
-import { LeadershipSection } from "./_components/LeadershipSection";
+import { PartnershipSection } from "./_components/PartnershipSection";
 import { CampusSection } from "./_components/CampusSection";
 
 
@@ -16,8 +16,8 @@ export default function AboutPage() {
             <AboutHero />
             <MissionSection />
             <ValuesSection />
-            <LeadershipSection />
-            <CampusSection />
+            <PartnershipSection />
+            {/* <CampusSection /> */}
 
             <Footer />
         </main>
