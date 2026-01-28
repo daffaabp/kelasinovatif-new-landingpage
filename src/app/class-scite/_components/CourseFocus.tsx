@@ -4,18 +4,18 @@ export function CourseFocus() {
     const focuses = [
         {
             icon: Search,
-            title: "Pencarian Boolean & Semantik",
-            description: "Kuasai seni menggabungkan kata kunci dengan operator Boolean (AND, OR, NOT) dan memahami kemampuan pencarian semantik untuk menemukan makalah yang relevan lebih cepat."
-        },
-        {
-            icon: GitBranch,
-            title: "Pemetaan Kutipan",
-            description: "Pelajari cara mengikuti \"jejak kutipan.\" Kami mengajarkan cara memetakan koneksi antara makalah fondasional dan penelitian terbaru untuk membangun timeline yang komprehensif."
+            title: "Cara Mencari Referensi yang Tepat",
+            description: "Belajar menyusun kata kunci dan query pencarian yang akurat untuk menemukan literatur yang benar-benar relevan dengan topik riset Anda."
         },
         {
             icon: Filter,
-            title: "Evaluasi Kritis",
-            description: "Tidak semua jurnal diciptakan sama. Kembangkan mata kritis untuk faktor dampak, integritas peer-review, dan membedakan jurnal predator dari sumber yang bereputasi."
+            title: "Memilih Jurnal Berkualitas",
+            description: "Mengenal cara memilih jurnal dan paper yang kredibel, termasuk memahami kuartil (Q1-Q3) dan indikator kualitas sumber akademik."
+        },
+        {
+            icon: GitBranch,
+            title: "Menemukan Gap & Novelty dengan AI",
+            description: "Menggunakan bantuan AI untuk membaca inti paper dengan cepat dan menemukan celah riset (gap) serta kebaruan (novelty) dari literatur yang ada."
         }
     ];
 
@@ -23,10 +23,10 @@ export function CourseFocus() {
         <section className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-sm font-bold text-eduzin-dark dark:text-green-400 uppercase tracking-wide mb-3">Fokus Kursus</h2>
-                    <h3 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white mb-4">Menguasai Metodologi Pencarian Jurnal</h3>
+                    <h2 className="text-sm font-bold text-eduzin-dark dark:text-green-400 uppercase tracking-wide mb-3">Fokus Kelas</h2>
+                    <h3 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white mb-4">Apa yang Akan Anda Kuasai?</h3>
                     <p className="text-lg text-gray-600 dark:text-gray-400">
-                        Kami tidak hanya mengajarkan alat; kami mengajarkan strategi. Pelajari cara membuat query pencarian yang efektif dan mensintesis informasi secara efisien.
+                        Di kelas ini, Anda akan belajar mencari referensi yang tepat, memilih sumber berkualitas, dan menemukan gap riset dengan lebih cepat menggunakan bantuan AI.
                     </p>
                 </div>
                 <div className="grid md:grid-cols-3 gap-8">

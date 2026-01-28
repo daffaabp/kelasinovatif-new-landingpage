@@ -26,24 +26,24 @@ export function ProgramList() {
                                     <span className="px-3 py-1 text-xs font-semibold tracking-wide uppercase bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full">Alat Penelitian</span>
                                 </div>
                                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white">
-                                    Kelas Scite: Analisis Kutipan Lanjutan
+                                    Kelas Menguasai SciSpace
                                 </h2>
                                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                                    Kuasai seni memverifikasi klaim ilmiah. Program intensif ini mengajarkan cara memanfaatkan Smart Citations untuk memahami konteks referensi dan mengevaluasi keandalan makalah penelitian secara efektif.
+                                    Tingkatkan kualitas riset dengan pencarian referensi yang lebih akurat. Anda akan belajar cara menemukan, menyaring, dan mengelola literatur secara efisien agar sumber yang dipakai relevan dan dapat dipertanggungjawabkan.
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-gray-100 dark:border-gray-700">
                                     <div className="flex items-start space-x-3">
                                         <CheckCircle className="text-program-primary dark:text-green-400 mt-1 w-5 h-5 flex-shrink-0" />
                                         <div>
-                                            <h4 className="font-semibold text-gray-900 dark:text-white">Konteks Kutipan</h4>
-                                            <p className="text-sm text-gray-500 dark:text-gray-400">Menyelam dalam bukti pendukung &amp; kontras.</p>
+                                            <h4 className="font-semibold text-gray-900 dark:text-white">Pencarian Lebih Akurat</h4>
+                                            <p className="text-sm text-gray-500 dark:text-gray-400">Temukan referensi yang tepat untuk topik Anda.</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start space-x-3">
                                         <CheckCircle className="text-program-primary dark:text-green-400 mt-1 w-5 h-5 flex-shrink-0" />
                                         <div>
-                                            <h4 className="font-semibold text-gray-900 dark:text-white">Penguasaan Literature Review</h4>
-                                            <p className="text-sm text-gray-500 dark:text-gray-400">Sederhanakan alur kerja literature review Anda.</p>
+                                            <h4 className="font-semibold text-gray-900 dark:text-white">Seleksi Literatur Efisien</h4>
+                                            <p className="text-sm text-gray-500 dark:text-gray-400">Percepat proses review tanpa kehilangan kualitas.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -63,24 +63,24 @@ export function ProgramList() {
                                     <span className="px-3 py-1 text-xs font-semibold tracking-wide uppercase bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 rounded-full">Bantuan AI</span>
                                 </div>
                                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white">
-                                    Kelas NotebookLM: Pembelajaran AI Personal
+                                    Kelas Menguasai NotebookLM
                                 </h2>
                                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                                    Ubah catatan Anda menjadi tutor AI yang dipersonalisasi. Pelajari cara mengorganisir informasi kompleks, menghasilkan ringkasan, dan berinteraksi dengan dokumen Anda sendiri menggunakan model bahasa canggih yang didasarkan pada sumber spesifik Anda.
+                                    Riset dan belajar lebih mendalam dari ratusan sumber. Anda akan mempraktikkan cara merangkum, membandingkan, dan menghubungkan informasi lintas dokumen sehingga pemahaman Anda lebih cepat, rapi, dan terstruktur.
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-gray-100 dark:border-gray-700">
                                     <div className="flex items-start space-x-3">
                                         <Sparkles className="text-program-primary dark:text-green-400 mt-1 w-5 h-5 flex-shrink-0" />
                                         <div>
-                                            <h4 className="font-semibold text-gray-900 dark:text-white">Pembumian Sumber</h4>
-                                            <p className="text-sm text-gray-500 dark:text-gray-400">Jawaban AI berdasarkan ketat pada dokumen Anda.</p>
+                                            <h4 className="font-semibold text-gray-900 dark:text-white">Sintesis Multi-Sumber</h4>
+                                            <p className="text-sm text-gray-500 dark:text-gray-400">Gabungkan insight dari banyak dokumen sekaligus.</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start space-x-3">
                                         <Sparkles className="text-program-primary dark:text-green-400 mt-1 w-5 h-5 flex-shrink-0" />
                                         <div>
-                                            <h4 className="font-semibold text-gray-900 dark:text-white">Sintesis Ide</h4>
-                                            <p className="text-sm text-gray-500 dark:text-gray-400">Hubungkan titik di berbagai PDF dan catatan.</p>
+                                            <h4 className="font-semibold text-gray-900 dark:text-white">Belajar Lebih Mendalam</h4>
+                                            <p className="text-sm text-gray-500 dark:text-gray-400">Tanya-jawab berbasis dokumen agar paham konteks.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -144,24 +144,24 @@ export function ProgramList() {
                                     <span className="px-3 py-1 text-xs font-semibold tracking-wide uppercase bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/50 dark:to-pink-900/50 text-purple-800 dark:text-purple-200 rounded-full border border-purple-200 dark:border-purple-700">Berbasis AI</span>
                                 </div>
                                 <h2 className="text-3xl md:text-4xl font-serif font-bold bg-gradient-to-r from-gray-900 via-teal-900 to-cyan-900 dark:from-white dark:via-teal-200 dark:to-cyan-200 bg-clip-text text-transparent">
-                                    Kelas Cursor: Pengeditan Kode Berbasis AI
+                                    Kelas Menguasai Cursor
                                 </h2>
                                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                                    Masuki masa depan pengembangan perangkat lunak. Belajar coding lebih cepat dan lebih pintar dengan Cursor, editor kode berbasis AI. Dari menghasilkan boilerplate hingga refactoring codebase legacy, buka kekuatan produktivitas super.
+                                    Fokus pada penulisan karya ilmiah seperti tesis, disertasi, artikel, dan lainnya. Anda akan belajar memanfaatkan Cursor untuk mempercepat drafting, merapikan struktur, dan membantu revisi—tanpa mengorbankan kualitas akademik.
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t-2 border-gradient-to-r from-teal-200 via-cyan-200 to-teal-200 dark:from-teal-800/50 dark:via-cyan-800/50 dark:to-teal-800/50">
                                     <div className="flex items-start space-x-3 bg-white/50 dark:bg-gray-800/50 p-3 rounded-lg backdrop-blur-sm">
                                         <Code className="text-teal-700 dark:text-teal-400 mt-1 w-5 h-5 flex-shrink-0" />
                                         <div>
-                                            <h4 className="font-semibold text-gray-900 dark:text-white">Refactoring Cerdas</h4>
-                                            <p className="text-sm text-gray-600 dark:text-gray-400">Jelaskan perubahan dalam bahasa Inggris sederhana.</p>
+                                            <h4 className="font-semibold text-gray-900 dark:text-white">Drafting Lebih Cepat</h4>
+                                            <p className="text-sm text-gray-600 dark:text-gray-400">Buat kerangka dan paragraf dengan lebih terarah.</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start space-x-3 bg-white/50 dark:bg-gray-800/50 p-3 rounded-lg backdrop-blur-sm">
                                         <Code className="text-teal-700 dark:text-teal-400 mt-1 w-5 h-5 flex-shrink-0" />
                                         <div>
-                                            <h4 className="font-semibold text-gray-900 dark:text-white">Chat Codebase</h4>
-                                            <p className="text-sm text-gray-600 dark:text-gray-400">Ajukan pertanyaan tentang seluruh proyek Anda.</p>
+                                            <h4 className="font-semibold text-gray-900 dark:text-white">Revisi & Penyuntingan</h4>
+                                            <p className="text-sm text-gray-600 dark:text-gray-400">Rapikan alur, konsistensi istilah, dan gaya akademik.</p>
                                         </div>
                                     </div>
                                 </div>

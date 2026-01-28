@@ -11,13 +11,13 @@ export function Hero() {
             </div>
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div className="inline-flex items-center px-3 py-1 rounded-full border border-eduzin-dark/20 bg-eduzin-dark/5 text-eduzin-dark dark:text-green-300 dark:bg-eduzin-dark/20 dark:border-eduzin-dark/40 text-xs font-semibold uppercase tracking-wide mb-6">
-                    Seri Metodologi Penelitian
+                    Program Kelas Reguler
                 </div>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                    Menguasai <span className="italic text-eduzin-dark dark:text-green-400">Scite</span> & <br />Pencarian Jurnal
+                    Menguasai <span className="italic text-eduzin-dark dark:text-green-400">SciSpace</span> untuk<br />Pencarian Referensi Akademik
                 </h1>
                 <p className="max-w-2xl mx-auto text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-10 leading-relaxed">
-                    Buka kekuatan kutipan cerdas. Pelajari cara menavigasi dunia jurnal akademik yang kompleks dengan alat bantu AI modern dan metodologi penelitian yang terbukti.
+                    Setiap tool AI dirancang untuk tujuan dan fungsinya masing-masing. SciSpace dirancang khusus untuk penelusuran literatur akademik secara real-time. Fitur AI-nya membantu mempercepat pemahaman paper sehingga screening dan literature review lebih efisien.
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
                     <a className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-eduzin-dark hover:bg-eduzin-dark/90 transition md:py-4 md:text-lg shadow-xl shadow-eduzin-dark/20" href="#syllabus">
@@ -33,19 +33,19 @@ export function Hero() {
                 </div>
                 <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto border-t border-gray-200 dark:border-gray-800 pt-8">
                     <div className="text-center">
-                        <span className="block text-3xl font-serif font-bold text-gray-900 dark:text-white">4</span>
-                        <span className="text-sm text-gray-600 dark:text-gray-400 uppercase tracking-wider">Minggu</span>
+                        <span className="block text-3xl font-serif font-bold text-gray-900 dark:text-white">2 Jam</span>
+                        <span className="text-sm text-gray-600 dark:text-gray-400 uppercase tracking-wider">Durasi</span>
                     </div>
                     <div className="text-center">
                         <span className="block text-3xl font-serif font-bold text-gray-900 dark:text-white">Pemula</span>
                         <span className="text-sm text-gray-600 dark:text-gray-400 uppercase tracking-wider">Tingkat</span>
                     </div>
                     <div className="text-center">
-                        <span className="block text-3xl font-serif font-bold text-gray-900 dark:text-white">Online</span>
+                        <span className="block text-3xl font-serif font-bold text-gray-900 dark:text-white">Zoom</span>
                         <span className="text-sm text-gray-600 dark:text-gray-400 uppercase tracking-wider">Format</span>
                     </div>
                     <div className="text-center">
-                        <span className="block text-3xl font-serif font-bold text-gray-900 dark:text-white">Dr. A. Chen</span>
+                        <span className="block text-3xl font-serif font-bold text-gray-900 dark:text-white">Arianto</span>
                         <span className="text-sm text-gray-600 dark:text-gray-400 uppercase tracking-wider">Instruktur</span>
                     </div>
                 </div>

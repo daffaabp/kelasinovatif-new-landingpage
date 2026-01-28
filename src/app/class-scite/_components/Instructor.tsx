@@ -1,4 +1,4 @@
-import { Mail, Globe } from 'lucide-react';
+// Icons removed - no longer needed
 
 export function Instructor() {
     return (
@@ -13,19 +13,11 @@ export function Instructor() {
                         />
                     </div>
                     <div className="text-center md:text-left">
-                        <h3 className="text-2xl font-bold text-gray-900 dark:text-white font-serif">Dr. Angela Chen</h3>
-                        <p className="text-eduzin-dark dark:text-green-400 font-medium mb-4">Senior Research Fellow & Ilmuwan Informasi</p>
+                        <h3 className="text-2xl font-bold text-gray-900 dark:text-white font-serif">Arianto</h3>
+                        <p className="text-eduzin-dark dark:text-green-400 font-medium mb-4">AI Engineer & Researcher</p>
                         <p className="text-gray-600 dark:text-gray-400 italic mb-6">
-                            "Di era kelebihan informasi, kemampuan untuk membedakan bukti berkualitas adalah keterampilan paling berharga yang dapat dimiliki seorang mahasiswa. Saya merancang kursus ini untuk memberdayakan Anda dengan alat terbaru untuk melakukan hal itu."
+                            "Kualitas karya ilmiah sangat ditentukan oleh kualitas referensi yang kita gunakan. Melalui kelas ini, saya akan memandu Anda menguasai SciSpace untuk memastikan setiap referensi yang Anda pilih relevan, kredibel, dan mendukung argumen akademik dengan kuat. <strong>Good Input = Best Output</strong>"
                         </p>
-                        <div className="flex justify-center md:justify-start space-x-4">
-                            <a className="text-gray-400 hover:text-eduzin-dark dark:hover:text-white transition" href="#">
-                                <Mail className="w-5 h-5" />
-                            </a>
-                            <a className="text-gray-400 hover:text-eduzin-dark dark:hover:text-white transition" href="#">
-                                <Globe className="w-5 h-5" />
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>

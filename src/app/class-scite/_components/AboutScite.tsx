@@ -21,14 +21,14 @@ export function AboutScite() {
                         </div>
                     </div>
                     <div>
-                        <h2 className="text-sm font-bold text-eduzin-dark dark:text-green-400 uppercase tracking-wide mb-3">Alat</h2>
-                        <h3 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white mb-6">Apa itu Scite?</h3>
+                        <h2 className="text-sm font-bold text-eduzin-dark dark:text-green-400 uppercase tracking-wide mb-3">Kenapa SciSpace?</h2>
+                        <h3 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white mb-6">Kualitas Referensi Menentukan Kualitas Karya Ilmiah</h3>
                         <div className="prose prose-lg text-gray-600 dark:text-gray-400 mb-8">
                             <p className="mb-4">
-                                Scite adalah platform pemenang penghargaan untuk menemukan dan mengevaluasi artikel ilmiah melalui Smart Citations. Smart Citations memungkinkan pengguna melihat bagaimana publikasi telah dikutip dengan menyediakan konteks kutipan dan klasifikasi yang menjelaskan apakah itu memberikan bukti pendukung atau kontras.
+                                Kualitas tesis, disertasi, atau artikel ilmiah sangat bergantung pada kualitas referensi yang digunakan. SciSpace dirancang khusus untuk membantu penelusuran literatur akademik dari database jurnal secara real-time, memastikan referensi Anda relevan, terkini, dan dapat dipertanggungjawabkan.
                             </p>
                             <p>
-                                Dalam kursus ini, kami melampaui pencarian kata kunci sederhana. Kami memanfaatkan Scite untuk memahami <em>percakapan</em> yang terjadi antara peneliti, memungkinkan Anda membangun literature review yang lebih kuat dan dapat dipertahankan.
+                                Dengan dukungan fitur AI, SciSpace mempercepat pemahaman isi paper—mulai dari ringkasan, abstrak, metodologi, hingga kesimpulan—sehingga proses screening dan literature review menjadi lebih efisien tanpa mengorbankan kualitas akademik.
                             </p>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -37,8 +37,8 @@ export function AboutScite() {
                                     <CheckCircle className="w-6 h-6 text-eduzin-dark dark:text-green-400" />
                                 </div>
                                 <div className="ml-4">
-                                    <h4 className="text-lg font-medium text-gray-900 dark:text-white">Verifikasi Klaim</h4>
-                                    <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">Lihat secara instan apakah makalah telah ditarik kembali atau diperdebatkan.</p>
+                                    <h4 className="text-lg font-medium text-gray-900 dark:text-white">Pencarian Real-Time</h4>
+                                    <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">Akses database jurnal untuk menemukan referensi yang relevan dan terkini.</p>
                                 </div>
                             </div>
                             <div className="flex items-start">
@@ -46,8 +46,8 @@ export function AboutScite() {
                                     <TrendingUp className="w-6 h-6 text-eduzin-dark dark:text-green-400" />
                                 </div>
                                 <div className="ml-4">
-                                    <h4 className="text-lg font-medium text-gray-900 dark:text-white">Analisis Kontekstual</h4>
-                                    <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">Baca konteks kutipan tanpa membuka PDF lengkap.</p>
+                                    <h4 className="text-lg font-medium text-gray-900 dark:text-white">Pemahaman Cepat dengan AI</h4>
+                                    <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">Ekstrak ringkasan, metodologi, dan temuan utama tanpa membaca seluruh PDF.</p>
                                 </div>
                             </div>
                         </div>

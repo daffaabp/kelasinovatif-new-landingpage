@@ -9,8 +9,9 @@ export function PartnershipSection() {
                         Program Kerjasama
                     </h2>
                     <p className="text-gray-600 dark:text-gray-400 text-lg">
-                        Kelas Inovatif membuka kerjasama yang dapat menunjang pertumbuhan AI di Indonesia. 
-                        Konsep kerjasama ini dirancang agar dapat memberikan manfaat kepada kedua belah pihak.
+                        Kami membuka peluang kerjasama strategis dengan kampus, akademisi, dan 
+                        organisasi untuk bersama-sama mengembangkan ekosistem AI di Indonesia. 
+                        Setiap kerjasama dirancang untuk memberikan nilai tambah yang saling menguntungkan.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -24,11 +25,11 @@ export function PartnershipSection() {
                         <ul className="space-y-3 text-gray-600 dark:text-gray-400">
                             <li className="flex items-start">
                                 <span className="text-about-primary mr-2">•</span>
-                                <span><strong className="text-about-primary dark:text-white">Integrasi Kurikulum AI:</strong> Menyediakan modul pembelajaran AI yang dapat diintegrasikan ke dalam kurikulum kampus untuk memberikan pelatihan praktis kepada mahasiswa.</span>
+                                <span><strong className="text-about-primary dark:text-white">Integrasi Kurikulum AI:</strong> Modul pembelajaran AI siap pakai yang dapat diintegrasikan ke kurikulum kampus untuk pelatihan praktis mahasiswa.</span>
                             </li>
                             <li className="flex items-start">
                                 <span className="text-about-primary mr-2">•</span>
-                                <span><strong className="text-about-primary dark:text-white">Bimbingan Skripsi & Tesis:</strong> Program mentoring untuk mahasiswa yang meneliti AI atau mengembangkan aplikasi AI dalam penelitian mereka.</span>
+                                <span><strong className="text-about-primary dark:text-white">Bimbingan Skripsi & Tesis:</strong> Program mentoring khusus untuk mahasiswa yang meneliti atau mengembangkan aplikasi AI dalam penelitian mereka.</span>
                             </li>
                         </ul>
                     </div>
@@ -42,11 +43,11 @@ export function PartnershipSection() {
                         <ul className="space-y-3 text-gray-600 dark:text-gray-400">
                             <li className="flex items-start">
                                 <span className="text-about-primary mr-2">•</span>
-                                <span><strong className="text-about-primary dark:text-white">Kolaborasi Penulisan Publikasi:</strong> Bekerja sama dalam menulis dan menerbitkan artikel ilmiah atau buku tentang penerapan AI di berbagai bidang penelitian.</span>
+                                <span><strong className="text-about-primary dark:text-white">Kolaborasi Penulisan Publikasi:</strong> Kerjasama dalam menulis dan menerbitkan artikel ilmiah atau buku tentang penerapan AI di berbagai bidang penelitian.</span>
                             </li>
                             <li className="flex items-start">
                                 <span className="text-about-primary mr-2">•</span>
-                                <span><strong className="text-about-primary dark:text-white">Workshop & Seminar Eksklusif:</strong> Mengadakan acara ilmiah, workshop, atau seminar eksklusif yang didukung oleh para pakar AI untuk memperluas wawasan akademisi.</span>
+                                <span><strong className="text-about-primary dark:text-white">Workshop & Seminar Eksklusif:</strong> Acara ilmiah eksklusif yang didukung pakar AI untuk memperluas wawasan dan jaringan akademisi.</span>
                             </li>
                         </ul>
                     </div>
@@ -60,11 +61,11 @@ export function PartnershipSection() {
                         <ul className="space-y-3 text-gray-600 dark:text-gray-400">
                             <li className="flex items-start">
                                 <span className="text-about-primary mr-2">•</span>
-                                <span><strong className="text-about-primary dark:text-white">Program Pengembangan Keterampilan:</strong> Menyediakan kursus atau bootcamp AI bersubsidi untuk anggota komunitas, fokus pada peningkatan literasi AI.</span>
+                                <span><strong className="text-about-primary dark:text-white">Program Pengembangan Keterampilan:</strong> Kursus atau bootcamp AI bersubsidi untuk anggota komunitas, fokus pada peningkatan literasi AI.</span>
                             </li>
                             <li className="flex items-start">
                                 <span className="text-about-primary mr-2">•</span>
-                                <span><strong className="text-about-primary dark:text-white">Kolaborasi Event:</strong> Bersama-sama menyelenggarakan acara edukasi seperti seminar, webinar, atau workshop untuk mengedukasi masyarakat.</span>
+                                <span><strong className="text-about-primary dark:text-white">Kolaborasi Event:</strong> Menyelenggarakan acara edukasi bersama seperti seminar, webinar, atau workshop untuk mengedukasi masyarakat.</span>
                             </li>
                         </ul>
                     </div>

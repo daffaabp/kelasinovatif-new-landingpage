@@ -16,42 +16,62 @@ export function Syllabus() {
     const weeks: Week[] = [
         {
             number: "01",
-            title: "Pengantar Pencarian Akademik",
-            subtitle: "Fondasi database dan logika Boolean.",
+            title: "Perumusan Keywords & Strategi Penelusuran",
+            subtitle: "Merancang kata kunci yang tepat sasaran dan akurat.",
             topics: [
-                "Memahami database akademik (Google Scholar, Web of Science, PubMed).",
-                "Membangun string pencarian lanjutan.",
-                "Aktivitas: Membangun matriks penelitian pertama Anda."
+                "Mempelajari cara merumuskan keywords yang presisi, termasuk variasi istilah, sinonim, dan bentuk frasa relevan.",
+                "Teknik pencarian lanjutan untuk menemukan literatur yang tepat.",
+                "Praktik: Menyusun query pencarian untuk topik riset Anda dengan pendampingan dan tanya jawab."
             ]
         },
         {
             number: "02",
-            title: "Menyelam dalam Scite.ai",
-            subtitle: "Menggunakan AI untuk analisis kutipan cerdas.",
+            title: "Strategi Menemukan Related Papers",
+            subtitle: "Teknik penelusuran literatur terkait yang efisien.",
             topics: [
-                "Menyiapkan dashboard Scite dan ekstensi browser.",
-                "Menafsirkan kutipan pendukung vs. kontras.",
-                "Aktivitas: Memvalidasi makalah kontroversial menggunakan metrik Scite."
+                "Menelusuri paper terkait melalui sitasi, rekomendasi, similarity, dan topical matching.",
+                "Pengembangan keyword dari paper inti untuk memperluas cakupan literatur.",
+                "Praktik: Menemukan dan mengelola related papers menggunakan SciSpace dengan panduan langsung."
             ]
         },
         {
             number: "03",
-            title: "Integrasi Manajemen Referensi",
-            subtitle: "Menghubungkan Scite dengan Zotero dan Mendeley.",
+            title: "Identifikasi Research Gap & Novelty",
+            subtitle: "Menggunakan AI untuk memetakan tema dan celah riset.",
             topics: [
-                "Mengimpor laporan Scite ke manajer referensi Anda.",
-                "Mengotomatisasi pembaruan bibliografi.",
-                "Aktivitas: Membuat perpustakaan dinamis yang memperbarui sendiri."
+                "Teknik mempercepat pemetaan tema dan perbandingan temuan lintas studi dengan bantuan AI.",
+                "Menentukan celah riset (gap), kebaruan (novelty), dan peluang kontribusi akademik.",
+                "Praktik: Analisis gap dan novelty dari kumpulan paper dengan pendampingan intensif."
             ]
         },
         {
             number: "04",
-            title: "Mensintesis Review",
-            subtitle: "Menulis dengan percaya diri dan presisi.",
+            title: "Seleksi Jurnal Bereputasi (Q1–Q3)",
+            subtitle: "Memilih jurnal berkualitas untuk publikasi.",
             topics: [
-                "Menyusun literature review berdasarkan kekuatan bukti.",
-                "Menghindari bias dalam seleksi.",
-                "Proyek Akhir: Kirim mini literature review tentang topik pilihan."
+                "Cara menyeleksi jurnal top-tier berdasarkan kuartil (Q1, Q2, Q3) dan indikator kualitas.",
+                "Memahami faktor dampak dan reputasi jurnal untuk memastikan sumber yang kredibel.",
+                "Praktik: Screening dan mengevaluasi kualitas jurnal untuk topik Anda dengan bimbingan."
+            ]
+        },
+        {
+            number: "05",
+            title: "Optimasi Penelusuran via Google",
+            subtitle: "Advanced search untuk hasil lebih relevan.",
+            topics: [
+                "Menyusun keyword dan query untuk mesin pencari Google agar hasil lebih relevan.",
+                "Pola pencarian efektif untuk menemukan PDF, publisher, dan preprint.",
+                "Praktik: Mencoba teknik advanced search dengan studi kasus nyata dan diskusi."
+            ]
+        },
+        {
+            number: "06",
+            title: "Manajemen Referensi & Sitasi Otomatis",
+            subtitle: "Menjaga konsistensi dan kerapian bibliografi.",
+            topics: [
+                "Menerapkan pembuatan sitasi dan daftar pustaka secara otomatis dalam format akademik umum.",
+                "Menjaga konsistensi gaya sitasi dan kerapian bibliografi untuk publikasi.",
+                "Praktik: Membuat dan mengelola referensi menggunakan tools sitasi otomatis dengan panduan."
             ]
         }
     ];
@@ -61,13 +81,20 @@ export function Syllabus() {
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row justify-between items-end md:items-center mb-12">
                     <div>
-                        <h2 className="text-sm font-bold text-eduzin-dark dark:text-green-400 uppercase tracking-wide mb-3">Kurikulum</h2>
-                        <h3 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white">Silabus Kelas</h3>
+                        <h2 className="text-sm font-bold text-eduzin-dark dark:text-green-400 uppercase tracking-wide mb-3">Silabus</h2>
+                        <h3 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white">Materi yang Akan Dipelajari</h3>
+                        <p className="text-gray-600 dark:text-gray-400 mt-2"><strong>Teori + Praktik.</strong> Setiap topik disertai sesi praktik langsung dengan pendampingan dan tanya jawab.</p>
                     </div>
-                    <button className="mt-4 md:mt-0 inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 shadow-sm text-sm font-medium rounded-full text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none transition">
+                    <a
+                        href="/dokumen/silabus/Silabus%20Menguasai%20Scispace%20-%20Kelas%20Inovatif.pdf"
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-4 md:mt-0 inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 shadow-sm text-sm font-medium rounded-full text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none transition"
+                    >
                         <Download className="w-4 h-4 mr-2" />
-                        Unduh PDF
-                    </button>
+                        Unduh Silabus
+                    </a>
                 </div>
                 <div className="space-y-4">
                     {weeks.map((week, index) => (

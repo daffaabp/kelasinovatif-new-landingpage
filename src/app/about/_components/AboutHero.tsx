@@ -23,7 +23,7 @@ export function AboutHero() {
                     Kelas Inovatif adalah komunitas pembelajaran AI No.1 di Indonesia yang
                     didedikasikan khusus untuk akademisi. Kami membantu mahasiswa, dosen, dan
                     peneliti menyelesaikan skripsi, tesis, disertasi, dan publikasi internasional
-                    dengan lebih terarah dan efisien.
+                    melalui pendekatan yang praktis, terstruktur, dan didukung komunitas yang aktif.
                 </p>
             </div>
         </header>

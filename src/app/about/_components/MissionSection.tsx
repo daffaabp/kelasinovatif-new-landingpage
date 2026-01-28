@@ -37,19 +37,19 @@ export function MissionSection() {
                         </h3>
                         <div className="space-y-4 text-base text-gray-600 dark:text-gray-400">
                             <p>
-                                <span className="font-bold text-about-primary dark:text-white">1.</span> Menyediakan akses pembelajaran AI yang praktis dan komprehensif bagi akademisi Indonesia, mulai dari mahasiswa hingga peneliti, untuk mendukung penyelesaian skripsi, tesis, disertasi, dan publikasi ilmiah.
+                                <span className="font-bold text-about-primary dark:text-white">1.</span> Menyediakan akses pembelajaran AI yang praktis dan komprehensif bagi akademisi Indonesia—dari mahasiswa hingga peneliti—untuk mendukung penyelesaian skripsi, tesis, disertasi, dan publikasi ilmiah.
                             </p>
                             <p>
-                                <span className="font-bold text-about-primary dark:text-white">2.</span> Menyajikan program e-learning interaktif, seminar berjadwal, dan video pembelajaran terkini yang relevan dengan kebutuhan penelitian dan penulisan akademik.
+                                <span className="font-bold text-about-primary dark:text-white">2.</span> Menyajikan program e-learning interaktif, seminar berjadwal, dan video pembelajaran terkini untuk mendukung penelitian dan penulisan akademik.
                             </p>
                             <p>
-                                <span className="font-bold text-about-primary dark:text-white">3.</span> Menghubungkan para akademisi dengan praktisi AI dan mentor ahli untuk membangun komunitas inovatif yang mendorong kolaborasi riset dan berbagi pengetahuan.
+                                <span className="font-bold text-about-primary dark:text-white">3.</span> Menghubungkan akademisi dengan praktisi AI dan mentor ahli untuk membangun komunitas inovatif yang mendorong kolaborasi riset dan berbagi pengetahuan.
                             </p>
                             <p>
                                 <span className="font-bold text-about-primary dark:text-white">4.</span> Mendukung pengembangan penelitian dan publikasi ilmiah dengan memanfaatkan teknologi AI untuk meningkatkan efisiensi dan kualitas karya akademik.
                             </p>
                             <p>
-                                <span className="font-bold text-about-primary dark:text-white">5.</span> Menjadi pusat informasi dan literasi digital yang membantu memperluas adopsi teknologi AI secara berkelanjutan di kalangan akademisi Indonesia.
+                                <span className="font-bold text-about-primary dark:text-white">5.</span> Menjadi pusat informasi dan literasi digital yang memperluas adopsi teknologi AI secara berkelanjutan di kalangan akademisi Indonesia.
                             </p>
                         </div>
                     </div>

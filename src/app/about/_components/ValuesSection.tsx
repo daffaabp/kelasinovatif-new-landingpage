@@ -26,7 +26,8 @@ export function ValuesSection() {
                             perjalanan akademik memiliki tantangan uniknya sendiri. Itulah mengapa 
                             kami hadir untuk mendampingi Anda dari awal hingga sukses—mulai dari 
                             menyelesaikan skripsi, tesis, disertasi, hingga publikasi internasional. 
-                            Kesuksesan Anda adalah kesuksesan kami.
+                            Dengan bimbingan step-by-step, materi terstruktur, dan dukungan komunitas, 
+                            kami memastikan Anda tidak berjalan sendirian dalam mencapai tujuan akademik.
                         </p>
                     </div>
                     <div className="bg-white dark:bg-about-surface-dark p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 dark:border-gray-800 group">
