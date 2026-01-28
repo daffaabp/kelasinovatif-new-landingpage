@@ -4,18 +4,18 @@ export function CourseFocus() {
     const focuses = [
         {
             icon: Search,
-            title: "Organisasi Dokumen & Query",
-            description: "Kuasai seni menyusun basis pengetahuan Anda dan membuat query yang efektif untuk mengekstrak nilai maksimum dari materi penelitian Anda menggunakan pencarian berbasis AI."
+            title: "Manajemen Sumber & Dasar NotebookLM",
+            description: "Mengunggah dan mengorganisir puluhan hingga ratusan sumber (PDF, Google Docs, website, video) dalam satu notebook. Memahami panel Sources, Chat, dan Studio untuk riset yang efisien."
         },
         {
             icon: GitBranch,
-            title: "Sintesis Lintas Sumber",
-            description: "Pelajari cara menghubungkan ide di berbagai dokumen. Kami mengajarkan cara menggunakan NotebookLM untuk mengidentifikasi pola, kontradiksi, dan hubungan antara berbagai sumber."
+            title: "9 Fitur untuk Memahami Alur Berpikir Penulis",
+            description: "Menguasai berbagai format output (Audio, Video, Peta Pikiran, Laporan, Kuis, Infografis, Slide, Tabel Data) untuk memahami bagaimana peneliti membangun argumen, metodologi, dan kesimpulan dari puluhan hingga ratusan jurnal."
         },
         {
             icon: Filter,
-            title: "Analisis Berbantuan AI",
-            description: "Kembangkan keterampilan dalam prompt engineering untuk penelitian. Pelajari cara mengajukan pertanyaan yang tepat dan memvalidasi wawasan yang dihasilkan AI terhadap materi sumber Anda."
+            title: "Dari Pemahaman ke Literature Review",
+            description: "Mengintegrasikan berbagai fitur untuk memetakan pola penelitian, mengidentifikasi gap dan hubungan antar studi, hingga menyusun kerangka dan draft literature review yang terstruktur."
         }
     ];
 
@@ -24,9 +24,9 @@ export function CourseFocus() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-sm font-bold text-eduzin-dark dark:text-green-400 uppercase tracking-wide mb-3">Fokus Kursus</h2>
-                    <h3 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white mb-4">Menguasai Penelitian Berbasis AI</h3>
+                    <h3 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white mb-4">Pahami Alur Berpikir Peneliti, Percepat Riset Anda</h3>
                     <p className="text-lg text-gray-600 dark:text-gray-400">
-                        Kami tidak hanya mengajarkan alat; kami mengajarkan metodologi. Pelajari cara memanfaatkan AI untuk mempercepat penelitian Anda sambil mempertahankan ketelitian akademik.
+                        Kami tidak hanya mengajarkan fitur; kami mengajarkan alur kerja. Pelajari cara memanfaatkan NotebookLM untuk memahami bagaimana peneliti membangun argumen, mengidentifikasi pola metodologi, dan memetakan hubungan antar studi—sehingga riset Anda lebih cepat dan tetap teliti.
                     </p>
                 </div>
                 <div className="grid md:grid-cols-3 gap-8">

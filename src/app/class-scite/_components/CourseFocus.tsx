@@ -24,7 +24,7 @@ export function CourseFocus() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-sm font-bold text-eduzin-dark dark:text-green-400 uppercase tracking-wide mb-3">Fokus Kelas</h2>
-                    <h3 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white mb-4">Apa yang Akan Anda Kuasai?</h3>
+                    <h3 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white mb-4">Pencarian Referensi Akurat dan Literature Review Efisien</h3>
                     <p className="text-lg text-gray-600 dark:text-gray-400">
                         Di kelas ini, Anda akan belajar mencari referensi yang tepat, memilih sumber berkualitas, dan menemukan gap riset dengan lebih cepat menggunakan bantuan AI.
                     </p>

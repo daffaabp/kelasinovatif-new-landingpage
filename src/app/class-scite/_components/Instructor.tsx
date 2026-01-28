@@ -9,7 +9,7 @@ export function Instructor() {
                         <img
                             alt="Dr. Angela Chen"
                             className="w-40 h-40 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-md"
-                            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop"
+                            src="/images/speaker/arianto.avif"
                         />
                     </div>
                     <div className="text-center md:text-left">

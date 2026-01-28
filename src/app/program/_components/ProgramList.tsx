@@ -16,14 +16,14 @@ export function ProgramList() {
                                     <img alt="Students analyzing scientific data" className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpmfB581a6gbvp8aaUkESasO6VhITZ1rDatiqVa9BwzSHKOJnHb6TN_aq7X5fF5kGncC-n_l-lWaOD6KdXvHXagkChl9F-vP1sxt5BOJUgGfCVHZZu_cdWF26NCyp2hWek51sxzpHx5-2chsPSChUEfKKo7q9SpEwtPHbXzbXrQ2jNcoobf3FlRcCjsuSGmEtcwtUQvUJQkmUQrGsJidEJ4Bl9LzcnA8iOBeQQI0CKXS-Z2dVJVCJ2JPNUSVxcRQPTGzlR2zgFWXE" />
                                     <div className="absolute bottom-4 left-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-4 py-2 rounded-lg shadow-sm">
                                         <span className="text-xs font-bold text-program-primary dark:text-white flex items-center gap-1">
-                                            <Clock className="w-4 h-4" /> 8 Weeks
+                                            <Sparkles className="w-4 h-4" /> Eksklusif Class
                                         </span>
                                     </div>
                                 </div>
                             </div>
                             <div className="lg:col-span-7 space-y-6">
                                 <div className="flex items-center space-x-4 mb-2">
-                                    <span className="px-3 py-1 text-xs font-semibold tracking-wide uppercase bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full">Alat Penelitian</span>
+                                    <span className="px-3 py-1 text-xs font-semibold tracking-wide uppercase bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full">Pencarian Referensi</span>
                                 </div>
                                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white">
                                     Kelas Menguasai SciSpace
@@ -95,7 +95,7 @@ export function ProgramList() {
                                     <img alt="Students using tablets for digital learning" className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyCM4lCIev0xztsmTsV-UFYthLMki4LnEV1PQ_-unaX8C1l6Id_zrae_-jstA6b51IYKt894B4Wq5H1qeYNKG3E31CV_RuHRJWyU-kvmwRb92-JZmukzcyD2RNVQJSDjP4DMnw4NwP30MYuXFkHDmFzLIEBndC0Zod_4Jrno3n5GHumAXxSg5EP83SXoplzf__0sb4yk3V8Xy0-ARvlGXKBEp63_zy3nK8pIUS71MoBlyQlKa71bBsDtAMYoTKqnFfiRcluj7Io8I" />
                                     <div className="absolute bottom-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-4 py-2 rounded-lg shadow-sm">
                                         <span className="text-xs font-bold text-program-primary dark:text-white flex items-center gap-1">
-                                            <Clock className="w-4 h-4" /> 6 Weeks
+                                            <Sparkles className="w-4 h-4" /> Eksklusif Class
                                         </span>
                                     </div>
                                 </div>
@@ -133,7 +133,7 @@ export function ProgramList() {
                                     <div className="absolute inset-0 bg-gradient-to-t from-teal-900/30 via-transparent to-transparent"></div>
                                     <div className="absolute bottom-4 left-4 bg-gradient-to-r from-teal-700/95 to-teal-800/95 dark:from-teal-800/95 dark:to-teal-900/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg ring-1 ring-white/20">
                                         <span className="text-xs font-bold text-white flex items-center gap-1">
-                                            <Clock className="w-4 h-4" /> 10 Minggu
+                                            <Sparkles className="w-4 h-4" /> Eksklusif Class
                                         </span>
                                     </div>
                                 </div>
@@ -144,7 +144,7 @@ export function ProgramList() {
                                     <span className="px-3 py-1 text-xs font-semibold tracking-wide uppercase bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/50 dark:to-pink-900/50 text-purple-800 dark:text-purple-200 rounded-full border border-purple-200 dark:border-purple-700">Berbasis AI</span>
                                 </div>
                                 <h2 className="text-3xl md:text-4xl font-serif font-bold bg-gradient-to-r from-gray-900 via-teal-900 to-cyan-900 dark:from-white dark:via-teal-200 dark:to-cyan-200 bg-clip-text text-transparent">
-                                    Kelas Menguasai Cursor
+                                    Kelas Intensif Penulisan Karya Ilmiah
                                 </h2>
                                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                                     Fokus pada penulisan karya ilmiah seperti tesis, disertasi, artikel, dan lainnya. Anda akan belajar memanfaatkan Cursor untuk mempercepat drafting, merapikan struktur, dan membantu revisi—tanpa mengorbankan kualitas akademik.

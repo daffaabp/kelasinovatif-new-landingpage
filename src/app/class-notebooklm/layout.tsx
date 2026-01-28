@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Kelas NotebookLM - Kelas Inovatif University',
-    description: 'Manfaatkan kekuatan Google NotebookLM. Pelajari cara mengubah dokumen Anda menjadi basis pengetahuan interaktif berbasis AI.',
+    title: 'Kelas Menguasai NotebookLM - Kelas Inovatif',
+    description: 'Riset dan belajar mendalam dari ratusan sumber dengan NotebookLM. Kuasai 9 fitur untuk memahami jurnal lebih cepat, menyusun literature review, dan mempercepat alur kerja penelitian Anda.',
 };
 
 export default function NotebookLMLayout({

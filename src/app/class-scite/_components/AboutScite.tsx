@@ -10,7 +10,7 @@ export function AboutScite() {
                         <img
                             alt="Researcher looking at data visualization"
                             className="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]"
-                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+                            src="/images/class-scite/image.png"
                         />
                         <div className="absolute bottom-6 right-6 bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg max-w-xs">
                             <div className="flex items-center gap-3 mb-2">
