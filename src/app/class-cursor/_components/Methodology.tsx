@@ -2,31 +2,31 @@ export function Methodology() {
     const steps = [
         {
             number: "01",
-            title: "Coding Berbantuan AI",
-            description: "Pelajari cara memanfaatkan AI Cursor untuk menulis kode lebih cepat. Jelaskan maksud Anda dalam bahasa Inggris sederhana dan lihat editor menghasilkan kode siap produksi.",
+            title: "Pencarian Referensi Berkualitas",
+            description: "Manfaatkan Cursor AI untuk mencari dan mengelola referensi akademik yang tepat dan akurat. Dari jurnal hingga sitasi otomatis, semua terintegrasi dalam satu platform.",
             icon: (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
             )
         },
         {
             number: "02",
-            title: "Smart Refactoring",
-            description: "Master the art of refactoring with AI assistance. Transform legacy code into modern, maintainable solutions with simple prompts.",
+            title: "Pemahaman & Review Literatur",
+            description: "Tingkatkan kemampuan memahami paper dan literatur kompleks dengan bantuan AI. Ekstrak insight penting, identifikasi novelty, dan temukan research gap dengan lebih cepat.",
             icon: (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
             )
         },
         {
             number: "03",
-            title: "Kecerdasan Codebase",
-            description: "Buka kekuatan pemahaman seluruh codebase. Ajukan pertanyaan tentang seluruh proyek Anda dan dapatkan jawaban instan yang memahami konteks.",
+            title: "Penulisan Berkualitas & Bebas Plagiasi",
+            description: "Hasilkan tulisan akademik yang koheren, profesional, dan bebas plagiasi. Cursor membantu drafting, strukturisasi paragraf, konsistensi istilah, hingga penyusunan daftar pustaka—semuanya dengan akurasi tinggi.",
             icon: (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
             )
         }
@@ -46,13 +46,15 @@ export function Methodology() {
                 <div className="text-center max-w-3xl mx-auto mb-20">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-50 dark:bg-teal-900/20 border border-teal-100 dark:border-teal-800/50 mb-6">
                         <div className="w-1.5 h-1.5 rounded-full bg-teal-600 animate-pulse"></div>
-                        <span className="text-teal-800 dark:text-teal-300 font-medium tracking-wide text-xs uppercase">Metodologi</span>
+                        <span className="text-teal-800 dark:text-teal-300 font-medium tracking-wide text-xs uppercase">
+                            TIGA PILAR 
+                        </span>
                     </div>
                     <h2 className="text-5xl font-serif font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                        Menguasai Pengembangan Berbasis AI
+                        Fokus Pembelajaran Utama
                     </h2>
                     <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                        Pendekatan terstruktur kami memastikan Anda menjadi mahir dengan editor kode paling canggih yang tersedia.
+                        Tiga pilar utama yang akan Anda kuasai untuk menghasilkan karya ilmiah berkualitas tinggi dan bebas plagiasi.
                     </p>
                 </div>
 

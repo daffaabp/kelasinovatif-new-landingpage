@@ -23,18 +23,18 @@ export function Hero() {
                     {/* Premium Badge */}
                     <div className="inline-flex items-center px-4 py-2 rounded-full border-2 border-teal-400/30 bg-white/10 text-white text-xs font-semibold mb-6 backdrop-blur-sm">
                         <Star className="w-4 h-4 mr-2 text-teal-300 fill-teal-300" />
-                        KELAS KHUSUS • PENGEMBANGAN AI
+                        KELAS INTENSIF • PENULISAN AKADEMIK
                     </div>
 
                     <h1 className="text-5xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight">
-                        Kelas Cursor: <br />
+                        Kelas Intensif Cursor<br />
                         <span className="italic font-light bg-gradient-to-r from-teal-200 via-cyan-200 to-teal-300 bg-clip-text text-transparent">
-                            Pengeditan Kode Berbasis AI
+                            Penulisan Karya Ilmiah
                         </span>
                     </h1>
 
                     <p className="text-lg text-gray-200 mb-8 max-w-2xl font-light leading-relaxed">
-                        Masuki masa depan pengembangan perangkat lunak. Belajar coding lebih cepat dan lebih pintar dengan Cursor, editor kode berbasis AI. Dari menghasilkan boilerplate hingga refactoring codebase legacy, buka kekuatan produktivitas super.
+                    Ratusan mahasiswa S2/S3 dan dosen telah mempercepat publikasi, penulisan artikel, tesis, disertasi, bahkan pembuatan buku dengan Cursor AI. Mulai dari draft hingga karya terbit—kini menulis karya ilmiah berkualitas dan bebas plagiasi jadi lebih mudah.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">
@@ -56,11 +56,11 @@ export function Hero() {
                     <div className="mt-12 flex flex-wrap items-center gap-8 text-white/90 text-sm">
                         <div className="flex items-center gap-2">
                             <Clock className="w-5 h-5 text-teal-300" />
-                            <span className="font-medium">Durasi 10 Minggu</span>
+                            <span className="font-medium">2× Pertemuan</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <TrendingUp className="w-5 h-5 text-teal-300" />
-                            <span className="font-medium">Tingkat Lanjutan</span>
+                            <span className="font-medium">Semua Tingkat</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <Users className="w-5 h-5 text-teal-300" />
@@ -68,7 +68,7 @@ export function Hero() {
                         </div>
                         <div className="flex items-center gap-2">
                             <Star className="w-5 h-5 text-teal-300 fill-teal-300" />
-                            <span className="font-medium">Akses Premium</span>
+                            <span className="font-medium">Bebas Plagiasi</span>
                         </div>
                     </div>
                 </div>

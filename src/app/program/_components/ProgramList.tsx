@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, CheckCircle, Sparkles, Code, Clock } from 'lucide-react';
+import { ArrowRight, CheckCircle, Sparkles, Clock } from 'lucide-react';
 
 export function ProgramList() {
     return (
@@ -60,7 +60,7 @@ export function ProgramList() {
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                             <div className="lg:col-span-7 space-y-6 order-2 lg:order-1">
                                 <div className="flex items-center space-x-4 mb-2">
-                                    <span className="px-3 py-1 text-xs font-semibold tracking-wide uppercase bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 rounded-full">Bantuan AI</span>
+                                    <span className="px-3 py-1 text-xs font-semibold tracking-wide uppercase bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 rounded-full">Riset Cepat</span>
                                 </div>
                                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 dark:text-white">
                                     Kelas Menguasai NotebookLM
@@ -112,7 +112,7 @@ export function ProgramList() {
                                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                     </svg>
-                                    Kelas Khusus
+                                    Best Seller
                                 </span>
                             </div>
                         </div>
@@ -129,7 +129,7 @@ export function ProgramList() {
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
                             <div className="lg:col-span-5 relative">
                                 <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-2xl relative ring-2 ring-teal-300 dark:ring-teal-800/50">
-                                    <img alt="Coding on a laptop screen" className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8pBvZT3EufRYzcZJKa23NdCupK23axMelTMC02IIOeFHRcIsYlBSdGoBt5EIT3xtBXCdtDUkD5zZlyuHHOqcE-MPrnmaizk-4QgBscLU4M_mfWw5RPNUSlPju3xySFJD30kM7_XTGgmHEyR7D1i-0gdp2teQ1yqgPnI0fSOCwtb_Ann-X3Y8nidNobxrPzS5nAB8eo0N9tEY8AmQSD2y0_o2f3qHzpu6GNZo2bGzCgLPpK4n6yGhtMmHgFleFQo9bRfLzSrUiuEA" />
+                                    <img alt="Penulisan karya ilmiah dengan bantuan Cursor di laptop" className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8pBvZT3EufRYzcZJKa23NdCupK23axMelTMC02IIOeFHRcIsYlBSdGoBt5EIT3xtBXCdtDUkD5zZlyuHHOqcE-MPrnmaizk-4QgBscLU4M_mfWw5RPNUSlPju3xySFJD30kM7_XTGgmHEyR7D1i-0gdp2teQ1yqgPnI0fSOCwtb_Ann-X3Y8nidNobxrPzS5nAB8eo0N9tEY8AmQSD2y0_o2f3qHzpu6GNZo2bGzCgLPpK4n6yGhtMmHgFleFQo9bRfLzSrUiuEA" />
                                     <div className="absolute inset-0 bg-gradient-to-t from-teal-900/30 via-transparent to-transparent"></div>
                                     <div className="absolute bottom-4 left-4 bg-gradient-to-r from-teal-700/95 to-teal-800/95 dark:from-teal-800/95 dark:to-teal-900/95 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg ring-1 ring-white/20">
                                         <span className="text-xs font-bold text-white flex items-center gap-1">
@@ -140,42 +140,37 @@ export function ProgramList() {
                             </div>
                             <div className="lg:col-span-7 space-y-6">
                                 <div className="flex items-center space-x-4 mb-2">
-                                    <span className="px-3 py-1 text-xs font-semibold tracking-wide uppercase bg-gradient-to-r from-teal-100 to-cyan-100 dark:from-teal-900/50 dark:to-cyan-900/50 text-teal-800 dark:text-teal-200 rounded-full border border-teal-200 dark:border-teal-700">Pengembangan</span>
+                                    <span className="px-3 py-1 text-xs font-semibold tracking-wide uppercase bg-gradient-to-r from-teal-100 to-cyan-100 dark:from-teal-900/50 dark:to-cyan-900/50 text-teal-800 dark:text-teal-200 rounded-full border border-teal-200 dark:border-teal-700">Penulisan Akademik</span>
                                     <span className="px-3 py-1 text-xs font-semibold tracking-wide uppercase bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/50 dark:to-pink-900/50 text-purple-800 dark:text-purple-200 rounded-full border border-purple-200 dark:border-purple-700">Berbasis AI</span>
                                 </div>
                                 <h2 className="text-3xl md:text-4xl font-serif font-bold bg-gradient-to-r from-gray-900 via-teal-900 to-cyan-900 dark:from-white dark:via-teal-200 dark:to-cyan-200 bg-clip-text text-transparent">
                                     Kelas Intensif Penulisan Karya Ilmiah
                                 </h2>
                                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                                    Fokus pada penulisan karya ilmiah seperti tesis, disertasi, artikel, dan lainnya. Anda akan belajar memanfaatkan Cursor untuk mempercepat drafting, merapikan struktur, dan membantu revisi—tanpa mengorbankan kualitas akademik.
+                                    Fokus pada penulisan karya ilmiah seperti artikel, tesis, disertasi, dan buku. Anda akan belajar memanfaatkan Cursor untuk mempercepat drafting, merapikan struktur, dan membantu revisi—tanpa mengorbankan kualitas akademik dan tetap bebas plagiasi.
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t-2 border-gradient-to-r from-teal-200 via-cyan-200 to-teal-200 dark:from-teal-800/50 dark:via-cyan-800/50 dark:to-teal-800/50">
                                     <div className="flex items-start space-x-3 bg-white/50 dark:bg-gray-800/50 p-3 rounded-lg backdrop-blur-sm">
-                                        <Code className="text-teal-700 dark:text-teal-400 mt-1 w-5 h-5 flex-shrink-0" />
+                                        <CheckCircle className="text-teal-700 dark:text-teal-400 mt-1 w-5 h-5 flex-shrink-0" />
                                         <div>
-                                            <h4 className="font-semibold text-gray-900 dark:text-white">Drafting Lebih Cepat</h4>
-                                            <p className="text-sm text-gray-600 dark:text-gray-400">Buat kerangka dan paragraf dengan lebih terarah.</p>
+                                            <h4 className="font-semibold text-gray-900 dark:text-white">Akurat & Cepat</h4>
+                                            <p className="text-sm text-gray-600 dark:text-gray-400">Software dirancang untuk menulis dengan akurasi dan kecepatan tinggi </p>
                                         </div>
                                     </div>
                                     <div className="flex items-start space-x-3 bg-white/50 dark:bg-gray-800/50 p-3 rounded-lg backdrop-blur-sm">
-                                        <Code className="text-teal-700 dark:text-teal-400 mt-1 w-5 h-5 flex-shrink-0" />
+                                        <CheckCircle className="text-teal-700 dark:text-teal-400 mt-1 w-5 h-5 flex-shrink-0" />
                                         <div>
-                                            <h4 className="font-semibold text-gray-900 dark:text-white">Revisi & Penyuntingan</h4>
-                                            <p className="text-sm text-gray-600 dark:text-gray-400">Rapikan alur, konsistensi istilah, dan gaya akademik.</p>
+                                            <h4 className="font-semibold text-gray-900 dark:text-white">Bebas Plagiasi</h4>
+                                            <p className="text-sm text-gray-600 dark:text-gray-400">
+                                                Fitur struktur paragraf dan pengecekan referensi meminimalisir plagiasi.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="pt-6 flex gap-4">
+                                <div className="pt-6 flex flex-col sm:flex-row sm:items-center gap-4">
                                     <a className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-teal-700 via-teal-800 to-teal-900 hover:from-teal-800 hover:via-teal-900 hover:to-teal-950 text-white rounded-lg font-bold transition-all duration-300 shadow-xl shadow-teal-700/50 hover:shadow-2xl hover:shadow-teal-800/50 hover:scale-105 ring-2 ring-teal-600/50" href="/class-cursor">
                                         Lihat Detail Program <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                                     </a>
-                                    <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-                                        <svg className="w-5 h-5 text-teal-700" fill="currentColor" viewBox="0 0 20 20">
-                                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                                            <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
-                                        </svg>
-                                        <span className="font-medium">Kursi Terbatas Tersedia</span>
-                                    </div>
                                 </div>
                             </div>
                         </div>

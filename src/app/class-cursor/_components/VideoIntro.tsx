@@ -7,19 +7,19 @@ export function VideoIntro() {
                     <div className="grid lg:grid-cols-2 gap-0">
                         <div className="p-12 lg:p-16 flex flex-col justify-center text-white relative z-10">
                             <span className="text-teal-300 font-semibold tracking-wider text-xs uppercase mb-4">Pengantar Kursus</span>
-                            <h2 className="text-3xl lg:text-4xl font-serif font-bold mb-6">Mengapa Cursor mengubah segalanya</h2>
+                            <h2 className="text-3xl lg:text-4xl font-serif font-bold mb-6">Mengapa Cursor untuk Penulisan Akademik?</h2>
                             <p className="text-gray-200 mb-8 leading-relaxed">
-                                Editor kode tradisional mengharuskan Anda menulis setiap baris secara manual. Cursor menggunakan AI canggih untuk memahami maksud Anda dan menghasilkan kode secara real-time. Bergabunglah dengan instruktur ahli kami saat mereka memandu Anda melalui masa depan pengembangan.
+                                Penulisan karya ilmiah membutuhkan akurasi, struktur yang rapi, dan bebas plagiasi. Cursor AI dirancang khusus untuk membantu Anda menulis dengan tingkat akurasi tinggi—membaca hingga level baris, mendukung berbagai model AI, dan mempercepat proses drafting hingga revisi tanpa mengorbankan kualitas akademik.
                             </p>
                             <div className="flex items-center gap-4">
                                 <img
                                     alt="Instructor"
                                     className="w-12 h-12 rounded-full border-2 border-teal-400 object-cover"
-                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop"
+                                    src="/images/speaker/arianto.avif"
                                 />
                                 <div>
-                                    <p className="font-semibold text-sm">Alex Thompson</p>
-                                    <p className="text-xs text-gray-300">Senior Developer Advocate</p>
+                                    <p className="font-semibold text-sm">Arianto</p>
+                                    <p className="text-xs text-gray-300">AI Engineer & Researcher</p>
                                 </div>
                             </div>
                         </div>
@@ -39,8 +39,8 @@ export function VideoIntro() {
                             <div className="absolute bottom-6 left-6 right-6">
                                 <div className="bg-black/60 backdrop-blur-sm p-4 rounded-xl border border-white/10">
                                     <div className="flex items-center justify-between text-white text-xs font-mono">
-                                        <span>CURSOR_INTRO_V3.MP4</span>
-                                        <span>03:42</span>
+                                        <span>KELAS_INTENSIF_PENULISAN.MP4</span>
+                                        <span>04:28</span>
                                     </div>
                                     <div className="w-full bg-white/20 h-1 mt-2 rounded-full overflow-hidden">
                                         <div className="w-1/3 bg-teal-500 h-full"></div>

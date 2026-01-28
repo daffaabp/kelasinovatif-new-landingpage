@@ -27,40 +27,44 @@ export function CTA() {
                 </div>
 
                 <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
-                    Siap coding secepat pikiran?
+                    Siap menulis karya ilmiah berkualitas?
                 </h2>
                 <p className="text-xl text-gray-200 mb-10 font-light max-w-2xl mx-auto">
-                    Bergabunglah dengan kelompok elit pengembang yang menguasai pengembangan berbasis AI. Kursi terbatas tersedia untuk kursus premium ini.
+                    Bergabunglah dengan para akademisi dan peneliti yang menghasilkan artikel, tesis, disertasi, dan buku berkualitas tinggi dengan teknologi AI. Kursi terbatas tersedia untuk kelas intensif ini.
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
-                    <button className="px-8 py-4 bg-white text-teal-900 font-bold rounded-full hover:bg-gray-100 transition shadow-xl shadow-teal-900/30 text-lg">
-                        Daftar Sekarang - Akses Premium
-                    </button>
-                    <button className="px-8 py-4 bg-transparent border-2 border-white/30 text-white font-bold rounded-full hover:bg-white/10 transition text-lg">
-                        Hubungi Instruktur
-                    </button>
+                    <a className="inline-flex items-center justify-center px-8 py-4 bg-white text-eduzin-dark font-bold rounded-full hover:bg-gray-100 transition shadow-lg text-lg" href="/schedule">
+                        Daftar Sekarang
+                    </a>
+                    <a
+                        className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white font-medium rounded-full hover:bg-white/10 transition text-lg"
+                        href="https://wa.me/6285712208535?text=Halo%20Admin%20Kelas%20Inovatif%2C%20saya%20ingin%20bertanya%20tentang%20Kelas%20Intensif%20Penulisan%20Karya%20Ilmiah%20menggunakan%20Cursor%20AI.%20Mohon%20info%20jadwal%20dan%20cara%20pendaftaran%20terbarunya.%20Terima%20kasih."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Hubungi Kami
+                    </a>
                 </div>
 
                 {/* Trust Indicators */}
                 <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-white/80 text-sm">
                     <div className="flex items-center gap-2">
                         <svg className="w-5 h-5 text-teal-300" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                            <path fillRule="evenodd" d="M10 2a8 8 0 11-5.293 14.293l.997-1.745A6 6 0 1010 4v2a1 1 0 11-2 0V2h2z" clipRule="evenodd" />
                         </svg>
-                        <span>Sertifikasi Disertakan</span>
+                        <span>Free Pengulangan Kelas </span>
                     </div>
                     <div className="flex items-center gap-2">
                         <svg className="w-5 h-5 text-teal-300" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                            <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                            <path fillRule="evenodd" d="M18 8a6 6 0 11-12 0 6 6 0 0112 0zm-1 7a1 1 0 01-1 1h-3.586l-1.707 1.707a1 1 0 01-1.414-1.414L10.586 16h-3.586a1 1 0 01-1-1v-1a1 1 0 011-1h9a1 1 0 011 1v1z" clipRule="evenodd" />
                         </svg>
-                        <span>Akses Seumur Hidup</span>
+                        <span>Lifetime Support via Admin</span>
                     </div>
                     <div className="flex items-center gap-2">
                         <svg className="w-5 h-5 text-teal-300" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                            <path fillRule="evenodd" d="M10 2C5.582 2 2 5.582 2 10c0 2.006.745 3.84 1.978 5.252l-.86 2.797a1 1 0 001.266 1.266l2.797-.86A7.968 7.968 0 0010 18c4.418 0 8-3.582 8-8s-3.582-8-8-8zm4 10a1 1 0 10-2 0 1 1 0 002 0zm-4 1a1 1 0 100-2 1 1 0 000 2zm-2-1a1 1 0 11-2 0 1 1 0 012 0z" clipRule="evenodd" />
                         </svg>
-                        <span>Dukungan Ahli</span>
+                        <span>Akses Komunitas Peneliti</span>
                     </div>
                 </div>
             </div>
