@@ -5,49 +5,81 @@ import { ChevronDown } from 'lucide-react';
 
 const faqCategories = [
     {
-        title: 'Penerimaan',
+        title: 'Mengapa Memilih Kami',
         questions: [
             {
-                question: 'Apa saja persyaratan penerimaan?',
-                answer: 'Persyaratan penerimaan bervariasi menurut program. Secara umum, kami memerlukan formulir aplikasi yang lengkap, transkrip, surat rekomendasi, dan pernyataan pribadi. Beberapa program mungkin juga memerlukan skor tes standar atau pengajuan portofolio.',
+                question: 'Apa yang membuat Kelas Inovatif berbeda dari pelatihan AI lainnya?',
+                answer: 'Kami adalah Platform Pembelajaran AI No.1 di Indonesia yang fokus khusus pada akademisi. Tidak hanya mengajarkan tools, tetapi juga metodologi riset lengkap—dari pencarian referensi hingga publikasi. Ratusan alumni telah berhasil menyelesaikan tesis, disertasi, dan publikasi internasional dengan dukungan komunitas aktif dan mentoring berkelanjutan.',
             },
             {
-                question: 'Kapan batas waktu pendaftaran?',
-                answer: 'Batas waktu pendaftaran bervariasi menurut program dan semester. Untuk penerimaan Fall, sebagian besar program memiliki batas waktu 1 Maret. Untuk penerimaan Spring, batas waktu biasanya 1 Oktober. Kami merekomendasikan untuk mendaftar lebih awal karena beberapa program memiliki tempat terbatas.',
+                question: 'Mengapa saya harus belajar AI untuk akademik? Apakah ini benar-benar membantu?',
+                answer: 'AI mempercepat proses yang memakan waktu seperti pencarian referensi, analisis literatur, dan penulisan—bukan menggantikan pemikiran Anda. Alumni kami menghemat 50-70% waktu riset dan menghasilkan karya lebih berkualitas karena bisa fokus pada ide dan analisis mendalam, bukan tugas administratif.',
             },
             {
-                question: 'Apakah Anda menawarkan beasiswa?',
-                answer: 'Ya, kami menawarkan berbagai beasiswa berdasarkan prestasi akademik, kebutuhan finansial, dan bakat khusus. Komite beasiswa kami meninjau semua aplikasi secara otomatis, dan Anda juga dapat mengajukan beasiswa bernama tertentu melalui portal bantuan keuangan kami.',
+                question: 'Apakah Kelas Inovatif memiliki track record yang terbukti?',
+                answer: 'Ya. Kami telah membantu ratusan mahasiswa S2/S3, dosen, dan peneliti menyelesaikan karya akademik mereka. Banyak alumni berhasil publikasi di jurnal Scopus, menyelesaikan tesis/disertasi lebih cepat, dan menghasilkan buku akademik. Testimoni dan hasil nyata tersedia di halaman komunitas kami.',
+            },
+            {
+                question: 'Siapa instruktur kelas dan apa kredensialnya?',
+                answer: 'Instruktur kami adalah Arianto, AI Engineer & Researcher dengan pengalaman mendalam dalam penelitian akademik dan penggunaan AI untuk penulisan ilmiah. Tidak hanya ahli teknis, tetapi juga memahami kebutuhan akademisi Indonesia dan selalu update dengan perkembangan terbaru tools AI untuk akademik.',
             },
         ],
     },
     {
-        title: 'Program Akademik',
+        title: 'Program & Hasil',
         questions: [
             {
-                question: 'Bisakah saya mengambil double major?',
-                answer: 'Ya, mahasiswa dapat mengejar double major dengan persetujuan dari kedua departemen. Anda perlu memenuhi semua persyaratan untuk kedua major dan bekerja dengan penasihat akademik untuk membuat jadwal kursus yang layak.',
+                question: 'Bagaimana struktur pembelajaran di Kelas Inovatif?',
+                answer: 'Kami menggunakan pendekatan intensif dengan praktik langsung. Setiap kelas menggabungkan teori dan praktik dengan pendampingan dari instruktur berpengalaman. Anda langsung mempraktikkan dengan project Anda sendiri, dan tetap mendapat dukungan melalui komunitas serta mentoring berkelanjutan setelah kelas.',
             },
             {
-                question: 'Apakah kelas online tersedia?',
-                answer: 'Kami menawarkan pilihan kursus online dan hybrid yang terus berkembang. Beberapa program tersedia sepenuhnya online, sementara yang lain menawarkan campuran opsi pembelajaran tatap muka dan virtual. Periksa dengan penasihat program Anda untuk ketersediaan khusus.',
+                question: 'Apa perbedaan kelas SciSpace, NotebookLM, dan Cursor? Apakah saya perlu mengikuti semuanya?',
+                answer: 'Setiap kelas dirancang untuk tahap berbeda dalam alur riset. SciSpace untuk pencarian referensi berkualitas, NotebookLM untuk memahami literatur mendalam, dan Cursor untuk penulisan akurat bebas plagiasi. Anda bisa mengambil sesuai kebutuhan atau mengikuti ketiganya sebagai paket lengkap untuk hasil maksimal.',
             },
             {
-                question: 'Berapa rasio mahasiswa-ke-dosen?',
-                answer: 'Rasio mahasiswa-ke-dosen kami adalah 12:1, memastikan perhatian yang dipersonalisasi dan peluang mentorship. Ukuran kelas kecil memungkinkan pengalaman pembelajaran yang lebih interaktif dan hubungan yang lebih kuat dengan profesor.',
+                question: 'Berapa lama waktu yang dibutuhkan untuk melihat hasil setelah mengikuti kelas?',
+                answer: 'Banyak peserta langsung menerapkan materi di kelas dan melihat hasil dalam 1-2 minggu pertama. Dengan praktik konsisten dan dukungan komunitas, Anda bisa menghemat 50-70% waktu riset. Beberapa alumni bahkan menyelesaikan tesis/disertasi lebih cepat dari timeline yang direncanakan.',
+            },
+            {
+                question: 'Apakah menggunakan AI untuk penulisan akademik dianggap plagiasi atau tidak etis?',
+                answer: 'Tidak, jika digunakan dengan benar dan transparan. Kami mengajarkan cara menggunakan AI secara etis—sebagai asisten yang mempercepat proses, bukan menggantikan pemikiran Anda. Cursor membantu drafting, strukturisasi, dan konsistensi, sementara ide, analisis, dan argumentasi tetap berasal dari Anda.',
+            },
+            {
+                question: 'Apakah kelas ini cocok untuk saya yang sedang menulis tesis/disertasi atau artikel jurnal?',
+                answer: 'Sangat cocok! Kelas dirancang khusus untuk akademisi di semua tahap—mulai dari mahasiswa yang baru mulai riset hingga dosen yang ingin mempercepat publikasi. Ratusan mahasiswa S2/S3 dan dosen telah membuktikan bahwa tools ini membantu menyelesaikan tesis, disertasi, artikel jurnal, bahkan buku akademik dengan kualitas tinggi.',
+            },
+            {
+                question: 'Apakah ada testimoni atau bukti keberhasilan alumni?',
+                answer: 'Ya, banyak sekali! Lihat testimoni video alumni di halaman komunitas kami. Banyak yang berhasil publikasi di jurnal Scopus, menyelesaikan disertasi lebih cepat, menghasilkan buku akademik, dan mendapat beasiswa lanjutan. Kami juga memiliki showcase hasil karya alumni sebagai inspirasi.',
             },
         ],
     },
     {
-        title: 'Kehidupan Kampus',
+        title: 'Komunitas & Pendaftaran',
         questions: [
             {
-                question: 'Apakah perumahan dijamin untuk mahasiswa baru?',
-                answer: 'Ya, perumahan di kampus dijamin untuk semua mahasiswa tahun pertama yang mengajukan aplikasi perumahan mereka sebelum batas waktu. Kami menawarkan berbagai opsi asrama untuk menyesuaikan preferensi dan anggaran yang berbeda.',
+                question: 'Apa yang saya dapatkan setelah bergabung dengan komunitas Kelas Inovatif?',
+                answer: 'Anda mendapat akses ke network akademisi aktif, sesi mentoring rutin, diskusi solusi untuk project Anda, materi premium tambahan, dan peluang kolaborasi riset. Banyak anggota menemukan co-author untuk publikasi, mendapat feedback untuk karya mereka, dan menemukan peluang penelitian baru.',
             },
             {
-                question: 'Aktivitas ekstrakurikuler apa saja yang tersedia?',
-                answer: 'Kami memiliki lebih dari 200 organisasi mahasiswa, termasuk klub akademik, kelompok budaya, tim olahraga, seni pertunjukan, dan organisasi layanan komunitas. Mahasiswa juga dapat memulai klub baru dengan persetujuan yang tepat.',
+                question: 'Bagaimana sistem mentoring berjalan di komunitas?',
+                answer: 'Mentoring kami berkelanjutan, bukan hanya saat kelas. Anda bisa bertanya langsung di grup komunitas dan mendapat respons dari mentor maupun anggota berpengalaman. Ada juga sesi mentoring rutin untuk topik spesifik, konsultasi privat untuk project Anda, dan sharing session dari alumni sukses.',
+            },
+            {
+                question: 'Apakah ada peluang kolaborasi riset dan publikasi di komunitas?',
+                answer: 'Tentu! Ini salah satu keunggulan utama kami. Anggota aktif sering berkolaborasi dalam penelitian, co-authoring artikel ilmiah, dan menghasilkan publikasi Scopus bersama. Kami juga mengadakan event khusus untuk matching researcher dengan interest serupa. Banyak publikasi internasional lahir dari kolaborasi di komunitas kami.',
+            },
+            {
+                question: 'Bagaimana cara mendaftar kelas?',
+                answer: 'Sangat mudah! Hubungi admin kami via WhatsApp di 0857-1220-8535 atau melalui form pendaftaran di website. Admin akan membantu Anda memilih kelas yang tepat sesuai kebutuhan, memberikan informasi jadwal terbaru, dan memandu proses pendaftaran. Kami juga menawarkan konsultasi gratis.',
+            },
+            {
+                question: 'Apakah ada diskon atau paket khusus?',
+                answer: 'Ya, kami sering memberikan penawaran khusus untuk paket lengkap (mengambil beberapa kelas sekaligus) dan untuk anggota komunitas yang ingin upgrade skill mereka. Hubungi admin untuk informasi penawaran terbaru dan paket yang tersedia.',
+            },
+            {
+                question: 'Apa yang perlu saya siapkan sebelum mengikuti kelas?',
+                answer: 'Yang utama adalah laptop/komputer dengan koneksi internet stabil dan semangat belajar! Untuk tools, sebagian besar gratis atau akan kami pandu instalasinya. SciSpace dan NotebookLM berbasis web, sementara Cursor akan kami pandu instalasi step-by-step di kelas. Tidak perlu khawatir—kami akan memastikan Anda siap.',
             },
         ],
     },

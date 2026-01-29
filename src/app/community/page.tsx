@@ -7,6 +7,7 @@ import { WhyWeGather } from './_components/WhyWeGather';
 import { ClubShowcase } from './_components/ClubShowcase';
 import { CommunityCalendar } from './_components/CommunityCalendar';
 import { CommunityLeader } from './_components/CommunityLeader';
+import { VideoTestimonials } from './_components/VideoTestimonials';
 import { BeyondGraduation } from './_components/BeyondGraduation';
 
 import type { Metadata } from 'next';
@@ -26,6 +27,7 @@ export default function CommunityPage() {
             <ClubShowcase />
             <CommunityCalendar />
             <CommunityLeader />
+            <VideoTestimonials />
             <BeyondGraduation />
             <Footer />
         </main>

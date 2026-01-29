@@ -1,25 +1,25 @@
 import React from 'react';
-import { GraduationCap, BookOpen, Home, ArrowRight } from 'lucide-react';
+import { Award, Sparkles, Users, ArrowRight } from 'lucide-react';
 
 const categories = [
     {
-        icon: GraduationCap,
-        title: 'Penerimaan',
-        description: 'Pelajari tentang batas waktu aplikasi, persyaratan, dan proses pendaftaran.',
+        icon: Award,
+        title: 'Mengapa Memilih Kami',
+        description: 'Value proposition, keunggulan, dan track record yang membedakan kami dari yang lain.',
         iconBg: 'bg-faq-primary/10 dark:bg-faq-primary/20',
         iconColor: 'text-faq-primary dark:text-faq-accent',
     },
     {
-        icon: BookOpen,
-        title: 'Program Akademik',
-        description: 'Detail tentang major, minor, kursus online, dan persyaratan gelar.',
+        icon: Sparkles,
+        title: 'Program & Hasil',
+        description: 'Struktur pembelajaran, metodologi, dan bukti keberhasilan alumni kami.',
         iconBg: 'bg-faq-primary/10 dark:bg-faq-primary/20',
         iconColor: 'text-faq-primary dark:text-faq-accent',
     },
     {
-        icon: Home,
-        title: 'Kehidupan Mahasiswa',
-        description: 'Perumahan, fasilitas kampus, klub, dan aktivitas ekstrakurikuler.',
+        icon: Users,
+        title: 'Komunitas & Pendaftaran',
+        description: 'Dukungan berkelanjutan, kolaborasi riset, dan cara bergabung dengan kami.',
         iconBg: 'bg-faq-primary/10 dark:bg-faq-primary/20',
         iconColor: 'text-faq-primary dark:text-faq-accent',
     },

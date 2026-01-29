@@ -13,13 +13,14 @@ export function Hero() {
             <div className="absolute inset-0 bg-gradient-to-t from-program-primary via-transparent to-transparent"></div>
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <span className="inline-block py-1 px-3 rounded-full bg-white/10 border border-white/20 text-white text-xs font-semibold tracking-wider mb-6 backdrop-blur-sm">
-                    KECEMERLANGAN AKADEMIK
+                    Tumbuh & Berkarya Bersama
                 </span>
                 <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
-                    Jalur Pembelajaran <br className="hidden md:block" /> <i className="font-serif italic text-white/90">Khusus Kami</i>
+                    Belajar, Kolaborasi, dan Raih Cita Akademik<br className="hidden md:block" /> 
+                    <i className="font-serif italic text-white/90">di Komunitas Kami</i>
                 </h1>
                 <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-200 font-light">
-                    Temukan program yang dirancang untuk membekali Anda dengan alat dan metodologi mutakhir yang dibutuhkan untuk lanskap akademik dan profesional modern.
+                    Bergabunglah dengan program yang tidak hanya meningkatkan pengetahuan, tetapi juga menguatkan semangat, koneksi, dan kepedulian akademik Anda. Bersama, kita mengembangkan potensi untuk masa depan yang inovatif dan bermakna.
                 </p>
             </div>
         </header>

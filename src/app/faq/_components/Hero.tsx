@@ -11,7 +11,7 @@ export function Hero() {
                     Pertanyaan yang Sering Diajukan
                 </h1>
                 <p className="max-w-2xl mx-auto text-lg text-white/80 mb-10">
-                    Temukan jawaban untuk pertanyaan yang paling umum tentang penerimaan, akademik, dan kehidupan mahasiswa di Kelas Inovatif University.
+                    Temukan jawaban untuk pertanyaan tentang keunggulan kami, program pembelajaran, hasil alumni, komunitas, dan cara bergabung dengan Kelas Inovatif.
                 </p>
                 <div className="max-w-xl mx-auto relative">
                     <input
